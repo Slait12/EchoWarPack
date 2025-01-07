@@ -1,0 +1,34 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "interactable_crate",
+    "width": 1.0,
+    "height": 0.5,
+    "forwardsDamage": true,
+    "destroyable": true,
+    "forwardsDamageMultiplier": 1.0
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "hasBlowoutPanels": true,
+    "feedsVehicles": true,
+    "inventoryUnits": 3.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "M1A2 ammorack",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "gun_mounted",
+    "useVehicleTexture": true,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "PKT",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "gun": {
+    "lockOnType": "default",
+    "targetType": "all",
+    "autoReload": true,
+    "capacity": 400,
+    "reloadTime": 20,
+    "muzzleVelocity": 150,
+    "fireDelay": 2.5,
+    "bulletSpreadFactor": 1.5,
+    "minYaw": -180.0,
+    "maxYaw": 180.0,
+    "minPitch": -6.0,
+    "maxPitch": 60.0,
+    "diameter": 7.62,
+    "yawSpeed": 4.5,
+    "pitchSpeed": 4.5,
+    "lockMaxAngle": 0.0,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0, 0.0, 0.171902],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "parts": [],
+  "collisionGroups": [],
+  "initialVariables": [],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "soundVariations": ["nw:guns/pkt/PKT_veh_fire_int_01", "nw:guns/pkt/PKT_veh_fire_int_02", "nw:guns/pkt/PKT_veh_fire_int_03", "nw:guns/pkt/PKT_veh_fire_int_04", "nw:guns/pkt/PKT_veh_fire_int_05", "nw:guns/pkt/PKT_veh_fire_int_06", "nw:guns/pkt/PKT_veh_fire_int_07", "nw:guns/pkt/PKT_veh_fire_int_08", "nw:guns/pkt/PKT_veh_fire_int_09", "nw:guns/pkt/PKT_veh_fire_int_10", "nw:guns/pkt/PKT_veh_fire_int_11", "nw:guns/pkt/PKT_veh_fire_int_12", "nw:guns/pkt/PKT_veh_fire_int_13", "nw:guns/pkt/PKT_veh_fire_int_14", "nw:guns/pkt/PKT_veh_fire_int_15", "nw:guns/pkt/PKT_veh_fire_int_16", "nw:guns/pkt/PKT_veh_fire_int_17", "nw:guns/pkt/PKT_veh_fire_int_18"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_close_initial_tail_01", "nw:guns/pkt/t72_coax_fire_close_initial_tail_02", "nw:guns/pkt/t72_coax_fire_close_initial_tail_03", "nw:guns/pkt/t72_coax_fire_close_initial_tail_04"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 16.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 32.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_close_initial_01", "nw:guns/pkt/t72_coax_fire_close_initial_02", "nw:guns/pkt/t72_coax_fire_close_initial_03", "nw:guns/pkt/t72_coax_fire_close_initial_04", "nw:guns/pkt/t72_coax_fire_close_initial_05", "nw:guns/pkt/t72_coax_fire_close_initial_06", "nw:guns/pkt/t72_coax_fire_close_initial_07", "nw:guns/pkt/t72_coax_fire_close_initial_08", "nw:guns/pkt/t72_coax_fire_close_initial_09", "nw:guns/pkt/t72_coax_fire_close_initial_10", "nw:guns/pkt/t72_coax_fire_close_initial_11", "nw:guns/pkt/t72_coax_fire_close_initial_12", "nw:guns/pkt/t72_coax_fire_close_initial_13", "nw:guns/pkt/t72_coax_fire_close_initial_14", "nw:guns/pkt/t72_coax_fire_close_initial_15", "nw:guns/pkt/t72_coax_fire_close_initial_16", "nw:guns/pkt/t72_coax_fire_close_initial_17", "nw:guns/pkt/t72_coax_fire_close_initial_18", "nw:guns/pkt/t72_coax_fire_close_initial_19"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 16.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 32.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_mid_initial_01", "nw:guns/pkt/t72_coax_fire_mid_initial_02", "nw:guns/pkt/t72_coax_fire_mid_initial_03", "nw:guns/pkt/t72_coax_fire_mid_initial_04", "nw:guns/pkt/t72_coax_fire_mid_initial_05", "nw:guns/pkt/t72_coax_fire_mid_initial_06", "nw:guns/pkt/t72_coax_fire_mid_initial_07", "nw:guns/pkt/t72_coax_fire_mid_initial_08", "nw:guns/pkt/t72_coax_fire_mid_initial_09", "nw:guns/pkt/t72_coax_fire_mid_initial_10", "nw:guns/pkt/t72_coax_fire_mid_initial_11", "nw:guns/pkt/t72_coax_fire_mid_initial_12", "nw:guns/pkt/t72_coax_fire_mid_initial_13", "nw:guns/pkt/t72_coax_fire_mid_initial_14", "nw:guns/pkt/t72_coax_fire_mid_initial_15", "nw:guns/pkt/t72_coax_fire_mid_initial_16", "nw:guns/pkt/t72_coax_fire_mid_initial_17", "nw:guns/pkt/t72_coax_fire_mid_initial_18"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 1.0,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_mid_initial_tail_01", "nw:guns/pkt/t72_coax_fire_mid_initial_tail_02", "nw:guns/pkt/t72_coax_fire_mid_initial_tail_03", "nw:guns/pkt/t72_coax_fire_mid_initial_tail_04", "nw:guns/pkt/t72_coax_fire_mid_initial_tail_05"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 1.0,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_far_initial_01", "nw:guns/pkt/t72_coax_fire_far_initial_02", "nw:guns/pkt/t72_coax_fire_far_initial_03", "nw:guns/pkt/t72_coax_fire_far_initial_04", "nw:guns/pkt/t72_coax_fire_far_initial_05", "nw:guns/pkt/t72_coax_fire_far_initial_06", "nw:guns/pkt/t72_coax_fire_far_initial_07", "nw:guns/pkt/t72_coax_fire_far_initial_08", "nw:guns/pkt/t72_coax_fire_far_initial_09", "nw:guns/pkt/t72_coax_fire_far_initial_10", "nw:guns/pkt/t72_coax_fire_far_initial_11", "nw:guns/pkt/t72_coax_fire_far_initial_12", "nw:guns/pkt/t72_coax_fire_far_initial_13", "nw:guns/pkt/t72_coax_fire_far_initial_14", "nw:guns/pkt/t72_coax_fire_far_initial_15", "nw:guns/pkt/t72_coax_fire_far_initial_16", "nw:guns/pkt/t72_coax_fire_far_initial_17", "nw:guns/pkt/t72_coax_fire_far_initial_18", "nw:guns/pkt/t72_coax_fire_far_initial_19"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 128.0,
+        "middleDistanceVolume": 1.0,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["nw:guns/pkt/t72_coax_fire_far_initial_tail_01", "nw:guns/pkt/t72_coax_fire_far_initial_tail_02", "nw:guns/pkt/t72_coax_fire_far_initial_tail_03", "nw:guns/pkt/t72_coax_fire_far_initial_tail_04", "nw:guns/pkt/t72_coax_fire_far_initial_tail_05"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 128.0,
+        "middleDistanceVolume": 1.0,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:gun_reloading",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 3.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 6.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "textureList": ["qvist_p:textures/particles/sparks/bang1.png", "qvist_p:textures/particles/sparks/bang2.png"],
+        "randomTexture": true,
+        "quantity": 1,
+        "duration": 4,
+        "transparency": 1.0,
+        "hitboxSize": 0.2,
+        "scale": 0.6,
+        "fadeScaleTime": 3,
+        "pos": [0.0, 0.0, 0.2],
+        "rotationRandomness ": [0.0, 0.0, -90.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_muzzleflash"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "texture": "qvist_p:textures/particles/whiteflash_translucent.png",
+        "quantity": 1,
+        "duration": 4,
+        "transparency": 1.0,
+        "hitboxSize": 0.1,
+        "fadeTransparencyTime": 2,
+        "color": "ffac30",
+        "scale": 2.0,
+        "pos": [0.0, 0.0, 0.171902],
+        "spreadRandomness": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 1.0, 1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_muzzleflash"
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "duration": 8,
+        "transparency": 0.1,
+        "fadeTransparencyTime": 6,
+        "scale": 0.0,
+        "toScale": 1.0,
+        "hitboxSize": 0.2,
+        "color": "BBBBBB",
+        "pos": [0.0, 0.0, 0.171902],
+        "initialVelocity": [0.0, 0.0, 1.0],
+        "spreadRandomness": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "spawningAnimations": [],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "duration": 16,
+        "transparency": 0.1,
+        "fadeTransparencyTime": 7,
+        "scale": 0.0,
+        "toScale": 1.0,
+        "hitboxSize": 0.2,
+        "color": "BBBBBB",
+        "pos": [0.0, 0.0, 0.171902],
+        "spreadRandomness": [0.3, 0.3, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.02],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "spawningAnimations": [],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "spawningOrientation": "entity",
+        "renderingOrientation": "fixed",
+        "type": "generic",
+        "stopsOnGround": true,
+        "groundSounds": ["qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_01", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_02", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_03", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_04", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_05", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_06", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_07", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_08", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_09", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_10", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_11", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_12", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_13", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_14", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_15", "qvist_p:EmptyShells/20mm/Concrete/shell_20mm_concrete_16"],
+        "texture": "qvist_p:textures/bullets/30mm_casing.png",
+        "model": "qvist_p:objmodels/bullets/30mm_casing.obj",
+        "quantity": 1,
+        "fadeScaleTime": 60,
+        "duration": 200,
+        "scale": 0.5,
+        "hitboxSize": 0.1,
+        "pos": [0.105108, 0.0, 0.0],
+        "rot": [180.0, 0.0, 0.0],
+        "rotationRandomness": [70.0, 50.0, 50.0],
+        "rotationVelocity": [-20.0, 0.0, 0.0],
+        "spreadRandomness": [1.0, 2.0, 1.0],
+        "initialVelocity": [3.0, 1.5, 0.0],
+        "movementVelocity": [0.0, -0.036, 0.0],
+        "terminalVelocity": [32.0, 36.0, 32.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ],
+        "spawningAnimations": []
+      }
+    ],
+    "modelType": "obj"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_trapdoor",
+    "useVehicleTexture": true,
+    "forwardsDamage": false,
+    "width": 0.3,
+    "height": 0.3
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Humvee trapdoor",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

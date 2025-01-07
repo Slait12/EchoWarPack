@@ -1,0 +1,3943 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "motorized": {
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 4672,
+    "waterBallastFactor": 0.5,
+    "steeringForceFactor": 0.2,
+    "overSteer": 1.0,
+    "underSteer": 1.0,
+    "axleRatio": 4.0,
+    "fuelCapacity": 15000,
+    "brakingFactor": 4.0,
+    "dragCoefficient": 0.6,
+    "maxTiltAngle": 3.0,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hudTexture": "qvist_p:textures/guis/car_hud.png",
+    "panelTexture": "qvist_p:textures/guis/car_panel.png",
+    "panelTextColor": "000000",
+    "panelLitTextColor": "27D800"
+  },
+  "definitions": [
+    {
+      "subName": "_green",
+      "name": "HMMWV M1165 [Green]",
+      "description": "future scrap metal",
+      "extraMaterialLists": [[]]
+    },
+    {
+      "subName": "_camo",
+      "name": "HMMWV M1165 [Camo]",
+      "description": "usa jarhead vibe",
+      "extraMaterialLists": [[]]
+    },
+    {
+      "subName": "_desert",
+      "name": "HMMWV M1165 [Desert]",
+      "description": "iraq vibe",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "parts": [
+    {
+      "pos": [1.18428, 0.534388, 2.12579],
+      "rot": [0.0, 0.0, 0.0],
+      "turnsWithSteer": true,
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_wheel",
+      "types": ["ground_humvee_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [1.18428, 0.534388, 2.12579],
+          "axis": [0.0, -1.0, 0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.13433, 0.534388, 2.12579],
+      "rot": [0.0, 180.0, 0.0],
+      "isMirrored": true,
+      "turnsWithSteer": true,
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_wheel",
+      "types": ["ground_humvee_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-1.13433, 0.534388, 2.12579],
+          "axis": [0.0, -1.0, 0.0]
+        }
+      ]
+    },
+    {
+      "pos": [1.18427, 0.534389, -1.97421],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_wheel",
+      "types": ["ground_humvee_wheel"],
+      "animations": []
+    },
+    {
+      "pos": [-1.13433, 0.534389, -1.97421],
+      "rot": [0.0, 180.0, 0.0],
+      "isMirrored": true,
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_wheel",
+      "types": ["ground_humvee_wheel"],
+      "animations": []
+    },
+    {
+      "pos": [0.89051, 1.05, 0.2688],
+      "dismountPos": [3.0, 1.0, 1.0],
+      "playerScale": [0.9, 0.9, 0.9],
+      "isController": true,
+      "defaultPart": "qvist_p:humvee_seat",
+      "types": ["seat_humvee"]
+    },
+    {
+      "pos": [-0.84688, 1.05, 0.24885],
+      "dismountPos": [-3.0, 0.0, 0.0],
+      "playerScale": [0.9, 0.9, 0.9],
+      "defaultPart": "qvist_p:humvee_seat",
+      "types": ["seat_humvee"]
+    },
+    {
+      "pos": [0.89051, 1.05, -0.75115],
+      "dismountPos": [3.0, 0.0, 0.0],
+      "playerScale": [0.9, 0.9, 0.9],
+      "defaultPart": "qvist_p:humvee_seat",
+      "types": ["seat_humvee"]
+    },
+    {
+      "pos": [-0.84688, 1.05, -0.75115],
+      "dismountPos": [-3.0, 0.0, 0.0],
+      "playerScale": [0.9, 0.9, 0.9],
+      "defaultPart": "qvist_p:humvee_seat",
+      "types": ["seat_humvee"]
+    },
+    {
+      "pos": [0.03, 1.6, -0.2],
+      "dismountPos": [-4.0, 0.0, 0.0],
+      "playerScale": [0.9, 0.9, 0.9],
+      "isPermanent": true,
+      "defaultPart": "qvist_p:seat_stand_invis",
+      "linkedParts": [10, 11, 12],
+      "types": ["seat"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "gun_yaw_1",
+          "centerPoint": [0.03, 1.6, -0.2],
+          "axis": [0.0, 1.0, 0.0]
+        },
+        {
+          "animationType": "rotation",
+          "variable": "gun_yaw_2",
+          "centerPoint": [0.03, 1.6, -0.2],
+          "axis": [0.0, 1.0, 0.0]
+        },
+        {
+          "animationType": "rotation",
+          "variable": "gun_yaw_3",
+          "centerPoint": [0.03, 1.6, -0.2],
+          "axis": [0.0, 1.0, 0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.027849, 2.32371, -0.09631],
+      "maxValue": 40.0,
+      "types": ["gun_turret_hamvee"],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-0.295266, 2.30625, 0.425],
+      "maxValue": 152.0,
+      "types": [""],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-0.295266, 2.30625, 0.425],
+      "maxValue": 152.0,
+      "types": ["gun_atgm"],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [0.0, 0.978449, 2.01574],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_engine",
+      "types": ["engine_humvee"],
+      "linkedParts": [1, 2, 3, 4]
+    },
+    {
+      "pos": [0.0, 1.0, 0.0],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_decor_boxes",
+      "types": ["generic_decor_humvee"]
+    },
+    {
+      "pos": [1.22377, 1.21776, 1.0363],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_door_front",
+      "types": ["generic_door_front"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "door_front_le",
+          "centerPoint": [1.22377, 1.21776, 1.0363],
+          "axis": [0.0, -60.0, 0.0],
+          "duration": 20,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [-1.19252, 1.21774, 1.0363],
+      "rot": [0.0, 0.0, 0.0],
+      "isMirrored": true,
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_door_front",
+      "types": ["generic_door_front"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "door_front_re",
+          "centerPoint": [-1.19252, 1.21774, 1.0363],
+          "axis": [0.0, 60.0, 0.0],
+          "duration": 20,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [1.22376, 1.21776, -0.06995],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_door_back",
+      "types": ["generic_door_back"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "door_back_le",
+          "centerPoint": [1.3367, 1.16308, -0.12],
+          "axis": [0.0, -60.0, 0.0],
+          "duration": 20,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [-1.19251, 1.21774, -0.069949],
+      "rot": [0.0, 0.0, 0.0],
+      "isMirrored": true,
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_door_back",
+      "types": ["generic_door_back"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "door_back_re",
+          "centerPoint": [-1.3367, 1.16308, -0.12],
+          "axis": [0.0, 60.0, 0.0],
+          "duration": 20,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [0.027849, 2.32371, -0.521522],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_hatch_top",
+      "types": ["generic_hatch_top"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "hatch_tope",
+          "centerPoint": [0.027849, 2.32371, -0.521522],
+          "axis": [-130.0, 0.0, 0.0],
+          "duration": 20,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [0.000107, 0.774985, 2.86876],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_bumper",
+      "types": ["generic_bumper"]
+    },
+    {
+      "pos": [-0.892879, 1.03721, -2.83573],
+      "maxValue": 100.0,
+      "types": ["generic_wheel_holder"],
+      "defaultPart": "qvist_p:humvee_wheel_holder",
+      "interactableVariables": [["part_present_24"]],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "back_hatches",
+          "centerPoint": [-0.892879, 1.03721, -2.83573],
+          "axis": [0.0, 95.0, 0.0],
+          "reverseDelay": 20,
+          "duration": 30,
+          "forwardsEasing": "easeoutquad",
+          "reverseEasing": "easeinquad"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [0.022252, 0.910965, -2.84532],
+      "maxValue": 100.0,
+      "types": ["generic_trapdoor"],
+      "defaultPart": "qvist_p:humvee_trapdoor",
+      "interactableVariables": [["part_present_24"]],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "back_hatches",
+          "centerPoint": [0.022252, 0.910965, -2.84532],
+          "axis": [-105.0, 0.0, 0.0],
+          "forwardsDelay": 20,
+          "duration": 40,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [0.021851, 2.13648, -1.28799],
+      "maxValue": 100.0,
+      "types": ["generic_hatch_back"],
+      "defaultPart": "qvist_p:humvee_hatch_back",
+      "interactableVariables": [["part_present_24"]],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "back_hatches",
+          "centerPoint": [-0.021851, 2.13648, -1.28799],
+          "axis": [60.0, 0.0, 0.0],
+          "forwardsDelay": 20,
+          "duration": 40,
+          "forwardsEasing": "easeoutbounce",
+          "reverseEasing": "easeinquad",
+          "forwardsStartSound": "qvist_p:tank_hatch_open",
+          "reverseEndSound": "qvist_p:tank_hatch_close"
+        },
+        {
+          "animationType": "visibility",
+          "variable": "damage_totaled"
+        }
+      ]
+    },
+    {
+      "pos": [0.015486, 1.80443, -2.18157],
+      "maxValue": 100.0,
+      "defaultPart": "qvist_p:humvee_kuzov",
+      "types": ["generic_kuzov"]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.80327, 1.49867, 4.74011],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 61,
+      "hudY": 38,
+      "hudScale": 0.5,
+      "defaultInstrument": "qvist_p:instrument_car_spedometer_kph"
+    },
+    {
+      "pos": [0.35533, 1.49867, 4.74011],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 331,
+      "hudY": 38,
+      "hudScale": 0.5,
+      "defaultInstrument": "qvist_p:instrument_car_tachometer_amc"
+    },
+    {
+      "pos": [0.70082, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 127,
+      "hudY": 34,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_fuelqty"
+    },
+    {
+      "pos": [0.61955, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 175,
+      "hudY": 34,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_electric"
+    },
+    {
+      "pos": [0.45622, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 224,
+      "hudY": 35,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_oilpressure_p"
+    },
+    {
+      "pos": [0.53749, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 270,
+      "hudY": 35,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_enginetemp_c"
+    }
+  ],
+  //"initialVariables": ["door_front_le", "door_front_re", "door_back_le", "door_back_re"],
+  "connectionGroups": [],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "applyAfter": "door_front_l",
+      "collisions": [
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.91265],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.74401],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.57538],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.40675],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.23811],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_l",
+          "pos": [1.34749, 1.42287, 0.06948],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_le",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_15",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "door_front_r",
+      "collisions": [
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.91265],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.74401],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.57538],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.40675],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.23811],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_front_r",
+          "pos": [-1.30435, 1.42287, 0.06948],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_front_re",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_16",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "door_back_l",
+      "collisions": [
+        {
+          "name": "door_back_l",
+          "pos": [1.34749, 1.42287, -0.18791],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_l",
+          "pos": [1.34749, 1.42287, -0.38047],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_l",
+          "pos": [1.34749, 1.42287, -0.57302],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_l",
+          "pos": [1.34749, 1.42287, -0.76557],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_le",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_l",
+          "pos": [1.34749, 1.42287, -0.95812],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_le",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_17",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "door_back_r",
+      "collisions": [
+        {
+          "name": "door_back_r",
+          "pos": [-1.30435, 1.42287, -0.18791],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_r",
+          "pos": [-1.30435, 1.42287, -0.38047],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_r",
+          "pos": [-1.30435, 1.42287, -0.57302],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_r",
+          "pos": [-1.30435, 1.42287, -0.76557],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_re",
+          "variableType": "toggle"
+        },
+        {
+          "name": "door_back_r",
+          "pos": [-1.30435, 1.42287, -0.95812],
+          "width": 0.19781,
+          "height": 1.35008,
+          "armorThickness": 9.0,
+          "variableName": "door_back_re",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_18",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "Hatch_Top",
+      "collisions": [
+        {
+          "name": "Hatch_Top.001",
+          "pos": [0.00547, 2.32371, -0.09631],
+          "width": 0.85042,
+          "height": 0.03357,
+          "armorThickness": 6.0,
+          "variableName": "hatch_tope",
+          "variableType": "toggle"
+        },
+        {
+          "name": "Hatch_Top.001",
+          "pos": [0.05023, 2.32371, -0.09631],
+          "width": 0.85042,
+          "height": 0.03357,
+          "armorThickness": 6.0,
+          "variableName": "hatch_tope",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_19",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "Back_Hatch",
+      "collisions": [
+        {
+          "name": "back_hatch.003",
+          "pos": [-0.65739, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [-0.43058, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [-0.20376, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [0.02305, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [0.24987, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [0.47668, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.003",
+          "pos": [0.70349, 1.8629, -2.19712],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [-0.65739, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [-0.43058, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [-0.20376, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [0.02305, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [0.24987, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [0.47668, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.002",
+          "pos": [0.70349, 1.929, -1.96262],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [-0.65739, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [-0.43058, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [-0.20376, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [0.02305, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [0.24987, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [0.47668, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.001",
+          "pos": [0.70349, 1.98995, -1.73284],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [-0.65739, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [-0.43058, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [-0.20376, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [0.02305, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [0.24987, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [0.47668, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch",
+          "pos": [0.70349, 2.09313, -1.50032],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [-0.65739, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [-0.43058, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [-0.20376, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [0.02305, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [0.24987, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [0.47668, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.004",
+          "pos": [0.70349, 1.7912, -2.42435],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [-0.65739, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [-0.43058, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [-0.20376, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [0.02305, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [0.24987, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [0.47668, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.005",
+          "pos": [0.70349, 1.71558, -2.65647],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [-0.65739, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [-0.43058, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [-0.20376, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [0.02305, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [0.24987, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [0.47668, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "back_hatch.006",
+          "pos": [0.70349, 1.6325, -2.77886],
+          "width": 0.23748,
+          "height": 0.23748,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_23",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "Trapdoor",
+      "collisions": [
+        {
+          "name": "trapdoor",
+          "pos": [-0.65739, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [-0.43058, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [-0.20376, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [0.02305, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [0.24987, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [0.47668, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "trapdoor",
+          "pos": [0.70349, 1.21257, -2.81015],
+          "width": 0.23748,
+          "height": 0.62506,
+          "armorThickness": 8.0,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_22",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "Wheel_holder",
+      "collisions": [
+        {
+          "name": "wheel_holder",
+          "pos": [-0.97625, 1.30313, -3.11232],
+          "width": 0.3565,
+          "height": 0.83313,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "wheel_holder",
+          "pos": [-0.66578, 1.30313, -3.11232],
+          "width": 0.3565,
+          "height": 0.83313,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "wheel_holder",
+          "pos": [-0.35532, 1.30313, -3.11232],
+          "width": 0.3565,
+          "height": 0.83313,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "wheel_holder",
+          "pos": [-0.04485, 1.30313, -3.11232],
+          "width": 0.3565,
+          "height": 0.83313,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        },
+        {
+          "name": "wheel_holder",
+          "pos": [0.26561, 1.30313, -3.11232],
+          "width": 0.3565,
+          "height": 0.83313,
+          "variableName": "back_hatches",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "part_present_20",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "name": "Cube",
+          "pos": [-0.8538, 1.3981, 1.45988],
+          "width": 0.87199,
+          "height": 0.3697,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube",
+          "pos": [0.0, 1.3981, 1.45988],
+          "width": 0.87199,
+          "height": 0.3697,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube",
+          "pos": [0.8538, 1.3981, 1.45988],
+          "width": 0.87199,
+          "height": 0.3697,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [-0.90362, 1.36828, 2.26966],
+          "width": 0.77235,
+          "height": 0.29296,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [-0.30121, 1.36828, 2.26966],
+          "width": 0.77235,
+          "height": 0.29296,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [0.30121, 1.36828, 2.26966],
+          "width": 0.77235,
+          "height": 0.29296,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [0.90362, 1.36828, 2.26966],
+          "width": 0.77235,
+          "height": 0.29296,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.6966, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.49757, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.29854, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.09951, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.09951, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.29854, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.49757, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.6966, 1.03025, 2.76095],
+          "width": 0.21897,
+          "height": 0.4659,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [-1.04103, 0.98895, 2.47626],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [-1.04103, 0.98895, 2.0699],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [-1.04103, 0.98895, 1.66355],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [-1.04103, 0.98895, 1.2572],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.06308, 0.98895, 2.47626],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.06308, 0.98895, 2.0699],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.06308, 0.98895, 1.66355],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.06308, 0.98895, 1.2572],
+          "width": 0.51608,
+          "height": 0.48321,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [-0.89033, 2.17544, 0.70196],
+          "width": 0.74427,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [-0.27856, 2.17544, 0.70196],
+          "width": 0.74427,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [0.33322, 2.17544, 0.70196],
+          "width": 0.74427,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [0.94499, 2.17544, 0.70196],
+          "width": 0.74427,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.83968, 2.17544, -0.94344],
+          "width": 0.84558,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.26167, 2.17544, -0.94344],
+          "width": 0.84558,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.31633, 2.17544, -0.94344],
+          "width": 0.84558,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.89434, 2.17544, -0.94344],
+          "width": 0.84558,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [0.89864, 2.17544, -0.08663],
+          "width": 0.83698,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [0.89864, 2.17544, -0.10055],
+          "width": 0.83698,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.008",
+          "pos": [-0.84398, 2.17544, -0.08663],
+          "width": 0.83698,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.008",
+          "pos": [-0.84398, 2.17544, -0.10055],
+          "width": 0.83698,
+          "height": 0.24709,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [-1.02553, 1.63618, -1.29779],
+          "width": 0.50112,
+          "height": 0.83087,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [-1.02553, 1.63618, -1.64225],
+          "width": 0.50112,
+          "height": 0.83087,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.02553, 1.53367, -2.14213],
+          "width": 0.50112,
+          "height": 0.70506,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.02553, 1.53367, -2.624],
+          "width": 0.50112,
+          "height": 0.70506,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.06869, 1.63618, -1.29779],
+          "width": 0.50112,
+          "height": 0.83087,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.06869, 1.63618, -1.64225],
+          "width": 0.50112,
+          "height": 0.83087,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [1.06869, 1.53367, -2.14213],
+          "width": 0.50112,
+          "height": 0.70506,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [1.06869, 1.53367, -2.624],
+          "width": 0.50112,
+          "height": 0.70506,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.013",
+          "pos": [0.00676, 0.67789, 2.01318],
+          "width": 1.62251,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.013",
+          "pos": [0.00676, 0.67789, 0.67106],
+          "width": 1.62251,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.013",
+          "pos": [0.00676, 0.67789, -0.67106],
+          "width": 1.62251,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.013",
+          "pos": [0.00676, 0.67789, -2.01318],
+          "width": 1.62251,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, 1.15378],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, 0.73108],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, 0.30838],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, -0.11432],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, -0.53702],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.014",
+          "pos": [-1.04834, 0.65725, -0.95972],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, 1.15378],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, 0.73108],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, 0.30838],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, -0.11432],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, -0.53702],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.015",
+          "pos": [1.07392, 0.65725, -0.95972],
+          "width": 0.50414,
+          "height": 0.26185,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.016",
+          "pos": [1.0277, 1.00983, -1.30459],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.016",
+          "pos": [1.0277, 1.00983, -1.71533],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.016",
+          "pos": [1.0277, 1.00983, -2.12607],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.016",
+          "pos": [1.0277, 1.00983, -2.53682],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.017",
+          "pos": [-0.9774, 1.00983, -1.30459],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.017",
+          "pos": [-0.9774, 1.00983, -1.71533],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.017",
+          "pos": [-0.9774, 1.00983, -2.12607],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.017",
+          "pos": [-0.9774, 1.00983, -2.53682],
+          "width": 0.50112,
+          "height": 0.42518,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [-0.71603, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [-0.53703, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [-0.35802, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [-0.17901, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [0.0, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [0.17901, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [0.35802, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [0.53703, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        },
+        {
+          "name": "Cube.018",
+          "pos": [0.71603, 0.8523, -2.81782],
+          "width": 0.19965,
+          "height": 0.13322,
+          "armorThickness": 8.0
+        }
+      ],
+      "animations": []
+    }
+  ],
+  "variableModifiers": [
+    //mudAcc system
+    {
+      "variable": "mudAcc",
+      "minValue": 0,
+      "maxValue": 100,
+      "animations": [
+        //mud addition gate
+        {
+          "animationType": "inhibitor",
+          "variable": "speed",
+          "clampMin": 0,
+          "clampMax": 5
+        },
+        //rain + speed addition
+        {
+          "animationType": "translation",
+          "variable": "rain_strength",
+          "axis": [0.0, 0.025, 0.0]
+        },
+        //mud-adding blocks
+        {
+          "animationType": "translation",
+          "variable": "terrain_blockmaterial_grass",
+          "axis": [0.0, 0.01, 0.0]
+        },
+        {
+          "animationType": "translation",
+          "variable": "terrain_blockmaterial_dirt",
+          "axis": [0.0, 0.02, 0.0]
+        },
+        {
+          "animationType": "translation",
+          "variable": "terrain_blockmaterial_clay",
+          "axis": [0.0, 0.05, 0.0]
+        },
+        //water + speed cleaning
+        {
+          "animationType": "translation",
+          "variable": "blockmaterial_water",
+          "axis": [0.0, -0.8, 0.0]
+        },
+        //mud reduction gate
+        {
+          "animationType": "inhibitor",
+          "variable": "speed",
+          "clampMin": 5,
+          "clampMax": 100
+        },
+        {
+          "animationType": "activator",
+          "variable": "speed",
+          "clampMin": 0,
+          "clampMax": 5
+        },
+        //rain cleaning
+        {
+          "animationType": "translation",
+          "variable": "rain_strength",
+          "axis": [0.0, -0.025, 0.0]
+        },
+        //water cleaning
+        {
+          "animationType": "translation",
+          "variable": "blockmaterial_water",
+          "axis": [0.0, -0.5, 0.0]
+        },
+        //sub 50% passive inhibitor gate
+        {
+          "animationType": "inhibitor",
+          "variable": "mudAcc",
+          "clampMin": 0,
+          "clampMax": 50
+        },
+        //passive reduction
+        {
+          "animationType": "translation",
+          "variable": "!piss",
+          "axis": [0.0, -0.00185, 0.0]
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "Rudder",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.777255, 1.04004, 1.60725],
+            "axis": [0.0, -2.8, 6.5]
+          }
+        ]
+      },
+      {
+        "objectName": "door_front_l",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_front_le",
+            "centerPoint": [1.22377, 1.21776, 1.0363],
+            "axis": [0.0, -60.0, 0.0],
+            "duration": 20,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "door_front_r",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_front_re",
+            "centerPoint": [-1.19252, 1.21774, 1.0363],
+            "axis": [0.0, 60.0, 0.0],
+            "duration": 20,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "door_back_l",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_back_le",
+            "centerPoint": [1.22376, 1.21776, -0.06995],
+            "axis": [0.0, -60.0, 0.0],
+            "duration": 20,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "door_back_r",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_back_re",
+            "centerPoint": [-1.19251, 1.21774, -0.069949],
+            "axis": [0.0, 60.0, 0.0],
+            "duration": 20,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "Hatch_Top",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "hatch_tope",
+            "centerPoint": [0.027849, 2.32371, -0.521522],
+            "axis": [-130.0, 0.0, 0.0],
+            "duration": 20,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "Back_Hatch",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "back_hatches",
+            "centerPoint": [-0.021851, 2.13648, -1.28799],
+            "axis": [60.0, 0.0, 0.0],
+            "forwardsDelay": 20,
+            "duration": 40,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "Trapdoor",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "back_hatches",
+            "centerPoint": [0.022252, 0.910965, -2.84532],
+            "axis": [-105.0, 0.0, 0.0],
+            "forwardsDelay": 20,
+            "duration": 40,
+            "forwardsEasing": "easeoutbounce",
+            "reverseEasing": "easeinquad",
+            "forwardsStartSound": "qvist_p:tank_hatch_open",
+            "reverseEndSound": "qvist_p:tank_hatch_close"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "Wheel_holder",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "back_hatches",
+            "centerPoint": [-0.892879, 1.03721, -2.83573],
+            "axis": [0.0, 95.0, 0.0],
+            "reverseDelay": 20,
+            "duration": 30,
+            "forwardsEasing": "easeoutquad",
+            "reverseEasing": "easeinquad"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled"
+          }
+        ]
+      },
+      {
+        "objectName": "Gearbox",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_hvertical_1",
+            "centerPoint": [0.27739, 0.890472, 0.331497],
+            "axis": [1.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "Handbrake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "p_brake",
+            "centerPoint": [0.50864, 0.757889, 0.464079],
+            "axis": [-20.0, 0.0, 0.0],
+            "duration": 5
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&headlight_l",
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0, 0.8, 0.0],
+            "duration": 13,
+            "forwardsEasing": "easeoutelastic",
+            "reverseEasing": "easeoutexpo"
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.642529, 1.1139, 2.91571],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 1.65,
+            "flareWidth": 1.65,
+            "beamDiameter": 30.0,
+            "beamLength": 42.0
+          }
+        ]
+      },
+      {
+        "objectName": "&headlight_r",
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0, 0.8, 0.0],
+            "duration": 13,
+            "forwardsEasing": "easeoutelastic",
+            "reverseEasing": "easeoutexpo"
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-0.592528, 1.1139, 2.91571],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 1.65,
+            "flareWidth": 1.65,
+            "beamDiameter": 30.0,
+            "beamLength": 42.0
+          }
+        ]
+      },
+      {
+        "objectName": "&stopsignal_l",
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.09088, 1.14407, -2.8918],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.4687501,
+            "flareWidth": 0.4687501
+          },
+          {
+            "pos": [1.09088, 1.14407, -2.8918],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.4687501,
+            "flareWidth": 0.4687501
+          }
+        ]
+      },
+      {
+        "objectName": "&stopsignal_r",
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.04637, 1.14407, -2.8918],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.4687501,
+            "flareWidth": 0.4687501
+          },
+          {
+            "pos": [-1.04637, 1.14407, -2.8918],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.4687501,
+            "flareWidth": 0.4687501
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_front_l",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.11326, 1.25254, 2.71406],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_front_r",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.06316, 1.26372, 2.73084],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_l",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.33141, 1.29425, 2.47907],
+            "axis": [1.0, 0.0, 0.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_r",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.28695, 1.28865, 2.47907],
+            "axis": [-1.0, 0.0, 0.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_back_l",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.38175, 1.07225, -2.7505],
+            "axis": [1.0, 0.0, 0.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignal_back_r",
+        "isElectric": true,
+        "color": "FF8C00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.338, 1.07225, -2.7505],
+            "axis": [-1.0, 0.0, 0.0],
+            "flareHeight": 0.515625,
+            "flareWidth": 0.515625
+          }
+        ]
+      }
+    ],
+    "customVariables": [],
+    "sounds": [
+      //watersplash
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:waterimpact0", "qvist_p:waterimpact1", "qvist_p:waterimpact2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //base
+      {
+        "name": "qvist_p:waterimpact_add",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -10.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //add
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:debrissettle_water0", "qvist_p:debrissettle_water1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //settle
+
+      //doorwind
+      {
+        "name": "qvist_p:dooropenwind",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 5,
+            "clampMax": 100
+          },
+          {
+            "animationType": "visibility",
+            "variable": "door_l",
+            "reverseDelay": 10,
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.4
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+
+      {
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "soundVariations": ["qvist_m:common/explosions/plane_explosion_1", "qvist_m:common/explosions/plane_explosion_2", "qvist_m:common/explosions/plane_explosion_3"],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.8,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.7
+      },
+      {
+        "name": "qvist_m:common/explosions/destroyed_fire",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.6,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:vehicle_boom_large_distant_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 0.7,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      },
+      //fuelalert
+      {
+        "name": "qvist_p:fuelalertcar1",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "electric_power",
+            "clampMin": 1.1,
+            "clampMax": 20
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engines_running",
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "fuel",
+            "clampMin": 0.01,
+            "clampMax": 0.15
+          }
+        ],
+        "looping": false,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //radiointeract
+      {
+        "name": "qvist_p:interact_radioopen0",
+        "pos": [0.0, 0.5, 2.0],
+        "soundVariations": ["qvist_p:interact_radioopen3", "qvist_p:interact_radioopen2", "qvist_p:interact_radioopen1", "qvist_p:interact_radioopen0"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "player_interacting",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 15.0,
+        "maxDistanceVolume": 0.0
+      },
+      //pedalpush
+      {
+        "name": "qvist_p:pedalgaspush0",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["qvist_p:pedalgaspush0", "qvist_p:pedalgaspush1", "qvist_p:pedalgaspush2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "throttle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:pedalgasrelease0",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["qvist_p:pedalgasrelease0", "qvist_p:pedalgasrelease1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "throttle",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:pedalgaspush0",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["qvist_p:pedalgaspush0", "qvist_p:pedalgaspush1", "qvist_p:pedalgaspush2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:pedalgasrelease0",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["qvist_p:pedalgasrelease0", "qvist_p:pedalgasrelease1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      //handbrake
+      {
+        "name": "qvist_p:carhandbrakeup",
+        "pos": [0.0, 0.5, 1.3],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "p_brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:carhandbrakedown",
+        "pos": [0.0, 0.5, 1.3],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "p_brake",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+
+      //blinkersound
+      {
+        "name": "qvist_p:blinker",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:blinker",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0
+      },
+      //blinkerlever
+      {
+        "name": "qvist_p:blinkerleverup",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:blinkerleverdown",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:blinkerleverup",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "qvist_p:blinkerleverdown",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+
+      //horn
+      {
+        "name": "qvist_p:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //rain outside
+      {
+        "name": "qvist_p:rain_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      },
+      //rain outside roof shennanigans
+      {
+        "name": "qvist_p:rain_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      },
+
+      //wind
+      {
+        "name": "qvist_p:HMMVW/M1151_ambient_moviving_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 1.0,
+            "clampMax": 300.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //outside wind if no roof
+      {
+        "name": "qvist_p:HMMVW/M1151_ambient_moviving_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 1.0,
+            "clampMax": 300.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      //watercrash (small)
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 6,
+        "duration": 30,
+        "movementDuration": 25,
+        "transparency": 1.0,
+        "toTransparency": 0.0,
+        "fadeTransparencyTime": 15,
+        "scale": 5.8,
+        "toScale": 10.5,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/watermist0_translucent.png", "qvist_p:textures/bullets/ground/watermist1_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, 1.1, 0.0],
+        "spreadRandomness": [2.4, 8.0, 2.4],
+        "initialVelocity": [0.0, 8.5, 0.0],
+        "movementVelocity": [0.0, -0.025, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -32767.0,
+            "clampMax": -7.5
+          },
+
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //throwup
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "duration": 50,
+        "movementDuration": 35,
+        "transparency": 1.0,
+        "toTransparency": 0.0,
+        "fadeTransparencyTime": 25,
+        "scale": 4.8,
+        "toScale": 10.5,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/watermist0_translucent.png", "qvist_p:textures/bullets/ground/watermist1_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, 1.1, 0.0],
+        "spreadRandomness": [1.8, 11.0, 1.8],
+        "initialVelocity": [0.0, 11.5, 0.0],
+        "movementVelocity": [0.0, -0.025, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -32767.0,
+            "clampMax": -14.5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //throwup high
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 7,
+        "duration": 50,
+        "movementDuration": 10,
+        "transparency": 0.5,
+        "toTransparency": 0.001,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "hitboxSize": 0.2,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "randomTexture": true,
+        "color": "ffffff",
+        "pos": [0.0, 2.1, 0.0],
+        "spreadRandomness": [10.0, 0.5, 10.0],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [0.0, 0.0001, 0.0],
+        "terminalVelocity": [100.0, 0.005, 100.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -32767.0,
+            "clampMax": -7.5
+          }
+        ]
+      }, //mist
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 80,
+        "movementDuration": 15,
+        "transparency": 0.15,
+        "toTransparency": 0.001,
+        "scale": 9.0,
+        "toScale": 15.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "randomTexture": true,
+        "randomColor": true,
+        "color": "ffffff",
+        "pos": [0.0, 3.0, 0.0],
+        "spreadRandomness": [12.0, 0.5, 12.0],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [0.0, 0.0001, 0.0],
+        "terminalVelocity": [100.0, 0.005, 100.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -32767.0,
+            "clampMax": -14.5
+          }
+        ]
+      }, //mist high
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "quantity": 2,
+        "duration": 100,
+        "transparency": 0.8,
+        "toTransparency": 0.001,
+        "scale": 12.2,
+        "toScale": 30,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/waterfoam0_translucent.png", "qvist_p:textures/bullets/ground/waterfoam1_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, 0.0, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "rotationRandomness": [0.0, 0, 50.0],
+        "rotationVelocity": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -999.0,
+            "clampMax": -2.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": 0.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //foam
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "quantity": 1,
+        "duration": 80,
+        "transparency": 0.6,
+        "toTransparency": 0.001,
+        "scale": 5.2,
+        "toScale": 40,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/ripple0_translucent.png", "qvist_p:textures/bullets/ground/ripple1_translucent.png", "qvist_p:textures/bullets/ground/ripple2_translucent.png", "qvist_p:textures/bullets/shockwave_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, -0.05, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "rotationRandomness": [0.0, 0.0, 50.0],
+        "rotationVelocity": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -999.0,
+            "clampMax": -2.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": 0.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //ripple
+
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "quantity": 1,
+        "duration": 50,
+        "transparency": 1.0,
+        "toTransparency": 0.001,
+        "scale": 5.2,
+        "toScale": 20,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/waterfoam0_translucent.png", "qvist_p:textures/bullets/ground/waterfoam1_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, -0.02, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "rotationRandomness": [0.0, 0, 50.0],
+        "rotationVelocity": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": 0.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //foam small
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "quantity": 1,
+        "duration": 50,
+        "transparency": 0.8,
+        "toTransparency": 0.001,
+        "scale": 2.2,
+        "toScale": 20,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/ripple0_translucent.png", "qvist_p:textures/bullets/ground/ripple1_translucent.png", "qvist_p:textures/bullets/ground/ripple2_translucent.png", "qvist_p:textures/bullets/shockwave_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, -0.02, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "rotationRandomness": [0.0, 0.0, 50.0],
+        "rotationVelocity": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": 0.0,
+            "clampMax": 1.0
+          }
+        ]
+      }, //ripple small
+
+      //watertrail
+      {
+        "type": "generic",
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "distance": 2,
+        "quantity": 1,
+        "duration": 100,
+        "transparency": 0.5,
+        "fadeTransparencyTime": 50,
+        "scale": 3.2,
+        "toScale": 15,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["qvist_p:textures/bullets/ground/waterfoam0_translucent.png", "qvist_p:textures/bullets/ground/waterfoam1_translucent.png"],
+        "randomTexture": true,
+        "pos": [0.0, 0.01, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "rotationRandomness": [0.0, 0, 50.0],
+        "rotationVelocity": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0001, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 0.0, 1.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -1, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 10,
+        "transparency": 1.0,
+        "toTransparency": 0.001,
+        "scale": 2.0,
+        "toScale": 4.0,
+        "hitboxSize": 0.2,
+        "relativeInheritedVelocityFactor": [0.4, 0.4, 0.4],
+        "textureList": ["qvist_p:textures/bullets/ground/watermist0_translucent.png", "qvist_p:textures/bullets/ground/watermist1_translucent.png"],
+        "randomTexture": true,
+        "color": "ffffff",
+        "pos": [0.3, 0.0, 3.5],
+        "spreadRandomness": [1.0, 1.5, 1.0],
+        "initialVelocity": [2.0, 2.5, 0.0],
+        "movementVelocity": [0.0, -0.08, 0.0],
+        "terminalVelocity": [100.0, 10, 100.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 4,
+            "clampMax": 100.5
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 10,
+        "transparency": 1.0,
+        "toTransparency": 0.001,
+        "scale": 2.0,
+        "toScale": 4.0,
+        "hitboxSize": 0.2,
+        "relativeInheritedVelocityFactor": [0.4, 0.4, 0.4],
+        "textureList": ["qvist_p:textures/bullets/ground/watermist0_translucent.png", "qvist_p:textures/bullets/ground/watermist1_translucent.png"],
+        "randomTexture": true,
+        "color": "ffffff",
+        "pos": [-0.3, 0.0, 3.5],
+        "spreadRandomness": [1.0, 1.5, 1.0],
+        "initialVelocity": [-2.0, 2.5, 0.0],
+        "movementVelocity": [0.0, -0.08, 0.0],
+        "terminalVelocity": [100.0, 10, 100.0],
+        "spawningAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "terrain_distance",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [0.0, -0.99, 0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 4,
+            "clampMax": 100.5
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "quantity": 1,
+        "duration": 8,
+        "hitboxSize": 1.0,
+        "transparency": 0.7,
+        "scale": 25.0,
+        "textureList": ["qvist_p:textures/particles/explosion_ground/spark1.png", "qvist_p:textures/particles/explosion_ground/spark2.png", "qvist_p:textures/particles/explosion_ground/spark3.png", "qvist_p:textures/particles/explosion_ground/spark4.png"],
+        "textureDelays": [2, 2, 2, 2],
+        "pos": [0.0, 0.884446, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "texture": "qvist_p:textures/particles/whiteflash_translucent.png",
+        "quantity": 1,
+        "duration": 16,
+        "transparency": 1.0,
+        "hitboxSize": 0.1,
+        "fadeTransparencyTime": 4,
+        "color": "ffac30",
+        "scale": 40.0,
+        "pos": [0.0, 0.884446, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "texture": "qvist_p:textures/particles/explosion_ground/fireball3.png",
+        "isBright": true,
+        "ignoreCollision": true,
+        "hitboxSize": 0.5,
+        "quantity": 15,
+        "duration": 120,
+        "scale": 1.6,
+        "pos": [0.0, 0.884446, 0.0],
+        "spreadRandomness": [4.8, 6.0, 4.8],
+        "initialVelocity": [0.0, 18.0, 0.0],
+        "movementVelocity": [0.0, -0.05, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "subParticles": [
+          {
+            "particle": {
+              "type": "smoke",
+              "spawnEveryTick": true,
+              "spawningOrientation": "entity",
+              "renderingOrientation": "player",
+              "ignoreCollision": true,
+              "quantity": 1,
+              "duration": 60,
+              "transparency": 0.5,
+              "toTransparency": 0.1,
+              "hitboxSize": 0.5,
+              "scale": 1.5,
+              "color": "757575",
+              "pos": [0.0, 0.0, 0.0],
+              "spreadRandomness": [0.0, 0.0, 0.0],
+              "initialVelocity": [0.0, 0.0, 0.0],
+              "movementVelocity": [0.0, 0.0, 0.0],
+              "terminalVelocity": [5700.0, 6000.0, 6200.0],
+              "activeAnimations": []
+            },
+            "time": 120
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "ignoreCollision": true,
+        "isBright": true,
+        "quantity": 25,
+        "duration": 30,
+        "hitboxSize": 0.1,
+        "scale": 0.1,
+        "fadeScaleTime": 5,
+        "textureList": ["qvist_p:textures/particles/debris/debris_1.png", "qvist_p:textures/particles/debris/debris_2.png", "qvist_p:textures/particles/debris/debris_3.png", "qvist_p:textures/particles/debris/debris_4.png", "qvist_p:textures/particles/debris/debris_5.png"],
+        "randomTexture": true,
+        "pos": [0.0, 0.884446, 0.0],
+        "rotationVelocity": [0.0, 0.0, 2.0],
+        "spreadRandomness": [3.8, 3.0, 3.8],
+        "initialVelocity": [0.0, 4.5, 0.0],
+        "movementVelocity": [0.0, -0.03, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "stopsOnGround": true,
+        "quantity": 80,
+        "duration": 120,
+        "hitboxSize": 0.3,
+        "transparency": 0.1,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "fadeTransparencyTime": 20,
+        "color": "757575",
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "textureDelays": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "pos": [0.0, 0.884446, 0.0],
+        "rotationVelocity": [0.0, 0.0, 100.0],
+        "spreadRandomness": [0.8, 0.3, 0.8],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 4.0, 1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 80,
+        "duration": 120,
+        "hitboxSize": 0.3,
+        "transparency": 0.1,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "fadeTransparencyTime": 20,
+        "color": "757575",
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "textureDelays": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "pos": [0.0, 0.884446, 0.0],
+        "rotationVelocity": [0.0, 0.0, 100.0],
+        "spreadRandomness": [1.2, 1.0, 1.2],
+        "initialVelocity": [0.0, 0.1, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 3.0, 1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "quantity": 1,
+        "duration": 32,
+        "hitboxSize": 1.0,
+        "transparency": 1.0,
+        "scale": 20.0,
+        "textureList": ["qvist_p:textures/particles/explosion/exp__01_translucent.png", "qvist_p:textures/particles/explosion/exp__02_translucent.png", "qvist_p:textures/particles/explosion/exp__03_translucent.png", "qvist_p:textures/particles/explosion/exp__04_translucent.png", "qvist_p:textures/particles/explosion/exp__05_translucent.png", "qvist_p:textures/particles/explosion/exp__06_translucent.png", "qvist_p:textures/particles/explosion/exp__07_translucent.png", "qvist_p:textures/particles/explosion/exp__08_translucent.png", "qvist_p:textures/particles/explosion/exp__09_translucent.png", "qvist_p:textures/particles/explosion/exp__10_translucent.png", "qvist_p:textures/particles/explosion/exp__11_translucent.png", "qvist_p:textures/particles/explosion/exp__12_translucent.png", "qvist_p:textures/particles/explosion/exp__13_translucent.png", "qvist_p:textures/particles/explosion/exp__14_translucent.png", "qvist_p:textures/particles/explosion/exp__15_translucent.png", "qvist_p:textures/particles/explosion/exp__16_translucent.png", "qvist_p:textures/particles/explosion/exp__17_translucent.png", "qvist_p:textures/particles/explosion/exp__18_translucent.png", "qvist_p:textures/particles/explosion/exp__19_translucent.png", "qvist_p:textures/particles/explosion/exp__20_translucent.png", "qvist_p:textures/particles/explosion/exp__21_translucent.png", "qvist_p:textures/particles/explosion/exp__22_translucent.png", "qvist_p:textures/particles/explosion/exp__23_translucent.png", "qvist_p:textures/particles/explosion/exp__24_translucent.png", "qvist_p:textures/particles/explosion/exp__25_translucent.png", "qvist_p:textures/particles/explosion/exp__26_translucent.png", "qvist_p:textures/particles/explosion/exp__27_translucent.png", "qvist_p:textures/particles/explosion/exp__28_translucent.png", "qvist_p:textures/particles/explosion/exp__29_translucent.png", "qvist_p:textures/particles/explosion/exp__30_translucent.png", "qvist_p:textures/particles/explosion/exp__31_translucent.png", "qvist_p:textures/particles/explosion/exp__32_translucent.png"],
+        "textureDelays": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "pos": [0.0, 0.884446, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "fixed",
+        "quantity": 1,
+        "duration": 600,
+        "hitboxSize": 0.2,
+        "transparency": 1.0,
+        "toTransparency": 0.0,
+        "fadeTransparencyTime": 600,
+        "scale": 20.0,
+        "randomTexture": true,
+        "textureList": ["qvist_p:textures/particles/explosion_decals/explosion_decal_01_translucent.png", "qvist_p:textures/particles/explosion_decals/explosion_decal_02_translucent.png", "qvist_p:textures/particles/explosion_decals/explosion_decal_03_translucent.png"],
+        "pos": [0.0, 0.1, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 7,
+        "hitboxSize": 1.0,
+        "transparency": 0.7,
+        "toTransparency": 0.5,
+        "fadeTransparencyTime": 7,
+        "scale": 5.0,
+        "toScale": 250.0,
+        "texture": "qvist_p:textures/particles/shockwave_translucent.png",
+        "pos": [0.0, 0.884446, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 120,
+        "transparency": 0.1,
+        "toTransparency": 0.08,
+        "scale": 10.0,
+        "textureList": ["qvist_p:textures/particles/smoke/smoke__01_translucent.png", "qvist_p:textures/particles/smoke/smoke__02_translucent.png", "qvist_p:textures/particles/smoke/smoke__03_translucent.png", "qvist_p:textures/particles/smoke/smoke__04_translucent.png", "qvist_p:textures/particles/smoke/smoke__05_translucent.png", "qvist_p:textures/particles/smoke/smoke__06_translucent.png", "qvist_p:textures/particles/smoke/smoke__07_translucent.png", "qvist_p:textures/particles/smoke/smoke__08_translucent.png", "qvist_p:textures/particles/smoke/smoke__09_translucent.png", "qvist_p:textures/particles/smoke/smoke__10_translucent.png", "qvist_p:textures/particles/smoke/smoke__11_translucent.png", "qvist_p:textures/particles/smoke/smoke__12_translucent.png", "qvist_p:textures/particles/smoke/smoke__13_translucent.png", "qvist_p:textures/particles/smoke/smoke__14_translucent.png", "qvist_p:textures/particles/smoke/smoke__15_translucent.png", "qvist_p:textures/particles/smoke/smoke__16_translucent.png", "qvist_p:textures/particles/smoke/smoke__17_translucent.png", "qvist_p:textures/particles/smoke/smoke__18_translucent.png", "qvist_p:textures/particles/smoke/smoke__19_translucent.png", "qvist_p:textures/particles/smoke/smoke__20_translucent.png", "qvist_p:textures/particles/smoke/smoke__21_translucent.png", "qvist_p:textures/particles/smoke/smoke__22_translucent.png", "qvist_p:textures/particles/smoke/smoke__23_translucent.png", "qvist_p:textures/particles/smoke/smoke__24_translucent.png", "qvist_p:textures/particles/smoke/smoke__25_translucent.png", "qvist_p:textures/particles/smoke/smoke__26_translucent.png", "qvist_p:textures/particles/smoke/smoke__27_translucent.png", "qvist_p:textures/particles/smoke/smoke__28_translucent.png", "qvist_p:textures/particles/smoke/smoke__29_translucent.png", "qvist_p:textures/particles/smoke/smoke__30_translucent.png", "qvist_p:textures/particles/smoke/smoke__31_translucent.png", "qvist_p:textures/particles/smoke/smoke__32_translucent.png", "qvist_p:textures/particles/smoke/smoke__33_translucent.png", "qvist_p:textures/particles/smoke/smoke__34_translucent.png", "qvist_p:textures/particles/smoke/smoke__35_translucent.png", "qvist_p:textures/particles/smoke/smoke__36_translucent.png"],
+        "textureDelays": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "hitboxSize": 1.0,
+        "pos": [0.0, 0.884446, 0.0],
+        "initialVelocity": [0.0, 2.0, 0.0],
+        "movementVelocity": [-0.001, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 20
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "isBright": true,
+        "quantity": 2,
+        "duration": 21,
+        "transparency": 1.0,
+        "scale": 5.0,
+        "fadeTransparencyTime": 10,
+        "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+        "textureDelays": [3, 3, 3, 3, 3, 3, 3],
+        "hitboxSize": 1.0,
+        "pos": [0.0, 1.884446, 0.0],
+        "rotationVelocity": [0.0, 0.0, -15.0],
+        "spreadRandomness": [1.2, 0.05, 1.2],
+        "initialVelocity": [0.0, 1.0, 0.0],
+        "movementVelocity": [-0.004, 0.01, -0.006],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      //exhaust
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 7,
+        "transparency": 0.3,
+        "toTransparency": 0.000001,
+        "movementDuration": 6,
+        "scale": 0.1,
+        "toScale": 2.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "dad1ca",
+        "pos": [1.43258, 2.46711, -1.90043],
+        "spreadRandomness": [0.0, 0.8, 2.0],
+        "initialVelocity": [0.0, 0.0, -3.0],
+        "movementVelocity": [0.0, 0.0001, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+
+      //?
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 2,
+        "duration": 7,
+        "transparency": 0.5,
+        "toTransparency": 0.001,
+        "movementDuration": 7,
+        "scale": 0.3,
+        "toScale": 1.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "ffffff",
+        "pos": [0.0, -0.5, -1.25],
+        "spreadRandomness": [0.2, 2.0, 0.2],
+        "initialVelocity": [0.0, 0.0, -1.0],
+        "movementVelocity": [0.0, 0.0001, -0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "efswitch",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+
+      //exhaust throttle
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 7,
+        "transparency": 0.3,
+        "toTransparency": 0.000001,
+        "movementDuration": 6,
+        "scale": 0.1,
+        "toScale": 3.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "dad1ca",
+        "pos": [1.43258, 2.46711, -1.90043],
+        "spreadRandomness": [0.8, 0.8, 2.0],
+        "initialVelocity": [0.0, 0.0, -3.5],
+        "movementVelocity": [0.0, 0.0001, -0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "throttle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 7,
+        "transparency": 0.3,
+        "toTransparency": 0.000001,
+        "movementDuration": 6,
+        "scale": 0.1,
+        "toScale": 3.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "141414",
+        "pos": [1.43258, 2.46711, -1.90043],
+        "spreadRandomness": [0.8, 0.8, 2.0],
+        "initialVelocity": [0.0, 0.0, -3.5],
+        "movementVelocity": [0.0, 0.0001, -0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

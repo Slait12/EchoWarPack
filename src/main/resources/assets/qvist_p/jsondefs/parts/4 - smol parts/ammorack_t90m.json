@@ -1,0 +1,31 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "interactable_crate",
+    "width": 0.89046, 
+    "height": 0.8688
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "hasBlowoutPanels": true,
+    "feedsVehicles": true,
+    "inventoryUnits": 1.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "ammunition stowage",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

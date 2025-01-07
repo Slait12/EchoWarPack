@@ -1,0 +1,64 @@
+{
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 448,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "yCenter": 19,
+      "scale": 1.0,
+      "textureXCenter": 832,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "engine_pressure",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.0,1.5],
+          "offset": -65.0
+        }
+      ]
+    },
+    {
+      "yCenter": 19,
+      "scale": 1.0,
+      "textureXCenter": 832,
+      "textureYCenter": 576,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "scale": 1.0,
+      "textureXCenter": 960,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "overlayTexture": true
+    }
+  ],
+  "textureName": "instruments.png",
+  "general": {
+    "name": "Oil Presure Gauge (PSI)",
+    "description": "Indicates oil pressure.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1",
+        "oredict:dyeBlack:1",
+        "oredict:dyeGray:2",
+        "oredict:dyeWhite:2",
+        "oredict:dyeRed:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

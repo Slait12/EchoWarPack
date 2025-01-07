@@ -1,0 +1,343 @@
+{
+  "general": {
+    "materialLists": [[]],
+    "health": 100
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "Ka-52 engine",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "generic": {
+    "type": "engine_turboshaft",
+    "width": 1.0,
+    "height": 1.0,
+    "forwardsDamage": true,
+    "forwardsDamageMultiplier": 1.0
+  },
+  "engine": {
+    "isAutomatic": true,
+    "starterPower": 30,
+    "shiftSpeed": 20,
+    "revResistance": 10,
+    "maxRPM": 14000,
+    "maxSafeRPM": 15000,
+    "idleRPM": 12500,
+    "startRPM": 2400,
+    "revlimitRPM": -1,
+    "revlimitBounce": 8,
+    "stallRPM": 2000,
+    "engineWinddownRate": 20,
+    "heatingCoefficient": 0.7,
+    "coolingCoefficient": 1.35,
+    "engineWearFactor": 1.0,
+    "fuelConsumption": 1.25,
+    "gearRatios": [-1.0,0.0,24.39],
+    "fuelType": "avgas"
+  },
+  "parts": [
+    {
+      "pos": [0.0, 0.55055, -0.068548],
+      "rot": [-90.0, 0.0, 0.0],
+      "types": ["propeller_rotor"],
+      "defaultPart": "qvist_p:ka52_rotor",
+      "maxValue": 1000.0
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "sounds": [
+      {
+        "name": "qvist_p:helicopter/engine_start_exterior",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_starter",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:helicopter/engine_stop_exterior",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running"
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:helicopter/engine_exterior",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.08,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:helicopter/rotor_main_exterior",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.08,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:helicopter/rotor_main_far",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.08,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "minDistance": 64.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 128.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:helicopter/rotor_main_echo",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.08,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "minDistance": 32.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 128.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 15,
+        "transparency": 0.05,
+        "toTransparency": 0.01,
+        "scale": 1.0,
+        "color": "c9c9c9",
+        "hitboxSize": 1.0,
+        "pos": [1.45252, -0.1063, -1.335302],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [0.003, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.0,
+            "clampMax": 0.2
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 15,
+        "transparency": 0.05,
+        "toTransparency": 0.01,
+        "scale": 1.0,
+        "color": "c9c9c9",
+        "hitboxSize": 1.0,
+        "pos": [-1.45252, -0.1063, -1.335302],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [-0.003, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.0,
+            "clampMax": 0.2
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 15,
+        "transparency": 0.08,
+        "toTransparency": 0.05,
+        "scale": 1.0,
+        "color": "c9c9c9",
+        "hitboxSize": 1.0,
+        "pos": [1.45252, -0.1063, -1.335302],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [0.003, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.2,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 15,
+        "transparency": 0.08,
+        "toTransparency": 0.05,
+        "scale": 1.0,
+        "color": "c9c9c9",
+        "hitboxSize": 1.0,
+        "pos": [-1.45252, -0.1063, -1.335302],
+        "initialVelocity": [0.0, 0.5, 0.0],
+        "movementVelocity": [-0.003, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_rpm_percent",
+            "clampMin": 0.2,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

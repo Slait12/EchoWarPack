@@ -1,0 +1,26 @@
+{
+  "item": {
+    "type": "repair_pack"
+  },
+  "repair": {
+    "canRepairTotaled": true,
+    "amount": 1
+  },
+  "general": {
+    "name": "Heavy welding",
+    "description": "For repairing destroyed vehicles",
+    "stackSize": 8,
+    "materialLists": [
+      [
+        "oredict:ingotIron:50"
+      ]
+    ],
+    "repairMaterialLists": [
+      [
+        "oredict:ingotIron:50"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

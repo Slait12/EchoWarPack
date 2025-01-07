@@ -1,0 +1,45 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "seat_humvee",
+    "useVehicleTexture": true,
+    "forwardsDamage": false,
+    "width": 0.5,
+    "height": 0.5
+  },
+  "seat": {},
+  "parts": [
+    {
+      "pos": [0.0, 0.001, 0.0],
+      "maxValue": 1.0,
+      "types": ["generic_npc"]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Humvee seat",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "seat",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "part_onvehicle",
+            "axis": [0.0, -0.25, 0.1]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

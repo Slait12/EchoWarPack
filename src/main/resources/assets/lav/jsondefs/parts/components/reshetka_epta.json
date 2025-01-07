@@ -1,0 +1,106 @@
+{
+  "generic": {
+    "type": "generic_reshetka",
+    "forwardsDamageMultiplier": 0.0,
+    "destroyable": true,
+    "width": 1.0,
+    "height": 1.0
+  },
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "bullet",
+        "entity",
+        "click",
+        "block"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,-0.5,-0.0],
+          "width": 3.5,
+          "height": 0.5
+        }
+      ],
+      "animations": []
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Russian Upgrade",
+      "description": "idi naxyi",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "eshkere",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_added_vehicle",
+            "clampMin": -1.0,
+            "clampMax": -1.0
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "mts:bench/custombench_craft2",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_added_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 10.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "lav:padenie_truby",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_removed_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 10.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "zhezht",
+    "health": 300,
+    "materialLists": [
+      [
+        "minecraft:iron_door:6",
+        "minecraft:iron_trapdoor:4",
+        "minecraft:iron_block:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

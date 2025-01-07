@@ -1,0 +1,25 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_triplex",
+    "forwardsDamage": false,
+    "width": 0.2,
+    "height": 0.2
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Triplex",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

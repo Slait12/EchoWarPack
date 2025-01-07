@@ -1,0 +1,331 @@
+{
+  "generic": {
+    "type": "generic_hub",
+    "forwardsDamageMultiplier": 1.0,
+    "canBePlacedOnGround": true,
+    "destroyable": true,
+    "width": 0.8,
+    "height": 0.5
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "feedsVehicles": true,
+    "inventoryUnits": 0.25
+  },
+  "parts": [],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "bullet",
+        "entity",
+        "click",
+        "block"
+      ],
+      "collisions": [
+        {
+          "pos": [-1.66775,0.49488,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,0.49488,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,0.49488,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,0.49488,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,1.51818,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,1.51818,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,1.51818,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,1.51818,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,2.53569,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,2.53569,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,2.53569,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.66775,2.53569,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.01169,2.90907,-2.58864],
+          "width": 2.35302,
+          "height": 0.4
+        },
+        {
+          "pos": [0.01169,2.90907,-0.22287],
+          "width": 2.35302,
+          "height": 0.4
+        },
+        {
+          "pos": [0.01169,2.90907,2.15703],
+          "width": 2.35302,
+          "height": 0.4
+        },
+        {
+          "pos": [-1.49143,1.51818,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.49143,0.49488,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.92304,1.51818,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.92304,0.49488,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.08221,1.51818,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.08221,0.49488,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.10378,1.51818,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.10378,0.49488,4.88805],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.54975,1.51818,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.54975,0.49488,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.5592,1.51818,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.5592,0.49488,3.8654],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,2.53569,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,2.53569,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,2.53569,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,2.53569,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,1.51818,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,1.51818,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,1.51818,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,1.51818,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,0.49488,1.52889],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,0.49488,0.50483],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,0.49488,-0.52094],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.75874,0.49488,-1.55335],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.5592,1.51818,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.54975,1.51818,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.46959,1.51818,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.49143,1.51818,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.5592,0.49488,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.54975,0.49488,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.46959,0.49488,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-1.49143,0.49488,-4.02259],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.10378,0.49488,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [1.10378,1.51818,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.08221,1.51818,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [0.08221,0.49488,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.92304,1.51818,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        },
+        {
+          "pos": [-0.92304,0.49488,-5.04524],
+          "width": 1.0,
+          "height": 1.0
+        }
+      ],
+      "animations": []
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "HUB",
+      "description": "Hub, with bags. They protect from bullets, grenades, explosions.",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_sand",
+      "name": "HUB",
+      "description": "Hub, with bags. They protect from bullets, grenades, explosions.",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "variableModifiers": [],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "HUB",
+    "health": 600,
+    "materialLists": [
+      [
+        "mts:lav.zcoin:25"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "engine_leopard2a5",
+    "width": 1.9,
+    "height": 1.2,
+    "forwardsDamage": false
+  },
+  "engine": {
+    "type": "normal",
+    "isAutomatic": true,
+    "clutchTime": 25,
+    "starterPower": 45,
+    "shiftSpeed": 4,
+    "revResistance": 10,
+    "maxRPM": 10000,
+    "maxSafeRPM": 8000,
+    "idleRPM": 500,
+    "startRPM": 600,
+    "revlimitRPM": -1,
+    "stallRPM": 325,
+    "engineWinddownRate": 10,
+    "heatingCoefficient": 0.1,
+    "coolingCoefficient": 8.0,
+    "engineWearFactor": 1.0,
+    "fuelConsumption": 5.0,
+    "superchargerEfficiency": 3.0,
+    "superchargerFuelConsumption": 2.0,
+    "gearRatios": [-1.0, 0.0, 5.0, 4.0, 3.0, 2.0, 1.0],
+    "fuelType": "diesel"
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "Engine MB 873 Ka-501",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "collisionGroups": [],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "nw:engines/leopard/EXT/Start-stop/Leopard_engine_stop_EXT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!engine_running",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 12.0, 0.0],
+            "clampMin": 0.85
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/INT/Start-stop/Leopard_engine_stop_INT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!engine_running",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 12.0, 0.0],
+            "clampMin": 0.85
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/EXT/Start-stop/Leopard_engine_stop_EXT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 12.0, 0.0],
+            "clampMin": 0.85
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/INT/Start-stop/Leopard_engine_start_INT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 12.0, 0.0],
+            "clampMin": 0.85
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/EXT/Throttle/Leopard_engine_throttle_EXT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "throttle",
+            "axis": [0.0, 0.6, 0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": -0.1
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 1.15, 0.0]
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/EXT/RPM/Leopard_engine_low_RPM_EXT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_rpm_percent_safe",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [-4.0, 0.75, 0.2],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "throttle",
+            "axis": [0.0, 0.65, 0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_clutch_downshift",
+            "axis": [0.0, 0.5, 0.0],
+            "duration": 3
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 2.15, 0.0]
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/EXT/RPM/Leopard_engine_idle_EXT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, -2.5, 0.0],
+            "offset": 1.3
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 3.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/INT/Throttle/Leopard_engine_throttle_INT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "throttle",
+            "axis": [0.0, 0.6, 0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 1.0, 0.0],
+            "offset": -0.1
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 1.15, 0.0]
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/INT/RPM/Leopard_engine_low_RPM_INT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_rpm_percent_safe",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [-4.0, 0.75, 0.2],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "throttle",
+            "axis": [0.0, 0.65, 0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_clutch_downshift",
+            "axis": [0.0, 0.5, 0.0],
+            "duration": 3
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 2.15, 0.0]
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "nw:engines/leopard/INT/RPM/Leopard_engine_idle_INT_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_powered",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, -2.5, 0.0],
+            "offset": 1.3
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 3.0, 0.0],
+            "offset": 0.5
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:generic_crank",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_starter",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:generic_crank_int",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_starter",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_rpm_percent_safe",
+            "axis": [0.0, 0.0, 0.0],
+            "offset": 0.5
+          },
+          {
+            "animationType": "translation",
+            "variable": "engine_running",
+            "axis": [0.0, -0.8, 0.0],
+            "duration": 5,
+            "skipReverseMovement": true
+          }
+        ],
+        "pitchAnimations": [],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 160,
+        "movementDuration": 10,
+        "transparency": 0.6,
+        "toTransparency": 0.001,
+        "scale": 4.6,
+        "toScale": 21.0,
+        "hitboxSize": 0.2,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "randomTexture": true,
+        "colorList": ["4E4C49", "3A3733", "43413D", "4D4942", "676259", "494641", "53504B", "363432", "2e2a28", "7a7772", "58544d"],
+        "randomColor": true,
+        "pos": [0.0, 0.5, 0.0],
+        "spreadRandomness": [6.0, 10.0, 6.0],
+        "initialVelocity": [0.0, 10.0, 0.0],
+        "movementVelocity": [0.0, 5.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_percent",
+            "clampMax": 0.99
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "quantity": 20,
+        "duration": 50,
+        "movementDuration": 10,
+        "transparency": 1.0,
+        "scale": 1.2,
+        "toScale": 0.1,
+        "hitboxSize": 0.2,
+        "textureList": ["mtsofficialpack:textures/bullets/bang0.png", "mtsofficialpack:textures/bullets/bang0d.png", "mtsofficialpack:textures/bullets/bang0b.png", "mtsofficialpack:textures/bullets/bang0a.png", "mtsofficialpack:textures/bullets/bang0c.png"],
+        "randomTexture": true,
+        "pos": [0.0, 0.5, 0.0],
+        "spreadRandomness": [20.0, 20.0, 20.0],
+        "initialVelocity": [0.0, 25.0, 0.0],
+        "movementVelocity": [0.0, -0.008, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_percent",
+            "clampMax": 0.99
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

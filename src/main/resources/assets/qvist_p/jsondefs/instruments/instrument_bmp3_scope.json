@@ -1,0 +1,18 @@
+{
+  "general": {
+    "name": "BMP-3 scope",
+    "stackSize": 64,
+    "materialLists": [[]]
+  },
+  "textureName": "instrument_bmp3_scope_translucent.png",
+  "components": [
+    {
+      "overlayTexture": true,
+      "scale": 1.0,
+      "textureXCenter": 512,
+      "textureYCenter": 512,
+      "textureWidth": 1024,
+      "textureHeight": 1024
+    }
+  ]
+}

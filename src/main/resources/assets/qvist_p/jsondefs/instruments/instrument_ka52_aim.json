@@ -1,0 +1,36 @@
+{
+  "general": {
+    "name": "Ka-52 Aim",
+    "stackSize": 64,
+    "materialLists": [[]],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  },
+  "textureName": "instrument_ka52_aim.png",
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 96,
+      "textureYCenter": 96,
+      "textureWidth": 191,
+      "textureHeight": 191,
+      "lightUpTexture": true
+    },
+    {
+      "scale": 1.0,
+      "textureXCenter": 92,
+      "textureYCenter": 248,
+      "textureWidth": 120,
+      "textureHeight": 120,
+      "lightUpTexture": true,
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "roll",
+          "centerPoint": [0.0, 0.0, 0.0],
+          "axis": [0.0, 0.0, -1.0]
+        }
+      ]
+    }
+  ]
+}

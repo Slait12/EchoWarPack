@@ -1,0 +1,29 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_camouflage_barrel",
+    "useVehicleTexture": true,
+    "forwardsDamage": false,
+    "width": 0.3,
+    "height": 0.3
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Leopard Barrel Camouflage",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+    ],
+
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

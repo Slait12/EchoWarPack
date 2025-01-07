@@ -1,0 +1,64 @@
+{
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 576,
+      "textureYCenter": 704,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "yCenter": 2,
+      "scale": 1.0,
+      "textureXCenter": 704,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "engine_rpm",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.0,0.03857000172138214],
+          "offset": -135.0
+        }
+      ]
+    },
+    {
+      "yCenter": 2,
+      "scale": 1.0,
+      "textureXCenter": 960,
+      "textureYCenter": 576,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "scale": 1.0,
+      "textureXCenter": 960,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "overlayTexture": true
+    }
+  ],
+  "textureName": "instruments.png",
+  "general": {
+    "name": "Detroit Diesel Tachometer",
+    "description": "Indicates engine speeds.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1",
+        "oredict:dyeBlack:1",
+        "oredict:dyeGray:2",
+        "oredict:dyeWhite:3",
+        "oredict:dyeRed:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

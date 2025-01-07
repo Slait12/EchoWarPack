@@ -1,0 +1,33 @@
+{
+  "general": {
+    "name": "Howitzer rangefinder",
+    "stackSize": 64,
+    "materialLists": [[]]
+  },
+  "textureName": "instrument_howitzer_rangefinder.png",
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 128,
+      "textureYCenter": 64,
+      "textureWidth": 256,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "scale": 1.0,
+      "textObject": {
+        "pos": [0.0, 15.0, 0.0],
+        "rot": [0.0, 0.0, 0.0],
+        "scale": 3.0,
+        "variableName": "gun_pitch_1",
+        "variableFactor": -1.0,
+        "variableFormat": "%1.0f",
+        "defaultText": "Distance",
+        "color": "20f200",
+        "lightsUp": true
+      },
+      "lightUpTexture": true
+    }
+  ]
+}

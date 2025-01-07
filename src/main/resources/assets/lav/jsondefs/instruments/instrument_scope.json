@@ -1,0 +1,22 @@
+{
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 512,
+      "textureYCenter": 512,
+      "textureWidth": 1024,
+      "textureHeight": 1024,
+      "overlayTexture": true
+    }
+  ],
+  "textureName": "instrument_scope_translucent.png",
+  "general": {
+    "name": "Scope",
+    "stackSize": 64,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

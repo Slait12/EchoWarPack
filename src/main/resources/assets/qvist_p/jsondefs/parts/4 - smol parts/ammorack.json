@@ -1,0 +1,34 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "interactable_crate",
+    "width": 0.7,
+    "height": 1.5,
+    "forwardsDamage": true,
+    "destroyable": true,
+    "forwardsDamageMultiplier": 2.0
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "hasBlowoutPanels": true,
+    "feedsVehicles": true,
+    "inventoryUnits": 3.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "Боекомплект",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

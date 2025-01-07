@@ -1,0 +1,43 @@
+{
+  "generic": {
+    "type": "ground_fake_wheel"
+  },
+  "ground": {
+    "width": 0.5,
+    "height": 0.5,
+    "climbHeight": 1.5,
+    "motiveFriction": 0.4,
+    "lateralFriction": 0.5,
+    "frictionModifiers": {
+      "snow": -0.2,
+      "ice": -0.2,
+      "dirt_wet": -0.1,
+      "sand_wet": -0.1,
+      "normal_wet": -0.1
+    }
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "Fake wheel",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "variableModifiers": [],
+  "rendering": {
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Large military wheel",
+    "health": 100,
+    "materialLists": [[""]],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

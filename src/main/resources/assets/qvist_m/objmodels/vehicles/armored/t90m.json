@@ -1,0 +1,3029 @@
+{
+  "general": {
+    "health": 600,
+    "materialLists": [[]]
+  },
+  "motorized": {
+    "hasRunningLights": true,
+    "hasPermanentSkidSteer": true,
+    "hasHeadlights": true,
+    "emptyMass": 48000,
+    "fuelCapacity": 25000,
+    "downForce": 0.2,
+    "overSteer": 1.0,
+    "underSteer": 1.0,
+    "axleRatio": 4.0,
+    "brakingFactor": 5.0,
+    "dragCoefficient": 6.75,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hudTexture": "qvist_p:textures/guis/car_hud.png",
+    "panelTexture": "qvist_p:textures/guis/car_panel.png",
+    "panelTextColor": "FFFAFA",
+    "panelLitTextColor": "FFE2A8"
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "T-90M [Green]",
+      "description": "made in nizhniy tagil",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "parts": [
+    {
+      "pos": [1.75032, 1.78087, -3.58561],
+      "rot": [-30.0, 0.0, 0.0],
+      "types": ["generic_flag"],
+      "applyAfter": "hull"
+    },
+    {
+      "pos": [-1.75032, 1.78087, -3.58561],
+      "rot": [-30.0, 0.0, 0.0],
+      "types": ["generic_flag"],
+      "applyAfter": "hull"
+    },
+    {
+      "pos": [1.6933, 0.385, -2.71145],
+      "turnsWithSteer": true,
+      "maxValue": 1.3,
+      "extraCollisionBoxOffset": 5.6,
+      "treadDroopConstant": 64.0,
+      "defaultPart": "qvist_p:t90m_tracks",
+      "types": ["ground_tread"],
+      "treadPath": ["lroller_02", "lroller_03", "lroller_04", "lroller_05", "lroller_06", "lroller_07", "lroller_08", "lroller_09", "lroller_10", "lroller_11", "lroller_01"]
+    },
+    {
+      "pos": [-1.6817, 0.385, -2.71145],
+      "turnsWithSteer": true,
+      "maxValue": 1.3,
+      "extraCollisionBoxOffset": 5.6,
+      "treadDroopConstant": 64.0,
+      "defaultPart": "qvist_p:t90m_tracks",
+      "types": ["ground_tread"],
+      "treadPath": ["rroller_02", "rroller_03", "rroller_04", "rroller_05", "rroller_06", "rroller_07", "rroller_08", "rroller_09", "rroller_10", "rroller_11", "rroller_01"]
+    },
+    {
+      "pos": [0.0, 1.7114, 2.392],
+      "isPermanent": true,
+      "defaultPart": "qvist_p:triplex",
+      "applyAfter": "hull",
+      "types": ["generic_triplex"],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "seat_occupied_client_1",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [0.0, 2.1558, 0.0],
+      "maxValue": 125.0,
+      "defaultPart": "qvist_m:t90m_turret",
+      "types": ["gun_turret_t90m"],
+      "applyAfter": "hull",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!turret_active",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [0.0, 1.1, -2.6],
+      "maxValue": 1000.0,
+      "defaultPart": "qvist_p:t90m_engine",
+      "types": ["engine_t90m"],
+      "linkedParts": [3, 4]
+    },
+    {
+      "pos": [0.0, 1.5559, 0.0],
+      "maxValue": 9.0,
+      "types": ["interactable_crate"],
+      "defaultPart": "qvist_p:ammorack",
+      "linkedParts": [6],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!turret_active",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [0.0, 0.48, -2.4],
+      "maxValue": 9.0,
+      "types": ["interactable_crate"],
+      "defaultPart": "qvist_p:ammorack",
+      "linkedParts": [6],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!turret_active",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "health": 0,
+      "collisions": [
+        {
+          "name": "fueltank_r",
+          "pos": [-0.85757, 1.1099, 2.8698],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_r",
+          "pos": [-0.85757, 1.1099, 2.39203],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_r",
+          "pos": [-0.85757, 1.1099, 1.91425],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_r",
+          "pos": [-0.85757, 1.1099, 1.43648],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_l",
+          "pos": [0.85757, 1.1099, 2.8698],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_l",
+          "pos": [0.85757, 1.1099, 2.39203],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_l",
+          "pos": [0.85757, 1.1099, 1.91425],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_l",
+          "pos": [0.85757, 1.1099, 1.43648],
+          "width": 0.6777,
+          "height": 0.47015
+        },
+        {
+          "name": "fueltank_rear",
+          "pos": [-0.67186, 1.26633, -1.51042],
+          "width": 0.66874,
+          "height": 0.60382
+        },
+        {
+          "name": "fueltank_rear",
+          "pos": [-0.22395, 1.26633, -1.51042],
+          "width": 0.66874,
+          "height": 0.60382
+        },
+        {
+          "name": "fueltank_rear",
+          "pos": [0.22395, 1.26633, -1.51042],
+          "width": 0.66874,
+          "height": 0.60382
+        },
+        {
+          "name": "fueltank_rear",
+          "pos": [0.67186, 1.26633, -1.51042],
+          "width": 0.66874,
+          "height": 0.60382
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_1",
+          "pos": [2.26276, 1.25451, 3.47093],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_1",
+          "pos": [2.26276, 1.25451, 3.2538],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_1",
+          "pos": [2.26276, 1.25451, 3.03666],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_2",
+          "pos": [2.27155, 1.34256, 2.75687],
+          "width": 0.25472,
+          "height": 0.72359,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_2",
+          "pos": [2.27155, 1.34256, 2.68046],
+          "width": 0.25472,
+          "height": 0.72359,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_3",
+          "pos": [2.25987, 1.37383, 2.31644],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_3",
+          "pos": [2.25987, 1.37383, 2.0993],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_3",
+          "pos": [2.25987, 1.37383, 1.88217],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_4",
+          "pos": [2.25987, 1.37266, 1.54144],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_4",
+          "pos": [2.25987, 1.37266, 1.3243],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_4",
+          "pos": [2.25987, 1.37266, 1.10717],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_5",
+          "pos": [2.25987, 1.37383, 0.74769],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_5",
+          "pos": [2.25987, 1.37383, 0.53055],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_5",
+          "pos": [2.25987, 1.37383, 0.31342],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_6",
+          "pos": [2.25987, 1.37383, -0.02106],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_6",
+          "pos": [2.25987, 1.37383, -0.2382],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_6",
+          "pos": [2.25987, 1.37383, -0.45533],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_l_7",
+          "pos": [2.25987, 1.37383, -0.81481],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_7",
+          "pos": [2.25987, 1.37383, -1.03195],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_l_7",
+          "pos": [2.25987, 1.37383, -1.24908],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_1",
+          "pos": [-2.25116, 1.25451, 3.47093],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_1",
+          "pos": [-2.25116, 1.25451, 3.2538],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_1",
+          "pos": [-2.25116, 1.25451, 3.03666],
+          "width": 0.25472,
+          "height": 0.63375,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_2",
+          "pos": [-2.25995, 1.34256, 2.75687],
+          "width": 0.25472,
+          "height": 0.72359,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_2",
+          "pos": [-2.25995, 1.34256, 2.68046],
+          "width": 0.25472,
+          "height": 0.72359,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_3",
+          "pos": [-2.24827, 1.37383, 2.31644],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_3",
+          "pos": [-2.24827, 1.37383, 2.09931],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_3",
+          "pos": [-2.24827, 1.37383, 1.88217],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_4",
+          "pos": [-2.24827, 1.37266, 1.54144],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_4",
+          "pos": [-2.24827, 1.37266, 1.32431],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_4",
+          "pos": [-2.24827, 1.37266, 1.10717],
+          "width": 0.25472,
+          "height": 0.83572,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_5",
+          "pos": [-2.24827, 1.37383, 0.74769],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_5",
+          "pos": [-2.24827, 1.37383, 0.53056],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_5",
+          "pos": [-2.24827, 1.37383, 0.31342],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_6",
+          "pos": [-2.24827, 1.37383, -0.02106],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_6",
+          "pos": [-2.24827, 1.37383, -0.23819],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_6",
+          "pos": [-2.24827, 1.37383, -0.45533],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "health": 100,
+      "collisions": [
+        {
+          "name": "era_r_7",
+          "pos": [-2.24827, 1.37383, -0.81481],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_7",
+          "pos": [-2.24827, 1.37383, -1.03194],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        },
+        {
+          "name": "era_r_7",
+          "pos": [-2.24827, 1.37383, -1.24908],
+          "width": 0.25472,
+          "height": 0.83103,
+          "heatArmorThickness": 300.0
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "name": "Cube",
+          "pos": [-1.06052, 1.0892, 3.50038],
+          "width": 0.5846,
+          "height": 0.5846,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube",
+          "pos": [-0.53026, 1.0892, 3.50038],
+          "width": 0.5846,
+          "height": 0.5846,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube",
+          "pos": [0.0, 1.0892, 3.50038],
+          "width": 0.5846,
+          "height": 0.5846,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube",
+          "pos": [0.53026, 1.0892, 3.50038],
+          "width": 0.5846,
+          "height": 0.5846,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube",
+          "pos": [1.06052, 1.0892, 3.50038],
+          "width": 0.5846,
+          "height": 0.5846,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [-1.49467, 1.54743, 2.58949],
+          "width": 1.26234,
+          "height": 0.41318,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [-0.49822, 1.54743, 2.58949],
+          "width": 1.26234,
+          "height": 0.41318,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [0.49822, 1.54743, 2.58949],
+          "width": 1.26234,
+          "height": 0.41318,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.001",
+          "pos": [1.49467, 1.54743, 2.58949],
+          "width": 1.26234,
+          "height": 0.41318,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-1.1472, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.7648, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [-0.3824, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.0, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.3824, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [0.7648, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.002",
+          "pos": [1.1472, 0.69623, 3.13825],
+          "width": 0.41452,
+          "height": 0.32565,
+          "armorThickness": 750.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [0.0, 0.69623, 1.5787],
+          "width": 2.70892,
+          "height": 0.32565,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [0.0, 0.69623, -0.30497],
+          "width": 2.70892,
+          "height": 0.32565,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.003",
+          "pos": [0.0, 0.69623, -2.18864],
+          "width": 2.70892,
+          "height": 0.32565,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [-1.82667, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [-1.30477, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [-0.78286, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [-0.26095, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [0.26095, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [0.78286, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.30477, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.004",
+          "pos": [1.82667, 1.54743, -3.79924],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [-1.09631, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [-0.65778, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [-0.21926, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [0.21926, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [0.65778, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.005",
+          "pos": [1.09631, 1.13759, -3.72131],
+          "width": 0.52871,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-1.13165, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.88017, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.62869, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.37722, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [-0.12574, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.12574, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.37722, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.62869, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [0.88017, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.006",
+          "pos": [1.13165, 0.75258, -3.65011],
+          "width": 0.25441,
+          "height": 0.41318,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [-1.74006, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [-1.04404, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [-0.34801, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [0.34801, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [1.04404, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.007",
+          "pos": [1.74006, 1.59521, 1.58865],
+          "width": 0.77157,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.008",
+          "pos": [-1.05664, 1.5967, -2.47457],
+          "width": 2.13842,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.008",
+          "pos": [1.05664, 1.5967, -2.47457],
+          "width": 2.13842,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [1.71111, 1.59521, 0.79955],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [1.71111, 1.59521, 0.19804],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [1.71111, 1.59521, -0.40347],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.009",
+          "pos": [1.71111, 1.59521, -1.00498],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.71111, 1.59521, 0.79955],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.71111, 1.59521, 0.19804],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.71111, 1.59521, -0.40347],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.010",
+          "pos": [-1.71111, 1.59521, -1.00498],
+          "width": 0.82947,
+          "height": 0.41318,
+          "armorThickness": 30.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 3.4723],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 3.24165],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 3.01101],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 2.78036],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 2.54971],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 2.31907],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 2.08842],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 1.85778],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 1.62713],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 1.39648],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 1.16584],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 0.93519],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 0.70454],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 0.4739],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 0.24325],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, 0.01261],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -0.21804],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -0.44869],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -0.67933],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -0.90998],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -1.14062],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -1.37127],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -1.60192],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -1.83256],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -2.06321],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -2.29385],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -2.5245],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -2.75515],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -2.98579],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -3.21644],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -3.44708],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.011",
+          "pos": [1.24791, 1.11546, -3.67773],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 3.4723],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 3.24165],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 3.01101],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 2.78036],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 2.54971],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 2.31907],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 2.08842],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 1.85778],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 1.62713],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 1.39648],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 1.16584],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 0.93519],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 0.70454],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 0.4739],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 0.24325],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, 0.01261],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -0.21804],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -0.44869],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -0.67933],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -0.90998],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -1.14062],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -1.37127],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -1.60192],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -1.83256],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -2.06321],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -2.29385],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -2.5245],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -2.75515],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -2.98579],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -3.21644],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -3.44708],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        },
+        {
+          "name": "Cube.012",
+          "pos": [-1.24791, 1.11546, -3.67773],
+          "width": 0.2335,
+          "height": 0.61643,
+          "armorThickness": 200.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.80327, 1.49867, 4.74011],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 61,
+      "hudY": 38,
+      "hudScale": 0.5,
+      "defaultInstrument": "qvist_p:instrument_car_spedometer_kph"
+    },
+    {
+      "pos": [0.35533, 1.49867, 4.74011],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 331,
+      "hudY": 38,
+      "hudScale": 0.5,
+      "defaultInstrument": "qvist_p:instrument_car_tachometer_amc"
+    },
+    {
+      "pos": [0.70082, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 127,
+      "hudY": 34,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_fuelqty"
+    },
+    {
+      "pos": [0.61955, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 175,
+      "hudY": 34,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_electric"
+    },
+    {
+      "pos": [0.45622, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 224,
+      "hudY": 35,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_oilpressure_p"
+    },
+    {
+      "pos": [0.53749, 1.5184, 4.74383],
+      "rot": [14.81105, -0.0, 0.0],
+      "hudX": 270,
+      "hudY": 35,
+      "hudScale": 0.35,
+      "defaultInstrument": "qvist_p:instrument_car_enginetemp_c"
+    }
+  ],
+  "initialVariables": [],
+  "variableModifiers": [
+    {
+      "variable": "turret_active",
+      "maxValue": 1.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "damage_totaled",
+          "axis": [0.0, 1.0, 0.0],
+          "forwardsDelay": 160
+        }
+      ]
+    },
+    {
+      "variable": "ammoburn_active",
+      "maxValue": 1.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "damage_totaled",
+          "axis": [0.0, 0.0, 1.0]
+        },
+        {
+          "animationType": "translation",
+          "variable": "damage_totaled",
+          "axis": [0.0, -1.0, 0.0],
+          "forwardsDelay": 160
+        }
+      ]
+    },
+    {
+      "variable": "smoke_active",
+      "maxValue": 1.0,
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "damage_totaled",
+          "axis": [0.0, 0.0, 1.0]
+        },
+        {
+          "animationType": "translation",
+          "variable": "damage_totaled",
+          "axis": [0.0, -1.0, 0.0],
+          "forwardsDelay": 60
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "lroller_01",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.70212, 0.997579, 3.62739],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_02",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, 2.71074],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_03",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, 1.69199],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_04",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, 0.723245],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_05",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, -0.245505],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_06",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, -1.25176],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_07",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.68675, 0.524445, -2.22676],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_08",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.72636, 0.869069, -3.19878],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_09",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.61561, 1.18123, -1.73337],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_10",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.61561, 1.18123, 0.216634],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "lroller_11",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [1.61561, 1.18123, 2.21663],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_01",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.70212, 0.997579, 3.62739],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_02",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, 2.71074],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_03",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, 1.69199],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_04",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, 0.723245],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_05",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, -0.245505],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_06",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, -1.25176],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_07",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.68675, 0.524445, -2.22676],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_08",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.72636, 0.869069, -3.19878],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_09",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.61561, 1.18123, -1.73337],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_10",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.61561, 1.18123, 0.216634],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "rroller_11",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [-1.61561, 1.18123, 2.21663],
+            "axis": [0.5, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "hull",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_cooldown_1",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [-2.5, 0.0, 1.0],
+            "duration": 30,
+            "forwardsEasing": "easeoutelastic",
+            "skipReverseMovement": true
+          },
+          {
+            "animationType": "translation",
+            "variable": "gun_cooldown_1",
+            "axis": [0.0, -0.005, 0.0],
+            "duration": 30,
+            "forwardsEasing": "easeoutelastic",
+            "skipReverseMovement": true
+          },
+          {
+            "animationType": "rotation",
+            "variable": "gun_cooldown_1",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [2.5, 0.0, -1.0],
+            "duration": 30,
+            //"forwardsDelay": 5,
+            "forwardsEasing": "easeoutbounce",
+            "skipReverseMovement": true
+          },
+          {
+            "animationType": "translation",
+            "variable": "gun_cooldown_1",
+            "axis": [0.0, 0.005, 0.0],
+            "duration": 30,
+            //"forwardsDelay": 5,
+            "forwardsEasing": "easeoutbounce",
+            "skipReverseMovement": true
+          },
+          {
+            "animationType": "rotation",
+            "variable": "speed",
+            "centerPoint": [0.0, 0.0, 0.0],
+            "axis": [-1.5, 0.0, 0.0],
+            "duration": 10,
+            "clampMin": -1.0,
+            "clampMax": 0.0,
+            //"duration": 20,
+            "forwardsEasing": "easeOutQuad"
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_1",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_2_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_2",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_3_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_3",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_4_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_4",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_5_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_5",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_6_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_6",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_7_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_l_7",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_8_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_1",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_9_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_2",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_10_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_3",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_11_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_4",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_12_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_5",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_13_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_6",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_14_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "era_r_7",
+        "applyAfter": "hull",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "collision_15_damage",
+            "clampMax": 99.0
+          }
+        ]
+      },
+      {
+        "objectName": "&headlight_l",
+        "applyAfter": "hull",
+        "animations": []
+      },
+      {
+        "objectName": "&headlight_r",
+        "applyAfter": "hull",
+        "animations": []
+      },
+      {
+        "objectName": "&stopsignal_l",
+        "applyAfter": "hull",
+        "animations": []
+      },
+      {
+        "objectName": "&stopsignal_r",
+        "applyAfter": "hull",
+        "animations": []
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&headlight_l",
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0, 0.8, 0.0],
+            "duration": 13,
+            "forwardsEasing": "easeoutelastic",
+            "reverseEasing": "easeoutexpo"
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.936633, 1.36239, 3.53864],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 1.0,
+            "flareWidth": 1.0,
+            "beamDiameter": 16.0,
+            "beamLength": 36.0
+          }
+        ]
+      },
+      {
+        "objectName": "&headlight_r",
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0, 0.8, 0.0],
+            "duration": 13,
+            "forwardsEasing": "easeoutelastic",
+            "reverseEasing": "easeoutexpo"
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-0.925036, 1.36239, 3.53864],
+            "axis": [0.0, 0.0, 1.0],
+            "flareHeight": 1.0,
+            "flareWidth": 1.0,
+            "beamDiameter": 16.0,
+            "beamLength": 36.0
+          }
+        ]
+      },
+      {
+        "objectName": "&stopsignal_l",
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.26241, 1.57926, -4.46016],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.6,
+            "flareWidth": 0.6
+          }
+        ]
+      },
+      {
+        "objectName": "&stopsignal_r",
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.73112, 1.57926, -4.05261],
+            "axis": [0.0, 0.0, -1.0],
+            "flareHeight": 0.6,
+            "flareWidth": 0.6
+          }
+        ]
+      }
+    ],
+    "customVariables": [],
+    "sounds": [
+      {
+        "name": "",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ],
+        "soundVariations": ["qvist_m:common/explosions/plane_explosion_1", "qvist_m:common/explosions/plane_explosion_2", "qvist_m:common/explosions/plane_explosion_3"],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.8,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.7
+      },
+      {
+        "name": "",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "soundVariations": ["qvist_m:common/explosions/ammo_burn-001", "qvist_m:common/explosions/ammo_burn-002", "qvist_m:common/explosions/ammo_burn-003"],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 16.0,
+        "middleDistanceVolume": 0.8,
+        "maxDistance": 32.0,
+        "maxDistanceVolume": 0.7
+      },
+      {
+        "name": "qvist_m:common/explosions/destroyed_fire",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 150
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.6,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:common/explosions/fire",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.6,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:common/explosions/ammo_cracks",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 16.0,
+        "middleDistanceVolume": 0.6,
+        "maxDistance": 32.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:vehicle_boom_large_distant_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 0.7,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      },
+      //watersplash
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:waterimpact0", "qvist_p:waterimpact1", "qvist_p:waterimpact2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1.0,
+            "clampMax": 5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //base
+      {
+        "name": "qvist_p:waterimpact_add",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -10.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1.0,
+            "clampMax": 5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //add
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:debrissettle_water0", "qvist_p:debrissettle_water1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1.0,
+            "clampMax": 5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //settle
+      //handbrake
+      {
+        "name": "qvist_p:carhandbrakeup",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "p_brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:carhandbrakedown",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "p_brake"
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //rain
+      {
+        "name": "qvist_p:rain_inside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "pos": [0.0, 3.0, 1.0],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:rain_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      //exhaust L
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 5,
+        "transparency": 0.5,
+        "toTransparency": 0.000001,
+        "movementDuration": 6,
+        "scale": 0.3,
+        "toScale": 3.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "3f3b39",
+        "pos": [2.269, 1.5223, -2.2805],
+        "spreadRandomness": [0.8, 0.8, 2.0],
+        "initialVelocity": [10.5, 0.0, -7.0],
+        "movementVelocity": [0.0, 0.0001, -0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      //ignition to running puff & spark L
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "duration": 8,
+        "transparency": 0.5,
+        "toTransparency": 0.000001,
+        "movementDuration": 9,
+        "scale": 0.4,
+        "toScale": 6.0,
+        "ignoreCollision": true,
+        "hitboxSize": 0.1,
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png", "mts:textures/particles/big_smoke_9.png", "mts:textures/particles/big_smoke_10.png", "mts:textures/particles/big_smoke_11.png"],
+        "randomTexture": true,
+        "color": "3f3b39",
+        "pos": [2.269, 1.5223, -2.2805],
+        "spreadRandomness": [0.8, 0.8, 2.0],
+        "initialVelocity": [10.5, 0.0, -7.0],
+        "movementVelocity": [0.0, 0.0001, -0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_running_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      // AMMO BURN
+
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "motion",
+        "spawnEveryTick": true,
+        "ignoreCollision": true,
+        "isBright": true,
+        "quantity": 25,
+        "duration": 25,
+        "hitboxSize": 0.1,
+        "transparency": 1.0,
+        "scale": 0.5,
+        "textureList": ["qvist_p:textures/particles/oskolki.png"],
+        "pos": [0.0, 1.3, 0.0],
+        "spreadRandomness": [15.0, 0.1, 15.0],
+        "rotationVelocity": [-90.0, 90.0, 0.0],
+        "initialVelocity": [0.0, 2.8, 0.0],
+        "movementVelocity": [0.0, -0.1, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 40
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "motion",
+        "spawnEveryTick": true,
+        "ignoreCollision": true,
+        "isBright": true,
+        "quantity": 25,
+        "duration": 25,
+        "hitboxSize": 0.1,
+        "transparency": 1.0,
+        "scale": 0.5,
+        "textureList": ["qvist_p:textures/particles/oskolki.png"],
+        "pos": [0.0, 1.3, 0.0],
+        "spreadRandomness": [15.0, 0.1, 15.0],
+        "rotationVelocity": [90.0, 90.0, 0.0],
+        "initialVelocity": [0.0, 2.8, 0.0],
+        "movementVelocity": [0.0, -0.1, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 40
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "motion",
+        "spawnEveryTick": true,
+        "isBright": true,
+        "quantity": 10,
+        "duration": 14,
+        "transparency": 1.0,
+        "scale": 1.0,
+        "fadeTransparencyTime": 4,
+        "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+        "textureDelays": [2, 2, 2, 2, 2, 2, 2],
+        "hitboxSize": 0.5,
+        "pos": [0.0, 1.3, 0.0],
+        "rotationVelocity": [-90.0, 180.0, 0.0],
+        "spreadRandomness": [2.2, 0.0, 2.2],
+        "initialVelocity": [0.0, 0.02, 0.0],
+        "movementVelocity": [0.0, 0.01, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 20
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "motion",
+        "spawnEveryTick": true,
+        "isBright": true,
+        "quantity": 10,
+        "duration": 14,
+        "transparency": 1.0,
+        "scale": 1.0,
+        "fadeTransparencyTime": 4,
+        "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+        "textureDelays": [2, 2, 2, 2, 2, 2, 2],
+        "hitboxSize": 0.5,
+        "pos": [0.0, 1.3, 0.0],
+        "rotationVelocity": [90.0, 0.0, 0.0],
+        "spreadRandomness": [2.2, 0.0, 2.2],
+        "initialVelocity": [0.0, 0.02, 0.0],
+        "movementVelocity": [0.0, 0.01, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 20
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "isBright": true,
+        "quantity": 1,
+        "duration": 7,
+        "transparency": 1.0,
+        "scale": 0.5,
+        "toScale": 5.0,
+        "fadeTransparencyTime": 3,
+        "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+        "textureDelays": [1, 1, 1, 1, 1, 1, 1],
+        "hitboxSize": 0.5,
+        "pos": [0.0, 1.3, 0.0],
+        "spreadRandomness": [0.5, 0.0, 0.5],
+        "initialVelocity": [0.0, 14.0, 0.0],
+        "movementVelocity": [0.0, 0.1, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "ammoburn_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 20
+          }
+        ],
+        "spawningAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_yaw_1",
+            "centerPoint": [0.0, 2.2947, 0.0],
+            "axis": [0.0, 1.0, 0.0]
+          }
+        ]
+      },
+      // AMMO BURN
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "quantity": 1,
+        "duration": 8,
+        "hitboxSize": 1.0,
+        "transparency": 0.7,
+        "scale": 25.0,
+        "textureList": ["qvist_p:textures/particles/explosion_ground/spark1.png", "qvist_p:textures/particles/explosion_ground/spark2.png", "qvist_p:textures/particles/explosion_ground/spark3.png", "qvist_p:textures/particles/explosion_ground/spark4.png"],
+        "textureDelays": [2, 2, 2, 2],
+        "pos": [0.0, 0.5, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "texture": "qvist_p:textures/particles/whiteflash_translucent.png",
+        "quantity": 1,
+        "duration": 16,
+        "transparency": 1.0,
+        "hitboxSize": 0.1,
+        "fadeTransparencyTime": 4,
+        "color": "ffac30",
+        "scale": 40.0,
+        "pos": [0.0, 0.5, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "texture": "qvist_p:textures/particles/explosion_ground/fireball3.png",
+        "isBright": true,
+        "ignoreCollision": true,
+        "hitboxSize": 0.5,
+        "quantity": 15,
+        "duration": 120,
+        "scale": 1.6,
+        "pos": [0.0, -1.1, 0.0],
+        "spreadRandomness": [4.8, 6.0, 4.8],
+        "initialVelocity": [0.0, 18.0, 0.0],
+        "movementVelocity": [0.0, -0.05, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ],
+        "subParticles": [
+          {
+            "particle": {
+              "type": "smoke",
+              "spawnEveryTick": true,
+              "spawningOrientation": "entity",
+              "renderingOrientation": "player",
+              "ignoreCollision": true,
+              "quantity": 1,
+              "duration": 60,
+              "transparency": 0.5,
+              "toTransparency": 0.1,
+              "hitboxSize": 0.5,
+              "scale": 1.5,
+              "color": "757575",
+              "pos": [0.0, 0.0, 0.0],
+              "spreadRandomness": [0.0, 0.0, 0.0],
+              "initialVelocity": [0.0, 0.0, 0.0],
+              "movementVelocity": [0.0, 0.0, 0.0],
+              "terminalVelocity": [5700.0, 6000.0, 6200.0],
+              "activeAnimations": []
+            },
+            "time": 120
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "ignoreCollision": true,
+        "isBright": true,
+        "quantity": 25,
+        "duration": 30,
+        "hitboxSize": 0.1,
+        "scale": 0.1,
+        "fadeScaleTime": 5,
+        "textureList": ["qvist_p:textures/particles/debris/debris_1.png", "qvist_p:textures/particles/debris/debris_2.png", "qvist_p:textures/particles/debris/debris_3.png", "qvist_p:textures/particles/debris/debris_4.png", "qvist_p:textures/particles/debris/debris_5.png"],
+        "randomTexture": true,
+        "pos": [0.0, 1.0, 0.0],
+        "rotationVelocity": [0.0, 0.0, 2.0],
+        "spreadRandomness": [3.8, 3.0, 3.8],
+        "initialVelocity": [0.0, 4.5, 0.0],
+        "movementVelocity": [0.0, -0.03, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "stopsOnGround": true,
+        "quantity": 80,
+        "duration": 120,
+        "hitboxSize": 0.3,
+        "transparency": 0.1,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "fadeTransparencyTime": 20,
+        "color": "757575",
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "textureDelays": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "pos": [0.0, 0.5, 0.0],
+        "rotationVelocity": [0.0, 0.0, 100.0],
+        "spreadRandomness": [0.8, 0.3, 0.8],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 4.0, 1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 80,
+        "duration": 120,
+        "hitboxSize": 0.3,
+        "transparency": 0.1,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "fadeTransparencyTime": 20,
+        "color": "757575",
+        "textureList": ["mts:textures/particles/big_smoke_0.png", "mts:textures/particles/big_smoke_1.png", "mts:textures/particles/big_smoke_2.png", "mts:textures/particles/big_smoke_3.png", "mts:textures/particles/big_smoke_4.png", "mts:textures/particles/big_smoke_5.png", "mts:textures/particles/big_smoke_6.png", "mts:textures/particles/big_smoke_7.png", "mts:textures/particles/big_smoke_8.png"],
+        "textureDelays": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "pos": [0.0, 0.5, 0.0],
+        "rotationVelocity": [0.0, 0.0, 100.0],
+        "spreadRandomness": [1.2, 1.0, 1.2],
+        "initialVelocity": [0.0, 0.1, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [1.0, 3.0, 1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "isBright": true,
+        "quantity": 1,
+        "duration": 32,
+        "hitboxSize": 1.0,
+        "transparency": 1.0,
+        "scale": 20.0,
+        "textureList": ["qvist_p:textures/particles/explosion/exp__01_translucent.png", "qvist_p:textures/particles/explosion/exp__02_translucent.png", "qvist_p:textures/particles/explosion/exp__03_translucent.png", "qvist_p:textures/particles/explosion/exp__04_translucent.png", "qvist_p:textures/particles/explosion/exp__05_translucent.png", "qvist_p:textures/particles/explosion/exp__06_translucent.png", "qvist_p:textures/particles/explosion/exp__07_translucent.png", "qvist_p:textures/particles/explosion/exp__08_translucent.png", "qvist_p:textures/particles/explosion/exp__09_translucent.png", "qvist_p:textures/particles/explosion/exp__10_translucent.png", "qvist_p:textures/particles/explosion/exp__11_translucent.png", "qvist_p:textures/particles/explosion/exp__12_translucent.png", "qvist_p:textures/particles/explosion/exp__13_translucent.png", "qvist_p:textures/particles/explosion/exp__14_translucent.png", "qvist_p:textures/particles/explosion/exp__15_translucent.png", "qvist_p:textures/particles/explosion/exp__16_translucent.png", "qvist_p:textures/particles/explosion/exp__17_translucent.png", "qvist_p:textures/particles/explosion/exp__18_translucent.png", "qvist_p:textures/particles/explosion/exp__19_translucent.png", "qvist_p:textures/particles/explosion/exp__20_translucent.png", "qvist_p:textures/particles/explosion/exp__21_translucent.png", "qvist_p:textures/particles/explosion/exp__22_translucent.png", "qvist_p:textures/particles/explosion/exp__23_translucent.png", "qvist_p:textures/particles/explosion/exp__24_translucent.png", "qvist_p:textures/particles/explosion/exp__25_translucent.png", "qvist_p:textures/particles/explosion/exp__26_translucent.png", "qvist_p:textures/particles/explosion/exp__27_translucent.png", "qvist_p:textures/particles/explosion/exp__28_translucent.png", "qvist_p:textures/particles/explosion/exp__29_translucent.png", "qvist_p:textures/particles/explosion/exp__30_translucent.png", "qvist_p:textures/particles/explosion/exp__31_translucent.png", "qvist_p:textures/particles/explosion/exp__32_translucent.png"],
+        "textureDelays": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        "pos": [0.0, 0.0, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "fixed",
+        "quantity": 1,
+        "duration": 600,
+        "hitboxSize": 0.2,
+        "transparency": 1.0,
+        "toTransparency": 0.0,
+        "fadeTransparencyTime": 600,
+        "scale": 20.0,
+        "randomTexture": true,
+        "textureList": ["qvist_p:textures/particles/explosion_decals/explosion_decal_01_translucent.png", "qvist_p:textures/particles/explosion_decals/explosion_decal_02_translucent.png", "qvist_p:textures/particles/explosion_decals/explosion_decal_03_translucent.png"],
+        "pos": [0.0, -0.54, 0.0],
+        "rot": [-90.0, 0.0, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 7,
+        "hitboxSize": 1.0,
+        "transparency": 0.7,
+        "toTransparency": 0.5,
+        "fadeTransparencyTime": 7,
+        "scale": 5.0,
+        "toScale": 250.0,
+        "texture": "qvist_p:textures/particles/shockwave_translucent.png",
+        "pos": [0.0, 0.0, 0.0],
+        "spreadRandomness ": [0.0, 0.0, 0.0],
+        "initialVelocity": [0.0, 0.0, 0.0],
+        "movementVelocity": [0.0, 0.0, 0.0],
+        "terminalVelocity": [0.0, 0.0, 0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "quantity": 1,
+        "duration": 48,
+        "transparency": 0.1,
+        "toTransparency": 0.08,
+        "scale": 10.0,
+        "textureList": ["qvist_p:textures/particles/smoke/smoke__01_translucent.png", "qvist_p:textures/particles/smoke/smoke__02_translucent.png", "qvist_p:textures/particles/smoke/smoke__03_translucent.png", "qvist_p:textures/particles/smoke/smoke__04_translucent.png", "qvist_p:textures/particles/smoke/smoke__05_translucent.png", "qvist_p:textures/particles/smoke/smoke__06_translucent.png", "qvist_p:textures/particles/smoke/smoke__07_translucent.png", "qvist_p:textures/particles/smoke/smoke__08_translucent.png", "qvist_p:textures/particles/smoke/smoke__09_translucent.png", "qvist_p:textures/particles/smoke/smoke__10_translucent.png", "qvist_p:textures/particles/smoke/smoke__11_translucent.png", "qvist_p:textures/particles/smoke/smoke__12_translucent.png", "qvist_p:textures/particles/smoke/smoke__13_translucent.png", "qvist_p:textures/particles/smoke/smoke__14_translucent.png", "qvist_p:textures/particles/smoke/smoke__15_translucent.png", "qvist_p:textures/particles/smoke/smoke__16_translucent.png", "qvist_p:textures/particles/smoke/smoke__17_translucent.png", "qvist_p:textures/particles/smoke/smoke__18_translucent.png", "qvist_p:textures/particles/smoke/smoke__19_translucent.png", "qvist_p:textures/particles/smoke/smoke__20_translucent.png", "qvist_p:textures/particles/smoke/smoke__21_translucent.png", "qvist_p:textures/particles/smoke/smoke__22_translucent.png", "qvist_p:textures/particles/smoke/smoke__23_translucent.png", "qvist_p:textures/particles/smoke/smoke__24_translucent.png", "qvist_p:textures/particles/smoke/smoke__25_translucent.png", "qvist_p:textures/particles/smoke/smoke__26_translucent.png", "qvist_p:textures/particles/smoke/smoke__27_translucent.png", "qvist_p:textures/particles/smoke/smoke__28_translucent.png", "qvist_p:textures/particles/smoke/smoke__29_translucent.png", "qvist_p:textures/particles/smoke/smoke__30_translucent.png", "qvist_p:textures/particles/smoke/smoke__31_translucent.png", "qvist_p:textures/particles/smoke/smoke__32_translucent.png", "qvist_p:textures/particles/smoke/smoke__33_translucent.png", "qvist_p:textures/particles/smoke/smoke__34_translucent.png", "qvist_p:textures/particles/smoke/smoke__35_translucent.png", "qvist_p:textures/particles/smoke/smoke__36_translucent.png"],
+        "textureDelays": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "hitboxSize": 1.0,
+        "pos": [0.0, 0.5, 0.0],
+        "initialVelocity": [0.0, 2.0, 0.0],
+        "movementVelocity": [-0.001, 0.0, -0.002],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 180
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "spawnEveryTick": true,
+        "isBright": true,
+        "quantity": 2,
+        "duration": 21,
+        "transparency": 1.0,
+        "scale": 2.0,
+        "fadeTransparencyTime": 10,
+        "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+        "textureDelays": [3, 3, 3, 3, 3, 3, 3],
+        "hitboxSize": 1.0,
+        "pos": [0.0, 1.0, 0.0],
+        "rotationVelocity": [0.0, 0.0, -15.0],
+        "spreadRandomness": [1.2, 0.05, 1.2],
+        "initialVelocity": [0.0, 1.0, 0.0],
+        "movementVelocity": [-0.004, 0.01, -0.006],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ]
+      },
+      {
+        "spawningOrientation": "entity",
+        "renderingOrientation": "fixed",
+        "type": "generic",
+        "stopsOnGround": true,
+        "groundSounds": ["qvist_m:common/generic/turret_fall"],
+        "texture": "qvist_m:textures/vehicles/t90m.png",
+        "model": "qvist_m:objmodels/parts/t90m_turret.obj",
+        "quantity": 1,
+        "duration": 600,
+        "scale": 1.0,
+        "hitboxSize": 0.7,
+        "pos": [0.0, 1.70828, 0.0],
+        //"rot": [0.0, 0.0, 0.0],
+        "spreadRandomness": [1.5, 0.0, 1.1],
+        "rotationVelocity": [-0.4, 0.0, 0.7],
+        "initialVelocity": [-4.4, 16.0, 1.7],
+        "movementVelocity": [0.0, -0.08, 0.0],
+        "terminalVelocity": [5700.0, 6000.0, 6200.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 160
+          }
+        ],
+        "subParticles": [
+          {
+            "particle": {
+              "type": "generic",
+              "spawningOrientation": "world",
+              "renderingOrientation": "player",
+              "spawnEveryTick": true,
+              "quantity": 1,
+              "duration": 48,
+              "transparency": 0.1,
+              "toTransparency": 0.08,
+              "scale": 5.0,
+              "textureList": ["qvist_p:textures/particles/smoke/smoke__01_translucent.png", "qvist_p:textures/particles/smoke/smoke__02_translucent.png", "qvist_p:textures/particles/smoke/smoke__03_translucent.png", "qvist_p:textures/particles/smoke/smoke__04_translucent.png", "qvist_p:textures/particles/smoke/smoke__05_translucent.png", "qvist_p:textures/particles/smoke/smoke__06_translucent.png", "qvist_p:textures/particles/smoke/smoke__07_translucent.png", "qvist_p:textures/particles/smoke/smoke__08_translucent.png", "qvist_p:textures/particles/smoke/smoke__09_translucent.png", "qvist_p:textures/particles/smoke/smoke__10_translucent.png", "qvist_p:textures/particles/smoke/smoke__11_translucent.png", "qvist_p:textures/particles/smoke/smoke__12_translucent.png", "qvist_p:textures/particles/smoke/smoke__13_translucent.png", "qvist_p:textures/particles/smoke/smoke__14_translucent.png", "qvist_p:textures/particles/smoke/smoke__15_translucent.png", "qvist_p:textures/particles/smoke/smoke__16_translucent.png", "qvist_p:textures/particles/smoke/smoke__17_translucent.png", "qvist_p:textures/particles/smoke/smoke__18_translucent.png", "qvist_p:textures/particles/smoke/smoke__19_translucent.png", "qvist_p:textures/particles/smoke/smoke__20_translucent.png", "qvist_p:textures/particles/smoke/smoke__21_translucent.png", "qvist_p:textures/particles/smoke/smoke__22_translucent.png", "qvist_p:textures/particles/smoke/smoke__23_translucent.png", "qvist_p:textures/particles/smoke/smoke__24_translucent.png", "qvist_p:textures/particles/smoke/smoke__25_translucent.png", "qvist_p:textures/particles/smoke/smoke__26_translucent.png", "qvist_p:textures/particles/smoke/smoke__27_translucent.png", "qvist_p:textures/particles/smoke/smoke__28_translucent.png", "qvist_p:textures/particles/smoke/smoke__29_translucent.png", "qvist_p:textures/particles/smoke/smoke__30_translucent.png", "qvist_p:textures/particles/smoke/smoke__31_translucent.png", "qvist_p:textures/particles/smoke/smoke__32_translucent.png", "qvist_p:textures/particles/smoke/smoke__33_translucent.png", "qvist_p:textures/particles/smoke/smoke__34_translucent.png", "qvist_p:textures/particles/smoke/smoke__35_translucent.png", "qvist_p:textures/particles/smoke/smoke__36_translucent.png"],
+              "textureDelays": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+              "hitboxSize": 1.0,
+              "pos": [0.0, 0.5, 0.0],
+              "initialVelocity": [0.0, 2.0, 0.0],
+              "movementVelocity": [-0.001, 0.0, -0.002],
+              "terminalVelocity": [9000.0, 9000.0, 9000.0],
+              "activeAnimations": []
+            },
+            "time": 600
+          },
+          {
+            "particle": {
+              "type": "generic",
+              "spawningOrientation": "world",
+              "renderingOrientation": "player",
+              "spawnEveryTick": true,
+              "isBright": true,
+              "quantity": 2,
+              "duration": 21,
+              "transparency": 1.0,
+              "scale": 1.0,
+              "fadeTransparencyTime": 10,
+              "textureList": ["qvist_p:textures/particles/flame/fire0.png", "qvist_p:textures/particles/flame/fire1.png", "qvist_p:textures/particles/flame/fire2.png", "qvist_p:textures/particles/flame/fire3.png", "qvist_p:textures/particles/flame/fire4.png", "qvist_p:textures/particles/flame/fire5.png", "qvist_p:textures/particles/flame/fire6.png"],
+              "textureDelays": [3, 3, 3, 3, 3, 3, 3],
+              "hitboxSize": 1.0,
+              "pos": [0.0, 0.5, 0.0],
+              "rotationVelocity": [0.0, 0.0, -15.0],
+              "spreadRandomness": [0.8, 0.05, 0.8],
+              "initialVelocity": [0.0, 0.5, 0.0],
+              "movementVelocity": [-0.004, 0.01, -0.006],
+              "terminalVelocity": [9000.0, 9000.0, 9000.0],
+              "activeAnimations": []
+            },
+            "time": 600
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

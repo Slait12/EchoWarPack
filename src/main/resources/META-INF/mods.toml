@@ -1,0 +1,33 @@
+# File required to load packs as Forge mods.
+# Find more information on toml format v0.5.0 here:  https://github.com/toml-lang/toml
+
+# Forge settings, don't touch!
+modLoader="javafml"
+loaderVersion="[36,)"
+
+# The license for your pack. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+# Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+license="All rights reserved"
+
+[[mods]] 
+# The ID of your pack.
+modId="gerwarpack"
+# Version number.  Must start with a number or Forge complains.
+version="1"
+ # Display name for the pack in the in-game mods list.
+displayName="GerWar pack"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+# Pack logo.
+logoFile="vingette.png"
+# The description text for the pack (multi line!)
+description='''
+Pack for GerWar server. Credits to gerwarpack and lindqvist.
+'''
+
+[[dependencies.gerwarpack]]
+    modId="mts"
+    mandatory=true
+    versionRange="[22.6.0,)"
+    ordering="NONE"
+    side="BOTH"

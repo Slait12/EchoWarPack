@@ -1,0 +1,37 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_decor_humvee",
+    "forwardsDamage": false,
+    "canBeRemovedByHand": true
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "humvee_decor",
+      "textureName": "humvee_decor",
+      "name": "Humvee decor",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "box",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "!true"
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

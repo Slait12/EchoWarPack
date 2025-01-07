@@ -1,0 +1,200 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "gun_atgm",
+    "canBeRemovedByHand": true,
+    "forwardsDamageMultiplier": 1.0,
+    "width": 0.5,
+    "height": 0.5,
+    "movementAnimations": [
+      {
+        "animationType": "rotation",
+        "variable": "gun_yaw",
+        "centerPoint": [0.0, 0.0, 0.0],
+        "axis": [0.0, 1.0, 0.0]
+      }
+    ]
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "BGM-71E ATGM",
+      "description": "eat tow-71",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "gun": {
+    "lockOnType": "manual",
+    "targetType": "all",
+    "isSemiAuto": true,
+    "capacity": 1,
+    "reloadTime": 120,
+    "muzzleVelocity": 50,
+    "fireDelay": 40.0,
+    "bulletSpreadFactor": 0.2,
+    "minYaw": -90.0,
+    "maxYaw": 90.0,
+    "minPitch": -10.0,
+    "maxPitch": 15.0,
+    "diameter": 152.0,
+    "minCaseLength": 1170.0,
+    "maxCaseLength": 1170.0,
+    "lockMaxAngle": 0.0,
+    "yawSpeed": 3.0,
+    "pitchSpeed": 3.0,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.03125, 0.5375, 1.53125],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "collisionGroups": [],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "gun_atgm",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [0.03125, 0.5375, 0.0],
+            "axis": [1.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "cameraObjects": [
+      {
+        "pos": [0.407329, 0.662014, 0.415097],
+        "rot": [0.0, 0.0, 0.0],
+        "fovOverride": 60.0,
+        "nightVision": true,
+        "mouseSensitivityOverride": 0.1,
+        "overlay": "qvist_p:textures/overlays/t_90m_optic_translucent_3440",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [0.03125, 0.5375, 0.0],
+            "axis": [1.0, 0.0, 0.0]
+          },
+          {
+            "animationType": "translation",
+            "variable": "gun_cooldown",
+            "axis": [0.0, 0.0, -0.05],
+            "duration": 1,
+            "forwardsEasing": "easeinoutquad",
+            "reverseEasing": "easeinquad"
+          },
+          {
+            "animationType": "rotation",
+            "variable": "gun_cooldown",
+            "centerPoint": [-0.034099, 0.51897, 0.742495],
+            "axis": [0.5, 0.0, 0.0],
+            "duration": 1,
+            "forwardsEasing": "easeinoutquad",
+            "reverseEasing": "easeinquad"
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "gun_cooldown"
+          },
+          {
+            "animationType": "rotation",
+            "variable": "random",
+            "centerPoint": [-0.034099, 0.51897, 0.742495],
+            "axis": [0.0, 0.0, 2.0],
+            "duration": 1,
+            "forwardsEasing": "easeinoutquad",
+            "reverseEasing": "easeinquad"
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "qvist_p:TOW/Fire/Close/Initial/tow_fire_close_initial_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:TOW/Fire/Close/Initial/tow_fire_close_initial_3p_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["qvist_p:TOW/Fire/Mid/tow_fire_mid_initial_01", "qvist_p:TOW/Fire/Mid/tow_fire_mid_initial_02", "qvist_p:TOW/Fire/Mid/tow_fire_mid_initial_03", "qvist_p:TOW/Fire/Mid/tow_fire_mid_initial_04"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 1.0,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:TOW/Reload/Tube/tow_reload_tube_in_01",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 3.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 6.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

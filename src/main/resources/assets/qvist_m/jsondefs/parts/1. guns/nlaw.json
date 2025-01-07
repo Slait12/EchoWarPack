@@ -1,0 +1,138 @@
+{
+  "general": {
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "gun_handheld_rocket"
+  },
+  "gun": {
+    "lockOnType": "default",
+    "targetType": "all",
+    "autoReload": true,
+    "handHeld": true,
+    "isTwoHanded": true,
+    "forceHandheldCameras": true,
+    "capacity": 1,
+    "reloadTime": 30,
+    "muzzleVelocity": 60,
+    "fireDelay": 109.0,
+    "diameter": 40.0,
+    "minCaseLength": 2.0,
+    "maxCaseLength": 2.0,
+    "yawSpeed": 11.056665,
+    "pitchSpeed": 11.056665,
+    "lockMaxAngle": 0.0,
+    "handHeldNormalOffset": [0.0, -0.03125, 0.4],
+    "handHeldAimedOffset": [0.205, -0.04, 0.2],
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0, 0.33, 0.0],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "NLAW",
+      "description": "200.000$",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "nlawmissile",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "&handl",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_controller_firstperson",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "&handr",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_controller_firstperson",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "cameraObjects": [
+      {
+        "pos": [0.109, 0.42, -0.1],
+        "rot": [0.0, 0.0, 0.0],
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_inhand_aiming",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "qvist_m:panzerfaust_fire",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:rpg_reloading",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

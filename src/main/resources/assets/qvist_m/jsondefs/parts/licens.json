@@ -1,0 +1,52 @@
+{
+  "generic": {
+    "type": "generic_sign",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.08964,
+    "height": 0.070597
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "licens",
+      "name": "Licens",
+      "description": "Customizable!",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "textObjects": [
+      {
+        "pos": [0.31,0.045,0.004],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.1,
+        "fieldName": "Region",
+        "defaultText": "SWE",
+        "maxLength": 3,
+        "color": "FFFFFF"
+      },
+      {
+        "pos": [-0.09,0.037,0.004],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.13,
+        "fieldName": "License Number",
+        "defaultText": "@PMC_KINDER",
+        "color": "FFFFFF"
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

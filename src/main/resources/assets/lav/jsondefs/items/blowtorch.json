@@ -1,0 +1,20 @@
+{
+  "item": {
+    "type": "repair_pack"
+  },
+  "repair": {
+    "amount": 300
+  },
+  "general": {
+    "name": "Blowtorch",
+    "description": "Repair tool.",
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:16",
+        "minecraft:redstone:6"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

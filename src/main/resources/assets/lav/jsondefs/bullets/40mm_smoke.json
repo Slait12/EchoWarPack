@@ -1,0 +1,480 @@
+{
+  "bullet": {
+    "types": [
+      "armor_piercing"
+    ],
+    "seekerRange": 1024,
+    "seekerMaxAngle": 90.0,
+    "quantity": 1,
+    "diameter": 40.0,
+    "damage": 45.0,
+    "knockback": 4.5,
+    "proximityFuze": 5.0,
+    "gravitationalVelocity": 0.033,
+    "despawnTime": 100
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Smoke Grenade Bullets",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "lav:turret/smoke_boom1",
+        "soundVariations": [
+          "lav:turret/smoke_boom1",
+          "lav:turret/smoke_boom2"
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 90.0,
+        "middleDistanceVolume": 0.9,
+        "maxDistance": 200.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 24,
+        "transparency": 0.8,
+        "scale": 0.4,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/generic_7.png",
+          "lav:textures/particles/generic_6.png",
+          "lav:textures/particles/generic_5.png",
+          "lav:textures/particles/generic_4.png",
+          "lav:textures/particles/generic_3.png",
+          "lav:textures/particles/generic_2.png",
+          "lav:textures/particles/generic_1.png",
+          "lav:textures/particles/generic_0.png"
+        ],
+        "textureDelays": [3,3,3,3,3,3,3,3],
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [0.3,0.3,0.3],
+        "initialVelocity": [0.0,0.0,0.2],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 32,
+        "transparency": 0.6,
+        "scale": 0.6,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/generic_7.png",
+          "lav:textures/particles/generic_6.png",
+          "lav:textures/particles/generic_5.png",
+          "lav:textures/particles/generic_4.png",
+          "lav:textures/particles/generic_3.png",
+          "lav:textures/particles/generic_2.png",
+          "lav:textures/particles/generic_1.png",
+          "lav:textures/particles/generic_0.png"
+        ],
+        "textureDelays": [4,4,4,4,4,4,4,4],
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [0.3,0.3,0.3],
+        "initialVelocity": [0.0,0.0,-0.2],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "ignoreCollision": true,
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 6,
+        "transparency": 1.0,
+        "fadeTransparencyTime": 2,
+        "scale": 1.0,
+        "toScale": 40.0,
+        "hitboxSize": 0.1,
+        "textureList": [
+          "mtsofficialpack:textures/bullets/alt0_translucent.png",
+          "mtsofficialpack:textures/bullets/alt01.png",
+          "mtsofficialpack:textures/bullets/alt02.png",
+          "mtsofficialpack:textures/bullets/alt03.png",
+          "mtsofficialpack:textures/bullets/alt04.png",
+          "mtsofficialpack:textures/bullets/alt4.png",
+          "mtsofficialpack:textures/bullets/sparkcluster0_translucent.png",
+          "mtsofficialpack:textures/bullets/sparkcluster1_translucent.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,1.0,0.0],
+        "movementVelocity": [0.0,-0.1,0.0],
+        "terminalVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "ignoreCollision": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 160,
+        "movementDuration": 10,
+        "transparency": 0.8,
+        "toTransparency": 0.001,
+        "scale": 4.6,
+        "toScale": 18.0,
+        "hitboxSize": 0.1,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [6.0,10.0,6.0],
+        "initialVelocity": [0.0,10.0,0.0],
+        "movementVelocity": [0.0,1.0E-4,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit_block",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "ignoreCollision": true,
+        "spawningOrientation": "world",
+        "renderingOrientation": "fixed",
+        "quantity": 15,
+        "duration": 215,
+        "transparency": 0.6,
+        "toTransparency": 1.0E-4,
+        "scale": 0.8,
+        "toScale": 1.0,
+        "hitboxSize": 0.1,
+        "model": "mtsofficialpack:objmodels/bullets/streamer.obj",
+        "textureList": [
+          "mtsofficialpack:textures/bullets/streamer0.png",
+          "mtsofficialpack:textures/bullets/streamer1.png",
+          "mtsofficialpack:textures/bullets/streamer2.png",
+          "mtsofficialpack:textures/bullets/streamer3.png",
+          "mtsofficialpack:textures/bullets/streamer4.png",
+          "mtsofficialpack:textures/bullets/streamer5.png",
+          "mtsofficialpack:textures/bullets/streamer6.png",
+          "mtsofficialpack:textures/bullets/streamer7.png",
+          "mtsofficialpack:textures/bullets/streamer8.png",
+          "mtsofficialpack:textures/bullets/streamer9.png"
+        ],
+        "textureDelays": [2,3,5,12,20,25,30,35,40,45],
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "rot": [0.0,0.0,0.0],
+        "rotationRandomness": [360.0,360.0,360.0],
+        "initialVelocity": [0.0,0.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "terminalVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 12,
+        "duration": 300,
+        "movementDuration": 5,
+        "transparency": 0.6,
+        "toTransparency": 0.001,
+        "scale": 2.5,
+        "toScale": 5.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [13.0,13.0,13.0],
+        "initialVelocity": [0.0,0.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 450,
+        "transparency": 0.8,
+        "toTransparency": 1.0E-4,
+        "scale": 3.0,
+        "toScale": 15.0,
+        "hitboxSize": 5.0,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [1.0,1.0,1.0],
+        "initialVelocity": [0.01,0.0,0.01],
+        "movementVelocity": [-5.0E-4,-5.0E-5,-5.0E-4],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "world",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 3,
+        "transparency": 0.4,
+        "scale": 90.0,
+        "toScale": 2.0,
+        "hitboxSize": 0.2,
+        "texture": "mtsofficialpack:textures/bullets/bombflare_translucent.png",
+        "color": "FFD496",
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,1.0,0.0],
+        "movementVelocity": [0.0,-0.1,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "isBlended": true,
+        "spawningOrientation": "facing",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 4,
+        "transparency": 1.0,
+        "toTransparency": 0.1,
+        "scale": 164.0,
+        "toScale": 1.2,
+        "hitboxSize": 0.2,
+        "texture": "lav:textures/particles/whiteflash_big_translucent.png",
+        "color": "FFFFFF",
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,1.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 10,
+        "transparency": 1.0,
+        "scale": 14.0,
+        "toScale": 1.2,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mtsofficialpack:textures/bullets/bang0.png",
+          "mtsofficialpack:textures/bullets/bang1.png",
+          "mtsofficialpack:textures/bullets/bang2.png",
+          "mtsofficialpack:textures/bullets/bang3.png",
+          "mtsofficialpack:textures/bullets/bang4.png"
+        ],
+        "textureDelays": [2,2,2,2,2],
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,1.0,0.0],
+        "movementVelocity": [0.0,-0.1,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 340,
+        "transparency": 0.6,
+        "toTransparency": 0.001,
+        "scale": 5.0,
+        "toScale": 10.0,
+        "hitboxSize": 0.2,
+        "texture": "mtsofficialpack:textures/bullets/aa_smoke.png",
+        "randomTexture": true,
+        "colorList": [
+          "FFFFFF",
+          "D3D3D3",
+          "A9A9A9"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,0.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "terminalVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "bullet_hit",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Smoke grenades on the vehicles. They can be loaded into all smoke grenades you see. Just click on them",
+    "stackSize": 16,
+    "materialLists": [
+      [
+        "minecraft:gunpowder:1",
+        "minecraft:iron_ingot:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0,
+    "type": "bullet"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_hlam",
+    "forwardsDamage": false,
+    "canBeRemovedByHand": true
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Washer",
+      "description": "trophy from Ukraine",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

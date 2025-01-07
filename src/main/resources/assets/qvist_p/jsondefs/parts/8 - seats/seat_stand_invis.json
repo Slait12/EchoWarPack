@@ -1,0 +1,31 @@
+{
+  "generic": {
+    "type": "seat",
+    "forwardsDamage": false,
+    "width": 0.6,
+    "height": 0.6
+  },
+  "seat": {
+    "standing": true
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "seat_invis_stand",
+      "name": "Invisible seat stand",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Invisible seat stand",
+    "health": 100,
+    "materialLists": [[""]],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

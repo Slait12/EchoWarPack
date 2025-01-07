@@ -1,0 +1,326 @@
+{
+  "generic": {
+    "type": "gun_pantsir_aagm",
+    "useVehicleTexture": true,
+    "forwardsDamageMultiplier": 0.0
+  },
+  "gun": {
+    "lockOnType": "boresight",
+    "targetType": "aircraft",
+    "autoReload": true,
+    "isSemiAuto": true,
+    "canLockTargets": true,
+    "capacity": 12,
+    "reloadTime": 3,
+    "muzzleVelocity": 20,
+    "fireDelay": 50.0,
+    "diameter": 150.0,
+    "minCaseLength": 9.0,
+    "maxCaseLength": 9.0,
+    "yawSpeed": 5.5,
+    "pitchSpeed": 5.5,
+    "lockMaxAngle": 7.0,
+    "lockRange": 1024,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [-1.5704, -0.28849, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [-1.2602, -0.28849, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [-1.5704, -0.0, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [-1.2602, -0.0, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [-1.5704, 0.3237, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [-1.2602, 0.3237, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.5704, -0.28849, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.2602, -0.28849, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.5704, -0.0, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.2602, -0.0, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.5704, 0.3237, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      },
+      {
+        "muzzles": [
+          {
+            "pos": [1.2602, 0.3237, 3.1165],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [1.43007, 0.02415, 3.23094],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [1.43007, 0.02415, 2.63502],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [1.43007, 0.02415, 2.04332],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [1.43007, 0.02415, 1.45489],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [1.43007, 0.02415, 0.86558],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [1.43007, 0.02415, 0.27942],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 3.23094],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 2.63502],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 2.04332],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 1.45489],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 0.86558],
+          "width": 0.57919,
+          "height": 0.57919
+        },
+        {
+          "pos": [-1.41781, 0.02415, 0.27942],
+          "width": 0.57919,
+          "height": 0.57919
+        }
+      ],
+      "animations": []
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Tubes 9M335",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "soundVariations": ["qvist_m:tor_m1/tor_m1_ignition-001", "qvist_m:tor_m1/tor_m1_ignition-002", "qvist_m:tor_m1/tor_m1_ignition-003"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["qvist_m:tor_m1/tor_m1_far-001", "qvist_m:tor_m1/tor_m1_far-002", "qvist_m:tor_m1/tor_m1_far-003"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 32.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:reload_cannon_20mm_2",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "iavm:lockactive",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_active",
+            "clampMin": 1.0,
+            "clampMax": 8.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 8.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_m:missile_alarm_capture",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_lockedon",
+            "clampMin": 1.0,
+            "clampMax": 8.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 8.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "12 9M335",
+    "health": 100,
+    "materialLists": [["mts:iav.iav_z_steelpanel:0:2", "immersiveengineering:wirecoil:0:10"]],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

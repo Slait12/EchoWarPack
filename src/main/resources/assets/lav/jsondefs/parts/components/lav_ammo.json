@@ -1,0 +1,76 @@
+{
+  "generic": {
+    "type": "interactable_crate",
+    "forwardsDamageMultiplier": 1.0,
+    "destroyable": true,
+    "width": 0.7,
+    "height": 1.5
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "feedsVehicles": true,
+    "hasBlowoutPanels": true,
+    "inventoryUnits": 3.0
+  },
+  "definitions": [
+    {
+      "hideOnCreativeTab": true,
+      "subName": "",
+      "modelName": "invisible",
+      "textureName": "invisible",
+      "name": "Ammo rack",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:cratebell47g_open",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "player_interacting"
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 15.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:cratebell47g_close",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "player_interacting",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 15.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

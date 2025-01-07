@@ -1,0 +1,64 @@
+{
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 64,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "yCenter": 19,
+      "scale": 1.0,
+      "textureXCenter": 832,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "engine_temp",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,0.0,0.928600013256073],
+          "offset": -65.0
+        }
+      ]
+    },
+    {
+      "yCenter": 19,
+      "scale": 1.0,
+      "textureXCenter": 832,
+      "textureYCenter": 576,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true
+    },
+    {
+      "scale": 1.0,
+      "textureXCenter": 960,
+      "textureYCenter": 832,
+      "textureWidth": 128,
+      "textureHeight": 128,
+      "lightUpTexture": true,
+      "overlayTexture": true
+    }
+  ],
+  "textureName": "instruments.png",
+  "general": {
+    "name": "Engine Temperature Gauge (C)",
+    "description": "Indicates engine temperature in Celcius.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1",
+        "oredict:dyeBlack:1",
+        "oredict:dyeGray:2",
+        "oredict:dyeWhite:3",
+        "oredict:dyeRed:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

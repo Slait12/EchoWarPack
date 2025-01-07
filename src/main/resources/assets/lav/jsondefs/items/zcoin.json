@@ -1,0 +1,15 @@
+{
+  "item": {
+    "type": "none"
+  },
+  "general": {
+    "name": "Z-coin",
+    "description": "This currency will help you buy everything on the front. Take care of it.",
+    "stackSize": 64,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

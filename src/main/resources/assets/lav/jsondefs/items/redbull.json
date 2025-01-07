@@ -1,0 +1,23 @@
+{
+  "item": {
+    "type": "food"
+  },
+  "food": {
+    "isDrink": true,
+    "timeToEat": 40,
+    "hungerAmount": 10,
+    "saturationAmount": 0.6
+  },
+  "general": {
+    "name": "RedBull",
+    "description": "wiking drink",
+    "stackSize": 4,
+    "materialLists": [
+      [
+        "mts:lav.zcoin:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

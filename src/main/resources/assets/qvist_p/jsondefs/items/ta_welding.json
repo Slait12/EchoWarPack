@@ -1,0 +1,25 @@
+{
+  "item": {
+    "type": "repair_pack"
+  },
+  "repair": {
+    "amount": 50
+  },
+  "general": {
+    "name": "Welding",
+    "description": "",
+    "stackSize": 8,
+    "materialLists": [
+      [
+        "oredict:ingotIron:20"
+      ]
+    ],
+    "repairMaterialLists": [
+      [
+        "oredict:ingotIron:20"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

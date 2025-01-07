@@ -1,0 +1,50 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "generic_door_back",
+    "useVehicleTexture": true,
+    "forwardsDamage": false,
+    "width": 0.3,
+    "height": 0.3
+  },
+  "parts": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Humvee back door",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "door_back_left",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "!part_ismirrored",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "door_back_right",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_ismirrored",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

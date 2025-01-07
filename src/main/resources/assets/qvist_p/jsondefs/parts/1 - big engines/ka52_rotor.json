@@ -1,0 +1,63 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Ka-52 rotor",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "generic": {
+    "type": "propeller_rotor",
+    "forwardsDamageMultiplier": 0.5,
+    "destroyable": true,
+    "width": 0.5,
+    "height": 1.0,
+    "movementAnimations": [
+      {
+        "animationType": "rotation",
+        "variable": "propeller_rotation",
+        "centerPoint": [0.0, 0.0, 0.0],
+        "axis": [0.0, 0.0, 1.0]
+      }
+    ]
+  },
+  "propeller": {
+    "isDynamicPitch": true,
+    "isRotor": true,
+    "pitch": 120,
+    "diameter": 446
+  },
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "rotor_blur_translucent",
+        "blendedAnimations": true,
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "propeller_rpm",
+            "clampMin": 100.0,
+            "clampMax": 1000.0
+          }
+        ]
+      },
+      {
+        "objectName": "rotor_blur1_translucent",
+        "blendedAnimations": true,
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "propeller_rpm",
+            "clampMin": 100.0,
+            "clampMax": 1000.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

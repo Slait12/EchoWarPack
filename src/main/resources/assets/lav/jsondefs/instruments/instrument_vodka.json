@@ -1,0 +1,21 @@
+{
+  "components": [
+    {
+      "scale": 1.0,
+      "textureXCenter": 512,
+      "textureYCenter": 512,
+      "textureWidth": 1024,
+      "textureHeight": 1024
+    }
+  ],
+  "textureName": "instrument_vodka.png",
+  "general": {
+    "name": "Scope attach",
+    "stackSize": 64,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

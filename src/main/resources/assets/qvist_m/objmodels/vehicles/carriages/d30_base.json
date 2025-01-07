@@ -1,0 +1,280 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "motorized": {
+    "isTrailer": true,
+    "hasRunningLights": true,
+    "emptyMass": 3200,
+    "downForce": 0.2,
+    "overSteer": 1.0,
+    "underSteer": 1.0,
+    "axleRatio": 2.36,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.443,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hudTexture": "qvist_p:textures/guis/car_hud.png",
+    "panelTexture": "qvist_p:textures/guis/car_panel.png",
+    "panelTextColor": "FFFAFA",
+    "panelLitTextColor": "FFE2A8",
+    "hookupVariables": ["electric_power", "running_light"]
+  },
+  "parts": [
+    {
+      "pos": [0.601528, 0.0, -1.5108],
+      "dismountPos": [0.0, 1.0, -3.0],
+      "isPermanent": true,
+      "isController": true,
+      "defaultPart": "qvist_p:seat_stand_invis",
+      "types": ["seat"],
+      "linkedParts": [2],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "connection_1_1_connected",
+          "axis": [0.0, 1.5, 0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-0.025, 0.75, 0.0],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 122.0,
+      "defaultPart": "qvist_p:d30_howitzer",
+      "types": ["gun_howitzer"],
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-1.0, 1.0, -1.0],
+      "maxValue": 9.0,
+      "types": ["interactable_crate"],
+      "defaultPart": "qvist_p:ammorack",
+      "linkedParts": [2]
+    },
+    {
+      "pos": [1.13642, 1.2278, 0.587302],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 999.0,
+      "defaultPart": "qvist_p:d30_wheel",
+      "types": ["ground_d30_wheel"],
+      "groundDevicePosition": "front_left",
+      "applyAfter": "wheel_stand",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-1.15516, 1.2278, 0.587302],
+      "rot": [0.0, 180.0, 0.0],
+      "isMirrored": true,
+      "maxValue": 999.0,
+      "defaultPart": "qvist_p:d30_wheel",
+      "types": ["ground_d30_wheel"],
+      "groundDevicePosition": "front_right",
+      "applyAfter": "wheel_stand",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!damage_totaled",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [0.0, 0.26, 3.79625],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 999.0,
+      "defaultPart": "qvist_p:fake_wheel",
+      "types": ["ground_fake_wheel"],
+      "applyAfter": "front_bedplate",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!connection_1_1_connected",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [3.03231, 0.37, -2.36122],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 999.0,
+      "defaultPart": "qvist_p:fake_wheel",
+      "types": ["ground_fake_wheel"],
+      "applyAfter": "bedplate_l",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!connection_1_1_connected",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-2.94814, 0.37, -2.36122],
+      "rot": [0.0, 0.0, 0.0],
+      "maxValue": 999.0,
+      "defaultPart": "qvist_p:fake_wheel",
+      "types": ["ground_fake_wheel"],
+      "applyAfter": "bedplate_r",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "!connection_1_1_connected",
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "connectionGroups": [
+    {
+      "groupName": "Hitch",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0, 0.5, 3.4],
+          "distance": 1.0
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [],
+  "definitions": [
+    {
+      "subName": "_green",
+      "name": "D-30 Howitzer [Green]",
+      "description": "333",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "horizontal_steering_wheel",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_yaw_1",
+            "centerPoint": [0.574242, 1.05712, -0.361236],
+            "axis": [0.0, 0.0, -80.0]
+          }
+        ]
+      },
+      {
+        "objectName": "wheel_stand",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [-0.014952, 0.901344, -0.180584],
+            "axis": [72.47, 0.0, 0.0],
+            "forwardsEasing": "easeInQuad",
+            "reverseEasing": "easeOutQuad",
+            "duration": 20
+          },
+          {
+            "animationType": "rotation",
+            "variable": "gun_yaw_1",
+            "centerPoint": [-0.014952, 0.901344, -0.180584],
+            "axis": [0.0, 1.0, 0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "bedplate_l",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [0.056948, 0.587301, 0.0],
+            "axis": [-7.3, -119.26, 0.0],
+            "forwardsEasing": "easeInQuad",
+            "reverseEasing": "easeOutQuad",
+            "duration": 60
+          }
+        ]
+      },
+      {
+        "objectName": "bedplate_r",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [0.018053, 0.587301, 0.0],
+            "axis": [-7.3, 119.26, 0.0],
+            "forwardsEasing": "easeInQuad",
+            "reverseEasing": "easeOutQuad",
+            "duration": 60
+          }
+        ]
+      },
+      {
+        "objectName": "front_bedplate",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [-0.031434, 0.617829, -0.187088],
+            "axis": [-7.3, 0.0, 0.0],
+            "forwardsEasing": "easeInQuad",
+            "reverseEasing": "easeOutQuad",
+            "duration": 60
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [
+      {
+        "spawningOrientation": "entity",
+        "renderingOrientation": "fixed",
+        "type": "generic",
+        "stopsOnGround": true,
+        "groundSounds": ["qvist_m:common/generic/turret_fall"],
+        "texture": "qvist_m:textures/vehicles/d30_base_green.png",
+        "model": "qvist_p:objmodels/parts/d30_howitzer.obj",
+        "quantity": 1,
+        "duration": 600,
+        "scale": 1.0,
+        "hitboxSize": 1.0,
+        "fadeTransparencyTime": 100,
+        "pos": [0.010075, 0.595538, 0.0],
+        "rot": [0.0, 0.0, 0.0],
+        "spreadRandomness": [0.5, 0.0, 0.1],
+        "rotationVelocity": [-0.4, 0.0, 15.7],
+        "initialVelocity": [-1.4, 6.0, 0.7],
+        "movementVelocity": [0.0, -0.08, 0.0],
+        "terminalVelocity": [9000.0, 9000.0, 9000.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage_totaled",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  }
+}

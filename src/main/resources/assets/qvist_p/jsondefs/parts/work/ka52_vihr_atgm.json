@@ -1,0 +1,222 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [["immersiveengineering:material:2:2", "immersiveengineering:metal:38:5", "immersiveengineering:material:27:2"]]
+  },
+  "generic": {
+    "type": "gun_atgm_pylon",
+    "useVehicleTexture": true,
+    "width": 0.4,
+    "height": 0.7
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Vihr ATGM Pylon",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "gun": {
+    "lockOnType": "manual",
+    "targetType": "ground",
+    "isSemiAuto": true,
+    "capacity": 6,
+    "reloadTime": 20,
+    "muzzleVelocity": 100,
+    "fireDelay": 10.0,
+    "bulletSpreadFactor": 0.2,
+    "diameter": 130.0,
+    "maxCaseLength": 1000.0,
+    "lockMaxAngle": 5.0,
+    "yawSpeed": 4.0,
+    "pitchSpeed": 4.0,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0, -0.578392, 1.22792],
+            "rot": [0.0, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "collisionGroups": [],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "cameraObjects": [],
+    "sounds": [
+      {
+        "soundVariations": ["qvist_p:gunrocketpod_reload0", "qvist_p:gunrocketpod_reload1", "qvist_p:gunrocketpod_reload2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:basic_ocp_rocket",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "random",
+            "axis": [0.0, 0.13, 0.0],
+            "offset": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:basic_ocp_rocket_distant",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:missilelockidle",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "reverseDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 2.14748365e9
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_lockedon",
+            "reverseDelay": 10
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:missilelockaiming",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "reverseDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 2.14748365e9
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_lockedon",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:missilelockready",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "reverseDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 1.0,
+            "clampMax": 2.14748365e9
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 10
+          },
+          {
+            "animationType": "visibility",
+            "variable": "gun_lockedon",
+            "clampMin": 1.0,
+            "clampMax": 1.0,
+            "forwardsDelay": 10
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

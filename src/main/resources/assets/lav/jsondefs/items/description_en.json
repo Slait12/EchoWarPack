@@ -1,0 +1,152 @@
+{
+  "item": {
+    "type": "booklet"
+  },
+  "booklet": {
+    "textureWidth": 467,
+    "textureHeight": 180,
+    "coverTexture": "mts:textures/guis/manual_car_cover.png",
+    "titleText": [
+      {
+        "pos": [330.0, 56.0, 0.0],
+        "rot": [0.0, 0.0, 0.0],
+        "scale": 1.5,
+        "fieldName": "",
+        "defaultText": "What s this mod?",
+        "color": "000000"
+      }
+    ],
+    "pages": [
+      {
+        "pageTexture": "mts:textures/guis/manual_car_pages.png",
+        "title": "Beginning",
+        "pageText": [
+          {
+            "pos": [111.0, 25.0, 0.0],
+            "rot": [0.0, 0.0, 0.0],
+            "scale": 1.0,
+            "fieldName": "",
+            "defaultText": "Beginning",
+            "color": "000000"
+          },
+          {
+            "pos": [27.0, 40.0, 0.0],
+            "rot": [0.0, 0.0, 0.0],
+            "scale": 0.8,
+            "fieldName": "",
+            "defaultText": "
+Hello. Here I will explain what this pack is and how to use it. First of all, this pack works in conjunction with the Immersive Vehicle mod and resources from the MTS Official Pack.
+
+The pack was created by the administration of the Telegram channel PMC Kinder The model creators are Lindqvist and Mute. The pack is completely free; if you purchased it, you were scammed.",
+            "color": "000000",
+            "wrapWidth": 180,
+            "renderPosition": 1
+        },
+        {
+          "pos": [261.0, 40.0, 0.0],
+          "rot": [0.0, 0.0, 0.0],
+          "scale": 0.8,
+          "fieldName": "",
+          "defaultText": "
+If you're making a video or TikTok, please leave a link to download it from CurseForge or Modrith in the description.
+
+This pack is prohibited for commercial use: (Minecraft servers with donations, selling the pack). If you're playing on a server with donations using this pack, please contact us.",
+          "color": "000000",
+          "wrapWidth": 180,
+          "renderPosition": 1
+      },
+      {
+          "pos": [345.0, 25.0, 0.0],
+          "rot": [0.0, 0.0, 0.0],
+          "scale": 1.0,
+          "fieldName": "",
+          "defaultText": "Usage Rights",
+          "color": "000000"
+      }
+        ]
+      },
+      {
+        "pageTexture": "mts:textures/guis/manual_car_pages.png",
+        "title": "What’s the deal?",
+        "pageText": [
+            {
+                "pos": [111.0, 25.0, 0.0],
+                "rot": [0.0, 0.0, 0.0],
+                "scale": 1.0,
+                "fieldName": "",
+                "defaultText": "How to shoot?",
+                "color": "000000"
+            },
+            {
+                "pos": [27.0, 40.0, 0.0],
+                "rot": [0.0, 0.0, 0.0],
+                "scale": 0.8,
+                "fieldName": "",
+                "defaultText": "
+To begin with, familiarize yourself with the combination F3+B, which allows you to enable hitboxes of the vehicles, which is essential.
+
+Full control of BMPs and tanks is done through the seats in the turret (they all work). Reloading the BMP and tanks occurs through the ammo supply (click under the gun from the inside and place the shells there).",
+                "color": "000000",
+                "wrapWidth": 180,
+                "renderPosition": 1
+            },
+            {
+                "pos": [261.0, 25.0, 0.0],
+                "rot": [0.0, 0.0, 0.0],
+                "scale": 0.8,
+                "fieldName": "",
+                "defaultText": "
+For the Bradley, it's a 7mm machine gun belt and 25mm cartridges.
+For the tank, the same cartridges for the machine gun and 125mm shells.
+
+Smoke grenades work on vehicles where there are visible smoke effects.
+
+Rockets are disposable; they don’t require ammo. Once fired, discard them.
+For the Javelin, you need to lock onto the target (a sound will play upon locking).",
+                "color": "000000",
+                "wrapWidth": 180,
+                "renderPosition": 1
+            }
+        ]
+      },
+      {
+      "pageTexture": "mts:textures/guis/manual_car_pages.png",
+      "title": "Keys",
+      "pageText": [
+          {
+              "pos": [111.0, 25.0, 0.0],
+              "rot": [0.0, 0.0, 0.0],
+              "scale": 1.0,
+              "fieldName": "",
+              "defaultText": "Keys:",
+              "color": "000000"
+          },
+          {
+              "pos": [27.0, 40.0, 0.0],
+              "rot": [0.0, 0.0, 0.0],
+              "scale": 0.8,
+              "fieldName": "",
+              "defaultText": "
+X - switch to scope.
+
+V - change weapon type (machine gun - main weapon, etc.)
+(if the scope doesn't work, you probably downloaded version IV 22.17, switch to 22.16)
+
+Space - fire the weapon.",
+              "color": "000000",
+              "wrapWidth": 180,
+              "renderPosition": 1
+          }
+      ]
+      }
+    ]
+  },
+  "general": {
+    "name": "Addon Description [EN] (READ ME!!)",
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

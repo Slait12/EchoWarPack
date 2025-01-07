@@ -1,0 +1,353 @@
+{
+  "generic": {
+    "type": "gun_smoke",
+    "forwardsDamageMultiplier": 1.0,
+    "destroyable": true,
+    "movementAnimations": []
+  },
+  "gun": {
+    "lockOnType": "default",
+    "targetType": "all",
+    "autoReload": true,
+    "capacity": 8,
+    "reloadTime": 15,
+    "muzzleVelocity": 15,
+    "bulletSpreadFactor": 10.0,
+    "minYaw": -180.0,
+    "maxYaw": 180.0,
+    "diameter": 40.0,
+    "yawSpeed": 4.5,
+    "pitchSpeed": 4.5,
+    "lockMaxAngle": 0.0,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0,0.0,0.0],
+            "rot": [-40.0,10.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [0.3,0.0,0.0],
+            "rot": [-55.0,30.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [0.0,0.0,0.0],
+            "rot": [-30.0,20.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [0.3,0.0,0.0],
+            "rot": [-35.0,40.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [-1.6,0.0,0.0],
+            "rot": [-40.0,-20.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [-1.63,0.0,0.0],
+            "rot": [-55.0,-50.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [-1.6,0.0,0.0],
+            "rot": [-30.0,-20.0,0.0],
+            "center": [0.0,0.0,0.0]
+          },
+          {
+            "pos": [-1.63,0.0,0.0],
+            "rot": [-35.0,-45.0,0.0],
+            "center": [0.0,0.0,0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "parts": [],
+  "collisionGroups": [],
+  "definitions": [
+    {
+      "hideOnCreativeTab": true,
+      "subName": "",
+      "modelName": "invisible",
+      "textureName": "invisible",
+      "name": "40mm Smoke Launcher",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "lav:turret/switch1",
+        "soundVariations": [
+          "lav:turret/switch1",
+          "lav:turret/switch2",
+          "lav:turret/switch3"
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_active",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 8.0,
+        "middleDistanceVolume": 0.2,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "lav:turret/smoke_launcher1",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 128.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 256.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 2,
+        "duration": 6,
+        "transparency": 0.33,
+        "toTransparency": 0.001,
+        "scale": 0.2,
+        "toScale": 3.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "color": "C8C2BD",
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [1.0,1.0,0.0],
+        "initialVelocity": [0.0,0.0,1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 8,
+        "movementDuration": 25,
+        "transparency": 0.23,
+        "toTransparency": 0.001,
+        "scale": 0.2,
+        "toScale": 5.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "color": "C8C2BD",
+        "pos": [0.0,0.0,0.0],
+        "spreadRandomness": [1.0,1.0,0.0],
+        "initialVelocity": [0.0,0.0,8.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "isBlended": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 3,
+        "transparency": 1.0,
+        "toTransparency": 0.1,
+        "scale": 32.0,
+        "toScale": 1.2,
+        "hitboxSize": 0.2,
+        "texture": "lav:textures/particles/whiteflash_big_translucent.png",
+        "color": "FFFFFF",
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,1.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 2,
+        "transparency": 1.0,
+        "scale": 0.75,
+        "hitboxSize": 0.3,
+        "textureList": [
+          "lav:textures/particles/flash0_translucent.png",
+          "lav:textures/particles/flash1_translucent.png",
+          "lav:textures/particles/flash2_translucent.png",
+          "lav:textures/particles/flash3_translucent.png"
+        ],
+        "randomTexture": true,
+        "color": "FFFFFF",
+        "pos": [0.0,0.0,0.0],
+        "initialVelocity": [0.0,0.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [1.0,0.0,0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 2,
+        "transparency": 1.0,
+        "scale": 4.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/whiteflash_translucent.png"
+        ],
+        "pos": [0.0,0.0,-0.1],
+        "initialVelocity": [0.0,0.0,0.0],
+        "movementVelocity": [0.0,0.0,0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [1.0,0.0,0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 35,
+        "movementDuration": 35,
+        "transparency": 1.0,
+        "scale": 0.25,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/generic_7.png",
+          "lav:textures/particles/generic_6.png",
+          "lav:textures/particles/generic_5.png",
+          "lav:textures/particles/generic_4.png",
+          "lav:textures/particles/generic_3.png",
+          "lav:textures/particles/generic_2.png",
+          "lav:textures/particles/generic_1.png",
+          "lav:textures/particles/generic_0.png"
+        ],
+        "textureDelays": [5,5,5,5,5,5,5],
+        "colorList": [
+          "404040",
+          "808080"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.15,0.0],
+        "spreadRandomness": [0.25,0.0,0.25],
+        "initialVelocity": [0.0,0.0025,0.0],
+        "movementVelocity": [0.0,0.0025,0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [1.0,0.0,0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_cooldown",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "",
+    "description": "It's a smoke grenade launcher, it goes on all tanks. It's loaded with 40mm smoke grenades",
+    "health": 20,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

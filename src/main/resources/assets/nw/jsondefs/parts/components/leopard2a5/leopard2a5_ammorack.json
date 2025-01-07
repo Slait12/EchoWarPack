@@ -1,0 +1,33 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [[]]
+  },
+  "generic": {
+    "type": "interactable_crate",
+    "width": 2.0,
+    "height": 0.5,
+    "forwardsDamage": true,
+    "destroyable": true,
+    "forwardsDamageMultiplier": 1.0
+  },
+  "interactable": {
+    "interactionType": "crate",
+    "hasBlowoutPanels": true,
+    "inventoryUnits": 3.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "modelName": "none",
+      "textureName": "none",
+      "name": "Leopard 2A5 ammorack",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  }
+}

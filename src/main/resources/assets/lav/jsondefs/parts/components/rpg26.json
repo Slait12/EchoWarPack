@@ -1,0 +1,407 @@
+{
+  "generic": {
+    "type": "gun_handheld_rocket",
+    "forwardsDamageMultiplier": 1.0,
+    "destroyable": true
+  },
+  "gun": {
+    "lockOnType": "default",
+    "targetType": "all",
+    "blockReloading": true,
+    "handHeld": true,
+    "isTwoHanded": true,
+    "capacity": 1,
+    "reloadTime": 2,
+    "windupTime": 4,
+    "muzzleVelocity": 50,
+    "fireDelay": 20.0,
+    "diameter": 70.0,
+    "minCaseLength": 2.0,
+    "maxCaseLength": 2.0,
+    "yawSpeed": 1.1830065,
+    "pitchSpeed": 1.1830065,
+    "lockMaxAngle": 0.0,
+    "preloadedBullet": "lav:bulletrocket:1",
+    "handHeldNormalOffset": [0.0,-0.03125,0.4],
+    "handHeldAimedOffset": [0.12259,0.0,0.5],
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0,0.18,0.0],
+            "rot": [0.0,0.0,0.0],
+            "center": [0.0,0.0,0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "RPG-26 Aglen",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "rocka",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_ammo_count",
+            "clampMin": 12.0,
+            "clampMax": 12.0
+          }
+        ]
+      },
+      {
+        "objectName": "maintube",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "gun_cooldown",
+            "centerPoint": [0.0,0.18,0.0],
+            "axis": [0.0,0.0,-0.7],
+            "duration": 2,
+            "reverseEasing": "easeinquad",
+            "skipReverseMovement": true
+          },
+          {
+            "animationType": "translation",
+            "variable": "gun_cooldown",
+            "centerPoint": [0.0,0.18,0.0],
+            "axis": [0.0,0.0,0.7],
+            "duration": 20,
+            "forwardsEasing": "easeinquad",
+            "forwardsDelay": 1,
+            "skipReverseMovement": true
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:rocketlauncher_equip0",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_inhand_equipped",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:rocketlauncher_equip1",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_inhand_equipped"
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:triggerclick",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_firing",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.6,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:gunrocketpod_reload0",
+        "soundVariations": [
+          "mtsofficialpack:gunrocketpod_reload0",
+          "mtsofficialpack:gunrocketpod_reload1",
+          "mtsofficialpack:gunrocketpod_reload2"
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 10.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:rocketlauncher0",
+        "soundVariations": [
+          "mtsofficialpack:rocketlauncher0",
+          "mtsofficialpack:rocketlauncher1",
+          "mtsofficialpack:rocketlauncher2"
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 50.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      },
+      {
+        "name": "mtsofficialpack:basic_ocp_rocket_distant",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 50.0,
+        "middleDistanceVolume": 0.6,
+        "maxDistance": 150.0,
+        "maxDistanceVolume": 0.0,
+        "conicalAngle": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "generic",
+        "ignoreCollision": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 120,
+        "movementDuration": 10,
+        "transparency": 0.83,
+        "toTransparency": 0.001,
+        "scale": 2.0,
+        "toScale": 9.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "C4C0BB",
+          "B9B4AD",
+          "D2D0CD",
+          "ADA79F",
+          "A39A8D",
+          "99958F",
+          "DDDBD8"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,1.0],
+        "spreadRandomness": [2.0,2.0,7.0],
+        "relativeInheritedVelocityFactor": [0.5,0.5,0.5],
+        "initialVelocity": [0.0,0.0,8.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "ignoreCollision": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 10,
+        "duration": 120,
+        "movementDuration": 10,
+        "transparency": 0.83,
+        "toTransparency": 0.001,
+        "scale": 2.0,
+        "toScale": 9.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mts:textures/particles/big_smoke_0.png",
+          "mts:textures/particles/big_smoke_1.png",
+          "mts:textures/particles/big_smoke_2.png",
+          "mts:textures/particles/big_smoke_3.png",
+          "mts:textures/particles/big_smoke_4.png",
+          "mts:textures/particles/big_smoke_5.png",
+          "mts:textures/particles/big_smoke_6.png",
+          "mts:textures/particles/big_smoke_7.png",
+          "mts:textures/particles/big_smoke_8.png"
+        ],
+        "randomTexture": true,
+        "colorList": [
+          "C4C0BB",
+          "B9B4AD",
+          "D2D0CD",
+          "ADA79F",
+          "A39A8D",
+          "99958F",
+          "DDDBD8"
+        ],
+        "randomColor": true,
+        "pos": [0.0,0.0,1.0],
+        "spreadRandomness": [2.0,2.0,-7.0],
+        "relativeInheritedVelocityFactor": [0.5,0.5,0.5],
+        "initialVelocity": [0.0,0.0,-8.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "duration": 20,
+        "movementDuration": 10,
+        "transparency": 1.0,
+        "scale": 1.0,
+        "toScale": 0.001,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "mtsofficialpack:textures/bullets/bang0.png",
+          "mtsofficialpack:textures/bullets/bang0d.png",
+          "mtsofficialpack:textures/bullets/bang0b.png",
+          "mtsofficialpack:textures/bullets/bang0a.png",
+          "mtsofficialpack:textures/bullets/bang0c.png"
+        ],
+        "randomTexture": true,
+        "pos": [0.045,0.675,1.61],
+        "spreadRandomness": [4.0,4.0,13.0],
+        "initialVelocity": [0.0,0.0,20.0],
+        "movementVelocity": [0.0,-0.008,0.0],
+        "spawningAnimations": [
+          {
+            "animationType": "rotation",
+            "variable": "gun_pitch",
+            "centerPoint": [-0.0625,1.4375,-0.1538],
+            "axis": [1.0,0.0,0.0]
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 3,
+        "transparency": 1.0,
+        "scale": 0.6,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/flash0_translucent.png",
+          "lav:textures/particles/flash1_translucent.png",
+          "lav:textures/particles/flash2_translucent.png",
+          "lav:textures/particles/flash3_translucent.png"
+        ],
+        "randomTexture": true,
+        "pos": [0.0,0.2,0.7515],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      },
+      {
+        "type": "generic",
+        "isBright": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 3,
+        "transparency": 1.0,
+        "scale": 8.0,
+        "hitboxSize": 0.2,
+        "textureList": [
+          "lav:textures/particles/whiteflash_translucent.png"
+        ],
+        "pos": [0.0,0.2,0.7515],
+        "spawningAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "!gun_fired"
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Disposable Rocket Launcher",
+    "description": "This is a disposable Soviet grenade launcher, no different from the American one, but it's ours!!1",
+    "health": 50,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:6",
+        "minecraft:gunpowder:4",
+        "minecraft:redstone:4"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

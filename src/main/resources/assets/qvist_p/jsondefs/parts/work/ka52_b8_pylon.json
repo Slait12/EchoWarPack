@@ -1,0 +1,114 @@
+{
+  "general": {
+    "health": 100,
+    "materialLists": [["immersiveengineering:material:2:2", "immersiveengineering:metal:38:5", "immersiveengineering:material:27:2"]]
+  },
+  "generic": {
+    "type": "gun_rocket_pylon",
+    "useVehicleTexture": true,
+    "width": 0.75,
+    "height": 0.75
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "B-8 Pylon",
+      "extraMaterialLists": [[]]
+    }
+  ],
+  "gun": {
+    "lockOnType": "default",
+    "targetType": "all",
+    "capacity": 12,
+    "reloadTime": 20,
+    "muzzleVelocity": 100,
+    "fireDelay": 2.0,
+    "bulletSpreadFactor": 0.2,
+    "diameter": 80.0,
+    "maxCaseLength": 1000.0,
+    "lockMaxAngle": 0.0,
+    "yawSpeed": 1.0,
+    "pitchSpeed": 1.0,
+    "muzzleGroups": [
+      {
+        "muzzles": [
+          {
+            "pos": [0.0, 0.043952, 0.805269],
+            "rot": [-3.94, 0.0, 0.0],
+            "center": [0.0, 0.0, 0.0]
+          }
+        ]
+      }
+    ]
+  },
+  "collisionGroups": [],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "cameraObjects": [],
+    "sounds": [
+      {
+        "soundVariations": ["qvist_p:gunrocketpod_reload0", "qvist_p:gunrocketpod_reload1", "qvist_p:gunrocketpod_reload2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_reload",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 8.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:basic_ocp_rocket",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "pitchAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "random",
+            "axis": [0.0, 0.13, 0.0],
+            "offset": 1.0
+          }
+        ],
+        "forceSound": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 32.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 64.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "qvist_p:basic_ocp_rocket_distant",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "gun_fired",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 64.0,
+        "middleDistanceVolume": 0.5,
+        "maxDistance": 128.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  }
+}
