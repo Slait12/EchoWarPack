@@ -7,7 +7,7 @@ loaderVersion="[36,)"
 
 # The license for your pack. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license="All rights reserved"
+license="The Unlicense"
 
 [[mods]] 
 # The ID of your pack.
@@ -22,7 +22,7 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-sim
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
 description='''
-Pack for GerWar server. Credits to gerwarpack and lindqvist.
+Vehicle pack for GerWar server. All files are from: lindqvist, LAV, MTS Official pack.
 '''
 
 [[dependencies.gerwarpack]]

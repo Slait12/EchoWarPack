@@ -116,7 +116,7 @@
   "collisionGroups": [
     {
       "collisionTypes": ["entity", "bullet", "click"], //hatch driver
-      "armorThickness": 60.0,
+      ,
       "applyAfter": "hatch_driver",
       "collisions": [
         {
@@ -139,7 +139,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], //hatch engine
-      "armorThickness": 60.0,
+      ,
       "applyAfter": "hatch_engine",
       "collisions": [
         {
@@ -791,7 +791,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // front top armor
-      "armorThickness": 550.0,
+      ,
       "heatArmorThickness": 800.0,
       "collisions": [
         {
@@ -912,7 +912,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // front bottom armor
-      "armorThickness": 160.0,
+      ,
       "collisions": [
         {
           "name": "front_bottom",
@@ -942,7 +942,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // top armor
-      "armorThickness": 40.0,
+      ,
       "collisions": [
         {
           "name": "top",
@@ -1086,7 +1086,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side top armor
-      "armorThickness": 25.0,
+      ,
       "collisions": [
         {
           "name": "side_top",
@@ -1224,7 +1224,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side left armor
-      "armorThickness": 80.0,
+      ,
       "collisions": [
         {
           "name": "side_right",
@@ -1704,7 +1704,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side right armor
-      "armorThickness": 80.0,
+      ,
       "collisions": [
         {
           "name": "side_left",
@@ -2184,7 +2184,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // rear armor
-      "armorThickness": 50.0,
+      ,
       "collisions": [
         {
           "name": "rear",
@@ -2466,7 +2466,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // bottom armor
-      "armorThickness": 40.0,
+      ,
       "collisions": [
         {
           "name": "bottom",

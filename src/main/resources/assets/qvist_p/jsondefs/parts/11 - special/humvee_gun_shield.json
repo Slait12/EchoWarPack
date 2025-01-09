@@ -27,133 +27,133 @@
           "pos": [0.7151, 0.00418, 0.39525],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube",
           "pos": [0.7151, 0.00418, 0.19231],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube",
           "pos": [0.7151, 0.00418, -0.01063],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube",
           "pos": [0.7151, 0.00418, -0.21356],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.001",
           "pos": [-0.43334, 0.09623, -0.58352],
           "width": 0.63135,
           "height": 0.47957,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.001",
           "pos": [0.00715, 0.09623, -0.58352],
           "width": 0.63135,
           "height": 0.47957,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.001",
           "pos": [0.44764, 0.09623, -0.58352],
           "width": 0.63135,
           "height": 0.47957,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.002",
           "pos": [0.59909, 0.00418, 0.71472],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.002",
           "pos": [0.59909, 0.00418, 0.6597],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.003",
           "pos": [0.3586, 0.00418, 1.02148],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.003",
           "pos": [0.3586, 0.00418, 0.96646],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.004",
           "pos": [-0.70298, 0.00418, 0.39525],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.004",
           "pos": [-0.70298, 0.00418, 0.19231],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.004",
           "pos": [-0.70298, 0.00418, -0.01063],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.004",
           "pos": [-0.70298, 0.00418, -0.21356],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.005",
           "pos": [-0.58697, 0.00418, 0.71472],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.005",
           "pos": [-0.58697, 0.00418, 0.6597],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.006",
           "pos": [-0.34648, 0.00418, 1.02148],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         },
         {
           "name": "Cube.006",
           "pos": [-0.34648, 0.00418, 0.96646],
           "width": 0.26354,
           "height": 0.65954,
-          "armorThickness": 8.0
+
         }
       ]
     }

@@ -127,7 +127,7 @@
           "pos": [0.0, 0.37186, 1.05796],
           "width": 1.04784,
           "height": 0.63146,
-          "armorThickness": 20.0,
+          ,
           "variableName": "connection_1_1_connected",
           "variableType": "toggle"
         }

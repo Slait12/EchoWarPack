@@ -103,7 +103,7 @@
   "collisionGroups": [
     {
       "collisionTypes": ["bullet", "entity", "click"], //driver hatch
-      "armorThickness": 600.0,
+      ,
       "heatArmorThickness": 1100.0,
       "applyAfter": "hatch_driver",
       "collisions": [
@@ -205,7 +205,7 @@
     },
     {
       "collisionTypes": ["bullet"], //armor plate left
-      "armorThickness": 8.0,
+      ,
       "health": 100,
       "collisions": [
         {
@@ -692,7 +692,7 @@
     },
     {
       "collisionTypes": ["bullet"], //armor plate right
-      "armorThickness": 8.0,
+      ,
       "health": 100,
       "collisions": [
         {
@@ -1179,7 +1179,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 1
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1199,7 +1199,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 2
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1219,7 +1219,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 3
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1239,7 +1239,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 4
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1259,7 +1259,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 5
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1279,7 +1279,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 5
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1299,7 +1299,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 6
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1319,7 +1319,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 7
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1339,7 +1339,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era left 8
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1359,7 +1359,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 1
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1379,7 +1379,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 2
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1399,7 +1399,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 3
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1419,7 +1419,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 4
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1439,7 +1439,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 5
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1459,7 +1459,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 6
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1479,7 +1479,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 7
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1499,7 +1499,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //era right 8
-      "armorThickness": 8.0,
+      ,
       "heatArmorThickness": 400.0,
       "health": 100,
       "collisions": [
@@ -1519,7 +1519,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //front armor
-      "armorThickness": 600.0,
+      ,
       "heatArmorThickness": 1100.0,
       "collisions": [
         {
@@ -1622,7 +1622,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //side armor
-      "armorThickness": 65.0,
+      ,
       "collisions": [
         {
           "name": "side.007",
@@ -2204,7 +2204,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //bottom armor
-      "armorThickness": 20.0,
+      ,
       "collisions": [
         {
           "name": "bottom",
@@ -2252,7 +2252,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //top armor
-      "armorThickness": 40.0,
+      ,
       "collisions": [
         {
           "name": "top",
@@ -2474,7 +2474,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //rear armor
-      "armorThickness": 40.0,
+      ,
       "collisions": [
         {
           "name": "rear",
@@ -2540,7 +2540,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //engine hatch
-      "armorThickness": 40.0,
+      ,
       "applyAfter": "hatch_engine_top",
       "collisions": [
         {
@@ -2563,7 +2563,7 @@
     },
     {
       "collisionTypes": ["bullet", "click"], //driver hatch 2
-      "armorThickness": 12.0,
+      ,
       "collisions": [
         {
           "name": "hatch_driver.002",

@@ -12,7 +12,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle"
 
 //Set file name.
-version = "V1"
+version = "V2"
 group = "gerwar"
 archivesBaseName = "GerWar Pack"
 
