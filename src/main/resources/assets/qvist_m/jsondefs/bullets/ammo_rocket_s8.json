@@ -10,7 +10,7 @@
     "isHeat": true,
     "quantity": 12,
     "diameter": 80.0,
-    "damage": 400.0,
+    "damage": 300.0,
     "caseLength": 40.0,
     "blastStrength": 3.5,
     "armorPenetration": 420.0,

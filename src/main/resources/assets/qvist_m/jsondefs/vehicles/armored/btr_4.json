@@ -2,7 +2,7 @@
   "general": {
     "name": "BTR",
     "description": "I'm a Barbie girl, in the Barbie entity",
-    "health": 10000,
+    "health": 1200,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]],
     "radarWidth": 0.0,
     "radarRange": 0.0

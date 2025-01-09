@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 700,
+    "health": 500,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]]
   },
   "motorized": {

@@ -10,7 +10,7 @@
     "damage": 900.0,
     "caseLength": 9.0,
     "blastStrength": 5.5,
-    "armorPenetration": 60.0,
+    "armorPenetration": 65.0,
     "gravitationalVelocity": 0.01,
     "burnTime": 90,
     "accelerationTime": 60,

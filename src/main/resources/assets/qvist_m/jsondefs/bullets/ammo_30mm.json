@@ -5,7 +5,7 @@
     "seekerMaxAngle": 90.0,
     "quantity": 200,
     "diameter": 30.0,
-    "damage": 350.0,
+    "damage": 125.0,
     "caseLength": 165.0,
     "armorPenetration": 65.0,
     "gravitationalVelocity": 0.005,

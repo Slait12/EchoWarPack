@@ -12,10 +12,10 @@
     "seekerMaxAngle": 90.0,
     "quantity": 1,
     "diameter": 4000.0,
-    "damage": 70.0,
+    "damage": 400.0,
     "blastStrength": 4.0,
     "caseLength": 3.0,
-    "armorPenetration": 36.0,
+    "armorPenetration": 65.0,
     "gravitationalVelocity": 0.02,
     "maxVelocity": 355,
     "impactDespawnTime": 40
