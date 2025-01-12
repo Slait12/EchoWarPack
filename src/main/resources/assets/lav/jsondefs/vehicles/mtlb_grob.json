@@ -64,7 +64,7 @@
     },
     {
       "pos": [0.885,0.9,2.2],
-      "dismountPos": [3.3,0.45,1.7],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "playerScale": [0.8,0.8,0.8],
       "defaultPart": "mts:invisible_seat",
@@ -90,7 +90,7 @@
     },
     {
       "pos": [-0.79,0.9,2.2],
-      "dismountPos": [3.3,0.45,1.7],
+      "dismountPos": [4.0,3.0,3.0],
       "playerScale": [0.8,0.8,0.8],
       "defaultPart": "mts:invisible_seat",
       "types": [

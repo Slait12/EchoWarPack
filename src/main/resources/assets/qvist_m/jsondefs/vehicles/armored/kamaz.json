@@ -97,7 +97,7 @@
     },
     {
       "pos": [0.734853, 2.14775, 3.25454],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "playerScale": [0.9, 0.9, 0.9],
       "isPermanent": true,
       "isController": true,

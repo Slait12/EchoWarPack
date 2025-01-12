@@ -149,7 +149,7 @@
     },
     {
       "pos": [0.42,-0.2,1.34],
-      "dismountPos": [1.5,0.5,1.34],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "types": [
         "seat"

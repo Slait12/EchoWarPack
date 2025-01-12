@@ -88,7 +88,7 @@
     //pilotseat 6-7
     {
       "pos": [0.45,0.2,2.25],
-      "dismountPos": [2.0,0.0,2.2],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "types": [
         "seat",
@@ -107,7 +107,7 @@
     //passangerseat 8-11
     {
       "pos": [0.45,0.2,1.35],
-      "dismountPos": [2.0,0.0,2.2],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "seat",
@@ -135,7 +135,7 @@
     },
     {
       "pos": [0.45,0.2,0.45],
-      "dismountPos": [2.0,0.0,2.2],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "seat",
@@ -164,7 +164,7 @@
     //crates 12-15
     {
       "pos": [0.45,-0.125,1.35],
-      "dismountPos": [2.0,0.0,2.2],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "interactable_crate"
@@ -190,7 +190,7 @@
     },
     {
       "pos": [0.45,-0.125,0.45],
-      "dismountPos": [2.0,0.0,2.2],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "interactable_crate"

@@ -78,7 +78,7 @@
     },
     {
       "pos": [0.783,0.632,1.863],
-      "dismountPos": [0.82325,2.5,3.035],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "playerScale": [0.8,0.8,0.8],
       "defaultPart": "mts:invisible_seat",

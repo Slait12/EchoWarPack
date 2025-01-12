@@ -2,7 +2,7 @@
   "general": {
     "name": "BTR",
     "description": "I'm a Barbie girl, in the Barbie entity",
-    "health": 600,
+    "health": 10000,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]],
     "radarWidth": 0.0,
     "radarRange": 0.0
@@ -327,7 +327,7 @@
     },
     {
       "pos": [0.47, 0.45, 5.65],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "isPermanent": true,
       "canDisableGun": true,
@@ -338,7 +338,7 @@
     {
       "pos": [-0.75, 0.25, 0.85],
       "rot": [0.0, 90.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -347,7 +347,7 @@
     {
       "pos": [-0.75, 0.25, -0.0],
       "rot": [0.0, 90.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -356,7 +356,7 @@
     {
       "pos": [-0.75, 0.25, -0.9],
       "rot": [0.0, 90.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -364,7 +364,7 @@
     },
     {
       "pos": [-0.55, 0.25, 5.65],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "isPermanent": true,
       "canDisableGun": true,
@@ -376,7 +376,7 @@
     {
       "pos": [0.75, 0.25, -0.9],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -385,7 +385,7 @@
     {
       "pos": [0.75, 0.25, 0.0],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -394,7 +394,7 @@
     {
       "pos": [0.75, 0.25, 0.9],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -449,7 +449,7 @@
           "height": 0.15373,
           "variableName": "hatchhle",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -464,7 +464,7 @@
           "height": 0.15373,
           "variableName": "hatchhre",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -478,7 +478,7 @@
           "height": 0.1,
           "variableName": "hatchtle",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -492,7 +492,7 @@
           "height": 0.1,
           "variableName": "hatchtre",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -507,7 +507,7 @@
           "height": 0.84611,
           "variableName": "doorble",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -522,7 +522,7 @@
           "height": 0.84611,
           "variableName": "doorbre",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -537,7 +537,7 @@
           "height": 0.84611,
           "variableName": "doorfle",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -552,7 +552,7 @@
           "height": 0.84611,
           "variableName": "doorfre",
           "variableType": "toggle",
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -565,833 +565,833 @@
           "pos": [-0.79328, 0.73408, 6.98998],
           "width": 0.91959,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.162",
           "pos": [0.0, 0.73408, 6.98998],
           "width": 0.91959,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.162",
           "pos": [0.79328, 0.73408, 6.98998],
           "width": 0.91959,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.163",
           "pos": [-0.89395, 0.2698, 6.90807],
           "width": 0.71825,
           "height": 0.64568,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.163",
           "pos": [-0.29798, 0.2698, 6.90807],
           "width": 0.71825,
           "height": 0.64568,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.163",
           "pos": [0.29798, 0.2698, 6.90807],
           "width": 0.71825,
           "height": 0.64568,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.163",
           "pos": [0.89395, 0.2698, 6.90807],
           "width": 0.71825,
           "height": 0.64568,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.164",
           "pos": [-0.89395, -0.25522, 6.3619],
           "width": 0.71825,
           "height": 0.43082,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.164",
           "pos": [-0.29798, -0.25522, 6.3619],
           "width": 0.71825,
           "height": 0.43082,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.164",
           "pos": [0.29798, -0.25522, 6.3619],
           "width": 0.71825,
           "height": 0.43082,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.164",
           "pos": [0.89395, -0.25522, 6.3619],
           "width": 0.71825,
           "height": 0.43082,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.165",
           "pos": [0.0, -0.41347, 4.75685],
           "width": 2.50615,
           "height": 0.23774,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.165",
           "pos": [0.0, -0.41347, 2.48589],
           "width": 2.50615,
           "height": 0.23774,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.165",
           "pos": [0.0, -0.41347, 0.21493],
           "width": 2.50615,
           "height": 0.23774,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.166",
           "pos": [0.0, 1.43075, 4.78894],
           "width": 2.50615,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.166",
           "pos": [0.0, 1.43075, 3.04122],
           "width": 2.50615,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.166",
           "pos": [0.0, 1.43075, 1.29349],
           "width": 2.50615,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.166",
           "pos": [0.0, 1.43075, -0.45423],
           "width": 2.50615,
           "height": 0.30551,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 5.11517],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 4.81446],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 4.51374],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 4.21302],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 3.91231],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 3.61159],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 3.31088],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 3.01016],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 2.70944],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 2.40873],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 2.10801],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 1.80729],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 1.50658],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 1.20586],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 0.90514],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 0.60443],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 0.30371],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, 0.003],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, -0.29772],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, -0.59844],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, -0.89915],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, -1.19987],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.167",
           "pos": [-1.39024, 0.99395, -1.50059],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.168",
           "pos": [0.0, 1.18151, 6.5074],
           "width": 0.35271,
           "height": 0.54663,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.168",
           "pos": [0.0, 1.18151, 6.22396],
           "width": 0.35271,
           "height": 0.54663,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.168",
           "pos": [0.0, 1.18151, 5.94052],
           "width": 0.35271,
           "height": 0.54663,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 5.11517],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 4.81446],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 4.51374],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 4.21302],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 3.91231],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 3.61159],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 3.31088],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 3.01016],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 2.70944],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 2.40873],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 2.10801],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 1.80729],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 1.50658],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 1.20586],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 0.90515],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 0.60443],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 0.30371],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, 0.003],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, -0.29772],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, -0.59844],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, -0.89915],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, -1.19987],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.169",
           "pos": [-1.21539, 0.20789, -1.50059],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.170",
           "pos": [-1.21539, 0.12614, 5.84131],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.170",
           "pos": [-1.21539, 0.12614, 5.62574],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.170",
           "pos": [-1.21539, 0.12614, 5.41017],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 5.11517],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 4.81446],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 4.51374],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 4.21302],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 3.91231],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 3.61159],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 3.31088],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 3.01016],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 2.70944],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 2.40873],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 2.10801],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 1.80729],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 1.50658],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 1.20586],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 0.90514],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 0.60443],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 0.30371],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, 0.003],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, -0.29772],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, -0.59844],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, -0.89915],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, -1.19987],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.171",
           "pos": [1.39024, 0.99395, -1.50059],
           "width": 0.30258,
           "height": 0.59283,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 5.11517],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 4.81446],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 4.51374],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 4.21302],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 3.91231],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 3.61159],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 3.31088],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 3.01016],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 2.70944],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 2.40873],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 2.10801],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 1.80729],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 1.50658],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 1.20586],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 0.90515],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 0.60443],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 0.30371],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, 0.003],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, -0.29772],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, -0.59844],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, -0.89915],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, -1.19987],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.172",
           "pos": [1.21539, 0.20789, -1.50059],
           "width": 0.30258,
           "height": 0.95832,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.173",
           "pos": [1.21539, 0.12614, 5.84131],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.173",
           "pos": [1.21539, 0.12614, 5.62574],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         },
         {
           "name": "Cube.173",
           "pos": [1.21539, 0.12614, 5.41017],
           "width": 0.30258,
           "height": 0.76664,
-
+          "armorThickness":    0.0
         }
       ],
       "animations": []
@@ -2159,123 +2159,122 @@
         "maxDistance": 128.0,
         "maxDistanceVolume": 0.0
       },
+      //watersplash
       {
-        "name": "qvist_p:car_noise",
+        "soundVariations": ["mtsofficialpack:waterimpact0", "mtsofficialpack:waterimpact1", "mtsofficialpack:waterimpact2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //base
+      {
+        "name": "mtsofficialpack:waterimpact_add",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -10.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //add
+      {
+        "soundVariations": ["mtsofficialpack:debrissettle_water0", "mtsofficialpack:debrissettle_water1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //settle
+
+      //doorwind
+      {
+        "name": "mtsofficialpack:dooropenwind",
         "activeAnimations": [
           {
             "animationType": "visibility",
             "variable": "speed",
-            "clampMin": 1.0,
-            "clampMax": 100.0
+            "clampMin": 5,
+            "clampMax": 100
+          },
+          {
+            "animationType": "visibility",
+            "variable": "soundPass",
+            "reverseDelay": 10,
+            "clampMin": 1,
+            "clampMax": 1
           }
         ],
         "volumeAnimations": [
           {
             "animationType": "translation",
             "variable": "speed",
-            "axis": [0.0, 0.0466, 0.0],
-            "offset": -0.01
-          }
-        ],
-        "pitchAnimations": [],
-        "looping": true,
-        "isExterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:car_noise_int",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "speed",
-            "clampMin": 1.0,
-            "clampMax": 100.0
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "speed",
-            "axis": [0.0, 0.0466, 0.0],
-            "offset": -0.01
-          }
-        ],
-        "pitchAnimations": [],
-        "looping": true,
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:horn_car",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "horn",
-            "clampMin": 1.0,
-            "clampMax": 1.0,
-            "reverseDelay": 4
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 1.0, 0.0],
-            "duration": 2
-          }
-        ],
-        "pitchAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 0.0, 0.0],
-            "offset": 1.0
-          }
-        ],
-        "looping": true,
-        "isExterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:horn_car_int",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "horn",
-            "clampMin": 1.0,
-            "clampMax": 1.0,
-            "reverseDelay": 4
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 1.0, 0.0],
-            "duration": 2
-          }
-        ],
-        "pitchAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 0.0, 0.0],
-            "offset": 1.0
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.4
           }
         ],
         "looping": true,
@@ -2287,16 +2286,31 @@
         "maxDistance": 0.0,
         "maxDistanceVolume": 0.0
       },
+      //fuelalert
       {
-        "name": "qvist_p:key_insert",
+        "name": "mtsofficialpack:fuelalertcar2",
+        "pos": [0, 0.0, 2.5],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_magneto_1",
-            "clampMin": 1.0,
-            "clampMax": 1.0
+            "variable": "electric_power",
+            "clampMin": 1.1,
+            "clampMax": 20
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engines_running",
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "fuel",
+            "clampMin": 0.01,
+            "clampMax": 0.15
           }
         ],
+        "looping": false,
         "isInterior": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
@@ -2305,107 +2319,9 @@
         "maxDistance": 0.0,
         "maxDistanceVolume": 0.0
       },
+      //blinkerstuffs
       {
-        "name": "qvist_p:car_lock",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "locked",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:car_lock",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "locked"
-          }
-        ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:key_remove",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "engine_magneto_1"
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:parking_brake",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "p_brake",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:clunk_1",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "left_turn_signal",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:clunk_2",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "left_turn_signal"
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:clunk_1",
+        "name": "mtsofficialpack:blinker",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2415,81 +2331,156 @@
           }
         ],
         "isInterior": true,
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
         "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "middleDistanceVolume": 0.0
       },
       {
-        "name": "qvist_p:clunk_2",
+        "name": "mtsofficialpack:blinker",
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "right_turn_signal"
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           }
         ],
         "isInterior": true,
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
         "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "middleDistanceVolume": 0.0
       },
       {
-        "name": "qvist_p:clunk_2",
+        "name": "mtsofficialpack:blinkerleverup",
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "right_turn_signal"
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           }
         ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
       {
-        "name": "qvist_p:gearshift",
+        "name": "mtsofficialpack:blinkerleverdown",
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_shift_up_1",
+            "variable": "right_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "mtsofficialpack:blinkerleverup",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "mtsofficialpack:blinkerleverdown",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      //radiointeract
+      {
+        "pos": [0.0, 0.46875, 2.34375],
+        "soundVariations": ["mtsofficialpack:interact_radioopen3", "mtsofficialpack:interact_radioopen2", "mtsofficialpack:interact_radioopen1", "mtsofficialpack:interact_radioopen0"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "player_interacting",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
         "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 15.0,
         "maxDistanceVolume": 0.0
       },
+      //pedalstuffs
       {
-        "name": "qvist_p:gearshift",
+        "pos": [0.0, 0.46875, 2.34375],
+        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_shift_down_1",
+            "variable": "throttle",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
       {
-        "name": "qvist_p:rain_car_ext",
+        "pos": [0.0, 0.46875, 2.34375],
+        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "throttle",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "pos": [0.0, 0.46875, 2.34375],
+        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "pos": [0.0, 0.46875, 2.34375],
+        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+
+      //rainstuffs
+      {
+        "name": "mtsofficialpack:rain_inside",
+        "pos": [0, 2, 3],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2498,11 +2489,51 @@
             "clampMax": 2.0
           }
         ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "name": "mtsofficialpack:rain_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          }
+        ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      },
+      //wind
+      {
+        "name": "mtsofficialpack:wind_on_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 1.0,
+            "clampMax": 300.0
+          }
+        ],
         "volumeAnimations": [
           {
             "animationType": "translation",
-            "variable": "rain_strength",
-            "axis": [0.0, 0.5, 0.0]
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
           }
         ],
         "looping": true,
@@ -2515,24 +2546,74 @@
         "maxDistanceVolume": 0.0
       },
       {
-        "name": "qvist_p:rain_car_int",
+        "name": "mtsofficialpack:carwind_inside",
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "rain_strength",
+            "variable": "speed",
             "clampMin": 1.0,
-            "clampMax": 2.0
+            "clampMax": 300.0
           }
         ],
         "volumeAnimations": [
           {
             "animationType": "translation",
-            "variable": "rain_strength",
-            "axis": [0.0, 0.5, 0.0]
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
           }
         ],
         "looping": true,
         "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //misc
+      {
+        "name": "mtsofficialpack:horn_truck",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "AAH",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      {
+        "soundVariations": ["mtsofficialpack:misc/horn_aaah1", "mtsofficialpack:misc/horn_aaah2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "AAH",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
         "middleDistance": 0.0,

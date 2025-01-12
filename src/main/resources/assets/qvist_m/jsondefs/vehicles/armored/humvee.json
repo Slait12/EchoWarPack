@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 300,
+    "health": 600,
     "materialLists": [[]]
   },
   "motorized": {
@@ -97,7 +97,7 @@
     },
     {
       "pos": [0.89051, 1.05, 0.2688],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "playerScale": [0.9, 0.9, 0.9],
       "isController": true,
       "defaultPart": "qvist_p:humvee_seat",
@@ -112,7 +112,7 @@
     },
     {
       "pos": [0.89051, 1.05, -0.75115],
-      "dismountPos": [3.0, 0.0, 0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:humvee_seat",
       "types": ["seat_humvee"]

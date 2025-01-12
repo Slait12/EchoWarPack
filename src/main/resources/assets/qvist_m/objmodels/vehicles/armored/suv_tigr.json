@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 500,
+    "health": 700,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]]
   },
   "motorized": {
@@ -219,7 +219,7 @@
     },
     {
       "pos": [0.77925, 0.6, 2.35],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "isPermanent": true,
       "canDisableGun": true,
@@ -229,7 +229,7 @@
     {
       "pos": [-0.77925, 0.6, 2.35],
       "rot": [0.0, 0.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -238,7 +238,7 @@
     {
       "pos": [-0.8355, 0.51, 1.32],
       "rot": [0.0, 0.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "canDisableGun": true,
       "playerScale": [0.9, 0.9, 0.9],
@@ -248,7 +248,7 @@
     {
       "pos": [-0.6, 0.7, 0.49216],
       "rot": [0.0, 90.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -257,7 +257,7 @@
     {
       "pos": [-0.6, 0.7, -0.37982],
       "rot": [0.0, 90.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -266,7 +266,7 @@
     {
       "pos": [0.6, 0.7, -0.37982],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -275,7 +275,7 @@
     {
       "pos": [0.6, 0.7, 0.49216],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -284,7 +284,7 @@
     {
       "pos": [0.83, 0.7, 1.38],
       "rot": [0.0, 270.0, 0.0],
-      "dismountPos": [3.0, 1.0, 1.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:seat_invis",
@@ -1574,7 +1574,6 @@
     "customVariables": [],
     "sounds": [
       {
-        "name": "",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -1626,144 +1625,137 @@
         "maxDistance": 128.0,
         "maxDistanceVolume": 0.0
       },
+      //watersplash
       {
-        "name": "qvist_p:car_noise",
+        "soundVariations": ["mtsofficialpack:waterimpact0", "mtsofficialpack:waterimpact1", "mtsofficialpack:waterimpact2"],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "speed",
-            "clampMin": 1.0,
-            "clampMax": 100.0
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "speed",
-            "axis": [0.0, 0.0466, 0.0],
-            "offset": -0.01
-          }
-        ],
-        "pitchAnimations": [],
-        "looping": true,
-        "isExterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:car_noise_int",
-        "activeAnimations": [
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
           {
             "animationType": "visibility",
-            "variable": "speed",
-            "clampMin": 1.0,
-            "clampMax": 100.0
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "speed",
-            "axis": [0.0, 0.0466, 0.0],
-            "offset": -0.01
-          }
-        ],
-        "pitchAnimations": [],
-        "looping": true,
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:horn_car",
-        "activeAnimations": [
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
           {
             "animationType": "visibility",
-            "variable": "horn",
-            "clampMin": 1.0,
-            "clampMax": 1.0,
-            "reverseDelay": 4
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 1.0, 0.0],
-            "duration": 2
-          }
-        ],
-        "pitchAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 0.0, 0.0],
-            "offset": 1.0
-          }
-        ],
-        "looping": true,
-        "isExterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:horn_car_int",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "horn",
-            "clampMin": 1.0,
-            "clampMax": 1.0,
-            "reverseDelay": 4
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 1.0, 0.0],
-            "duration": 2
-          }
-        ],
-        "pitchAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "horn",
-            "axis": [0.0, 0.0, 0.0],
-            "offset": 1.0
-          }
-        ],
-        "looping": true,
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:key_insert",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "engine_magneto_1",
+            "variable": "terrain_blockmaterial_water",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //base
+      {
+        "name": "mtsofficialpack:waterimpact_add",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -10.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //add
+      {
+        "soundVariations": ["mtsofficialpack:debrissettle_water0", "mtsofficialpack:debrissettle_water1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //settle
+
+      //doorwind
+      {
+        "name": "mtsofficialpack:dooropenwind",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 5,
+            "clampMax": 100
+          },
+          {
+            "animationType": "visibility",
+            "variable": "soundPass",
+            "reverseDelay": 10,
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.4
+          }
+        ],
+        "looping": true,
         "isInterior": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
@@ -1772,56 +1764,113 @@
         "maxDistance": 0.0,
         "maxDistanceVolume": 0.0
       },
+      //fuelalert
       {
-        "name": "qvist_p:car_lock",
+        "name": "mtsofficialpack:fuelalertcar1",
+        "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "locked",
+            "variable": "electric_power",
+            "clampMin": 1.1,
+            "clampMax": 20
+          },
+          {
+            "animationType": "visibility",
+            "variable": "engines_running",
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "fuel",
+            "clampMin": 0.01,
+            "clampMax": 0.15
+          }
+        ],
+        "looping": false,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+      //radiointeract
+      {
+        "pos": [0.0, 0.5, 2.0],
+        "soundVariations": ["mtsofficialpack:interact_radioopen3", "mtsofficialpack:interact_radioopen2", "mtsofficialpack:interact_radioopen1", "mtsofficialpack:interact_radioopen0"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "player_interacting",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
         "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 15.0,
         "maxDistanceVolume": 0.0
       },
+      //pedalpush
       {
-        "name": "qvist_p:car_lock",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "locked"
+            "variable": "throttle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           }
         ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
       {
-        "name": "qvist_p:key_remove",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_magneto_1"
+            "variable": "throttle",
+            "clampMin": 0.0,
+            "clampMax": 0.0
           }
         ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
       {
-        "name": "qvist_p:parking_brake",
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "pos": [0.5, 0.5, 2.0],
+        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      //handbrake
+      {
+        "name": "mtsofficialpack:carhandbrakeup",
+        "pos": [0.0, 0.5, 1.3],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -1830,49 +1879,26 @@
             "clampMax": 1.0
           }
         ],
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
       {
-        "name": "qvist_p:clunk_1",
+        "name": "mtsofficialpack:carhandbrakedown",
+        "pos": [0.0, 0.5, 1.3],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "left_turn_signal",
-            "clampMin": 1.0,
-            "clampMax": 1.0
+            "variable": "p_brake",
+            "clampMin": 0.0,
+            "clampMax": 0.0
           }
         ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "isInterior": true
       },
+
+      //blinkersound
       {
-        "name": "qvist_p:clunk_2",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "left_turn_signal"
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:clunk_1",
+        "name": "mtsofficialpack:blinker",
+        "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -1882,72 +1908,100 @@
           }
         ],
         "isInterior": true,
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
         "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "middleDistanceVolume": 0.0
       },
       {
-        "name": "qvist_p:clunk_2",
+        "name": "mtsofficialpack:blinker",
+        "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "right_turn_signal"
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:clunk_2",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "right_turn_signal"
-          }
-        ],
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
-      {
-        "name": "qvist_p:gearshift",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "engine_shift_up_1",
+            "variable": "left_turn_signal",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
+        "isInterior": true,
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0,
         "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
+        "middleDistanceVolume": 0.0
       },
+      //blinkerlever
       {
-        "name": "qvist_p:gearshift",
+        "name": "mtsofficialpack:blinkerleverup",
+        "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "engine_shift_down_1",
+            "variable": "right_turn_signal",
             "clampMin": 1.0,
             "clampMax": 1.0
           }
         ],
+        "isInterior": true
+      },
+      {
+        "name": "mtsofficialpack:blinkerleverdown",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "mtsofficialpack:blinkerleverup",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "isInterior": true
+      },
+      {
+        "name": "mtsofficialpack:blinkerleverdown",
+        "pos": [0.5, 0.5, 2.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "isInterior": true
+      },
+
+      //horn
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
         "minDistance": 0.0,
         "minDistanceVolume": 0.0,
         "middleDistance": 0.0,
@@ -1955,8 +2009,9 @@
         "maxDistance": 0.0,
         "maxDistanceVolume": 0.0
       },
+      //rain outside
       {
-        "name": "qvist_p:rain_car_ext",
+        "name": "mtsofficialpack:rain_outside",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -1965,11 +2020,65 @@
             "clampMax": 2.0
           }
         ],
+        "looping": true,
+        "isExterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      },
+      //rain outside roof shennanigans
+      {
+        "name": "mtsofficialpack:rain_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "rain_strength",
+            "clampMin": 1.0,
+            "clampMax": 2.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 4.0,
+        "middleDistanceVolume": 0.4,
+        "maxDistance": 12.0,
+        "maxDistanceVolume": 0.0
+      },
+
+      //wind
+      {
+        "name": "mtsofficialpack:wind_on_outside",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 1.0,
+            "clampMax": 300.0
+          }
+        ],
         "volumeAnimations": [
           {
             "animationType": "translation",
-            "variable": "rain_strength",
-            "axis": [0.0, 0.5, 0.0]
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
           }
         ],
         "looping": true,
@@ -1981,21 +2090,35 @@
         "maxDistance": 0.0,
         "maxDistanceVolume": 0.0
       },
+      //outside wind if no roof
       {
-        "name": "qvist_p:rain_car_int",
+        "name": "mtsofficialpack:wind_on_outside",
         "activeAnimations": [
           {
             "animationType": "visibility",
-            "variable": "rain_strength",
+            "variable": "speed",
             "clampMin": 1.0,
-            "clampMax": 2.0
+            "clampMax": 300.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
           }
         ],
         "volumeAnimations": [
           {
             "animationType": "translation",
-            "variable": "rain_strength",
-            "axis": [0.0, 0.5, 0.0]
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.8
           }
         ],
         "looping": true,

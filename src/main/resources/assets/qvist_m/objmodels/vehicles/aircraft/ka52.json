@@ -39,7 +39,7 @@
   "parts": [
     {
       "pos": [0.48349, 1.4, 2.9722],
-      "dismountPos": [2.0, 0.0, 0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "isPermanent": true,
       "canDisableGun": true,
@@ -49,7 +49,7 @@
     },
     {
       "pos": [-0.48349, 1.4, 2.9722],
-      "dismountPos": [2.0, 0.0, 0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "canDisableGun": true,
       "defaultPart": "qvist_p:seat_invis",

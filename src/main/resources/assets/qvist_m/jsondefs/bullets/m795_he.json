@@ -7,7 +7,7 @@
     "types": ["armor_piercing", "explosive"],
     "quantity": 1,
     "diameter": 155.0,
-    "damage": 100.0,
+    "damage": 7000.0,
     "blastStrength": 6.0,
     "caseLength": 840.0,
     "armorPenetration": 36.0,

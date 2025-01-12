@@ -102,7 +102,7 @@
     },
     {
       "pos": [0.0,-0.2125,0.625],
-      "dismountPos": [1.5,1.0,0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "canDisableGun": true,
       "types": [
@@ -112,7 +112,7 @@
     },
     {
       "pos": [0.0,-0.562,2.3125],
-      "dismountPos": [1.5,1.0,0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "canDisableGun": true,
       "types": [
         "seat",

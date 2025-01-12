@@ -46,7 +46,7 @@
   "parts": [
     {
       "pos": [-0.70635,-0.199,-0.44795],
-      "dismountPos": [0.0,1.0,0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "canDisableGun": true,
       "playerScale": [0.8,0.8,0.8],
@@ -73,7 +73,7 @@
     },
     {
       "pos": [0.7825,-0.27265,-0.44565],
-      "dismountPos": [0.0,1.0,0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "canDisableGun": true,
       "playerScale": [0.8,0.8,0.8],

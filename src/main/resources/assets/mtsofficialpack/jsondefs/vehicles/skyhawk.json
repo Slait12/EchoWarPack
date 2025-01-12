@@ -145,7 +145,7 @@
     {
       "pos": [0.53125,-0.3,0.35],
       "partScale": [0.92,1.0,1.0],
-      "dismountPos": [2.0,0.0,0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "types": [
         "seat",
@@ -165,7 +165,7 @@
     {
       "pos": [0.53125,-0.3,-0.8],
       "partScale": [0.92,1.0,1.0],
-      "dismountPos": [2.0,0.0,0],
+      "dismountPos": [4.0,3.0,3.0],
       "types": [
         "seat",
         "seat_pilot"
@@ -179,7 +179,7 @@
     {
       "pos": [-0.53125,-0.3,-0.8],
       "partScale": [0.92,1.0,1.0],
-      "dismountPos": [2.0,0.0,0],
+      "dismountPos": [4.0,3.0,3.0],
       "types": [
         "seat",
         "seat_pilot"
@@ -193,7 +193,7 @@
     //Crates for cracky 
     {
       "pos": [0.53125,-0.63,-0.8],
-      "dismountPos": [2.0,0.0,0],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "interactable_crate"
@@ -206,7 +206,7 @@
     },
     {
       "pos": [-0.53125,-0.63,-0.8],
-      "dismountPos": [2.0,0.0,0],
+      "dismountPos": [4.0,3.0,3.0],
       "maxValue": 3.0,
       "types": [
         "interactable_crate"

@@ -10,7 +10,7 @@
     "isHeat": true,
     "quantity": 1,
     "diameter": 40.0,
-    "damage": 600.0,
+    "damage": 32000.0,
     "caseLength": 2.0,
     "blastStrength": 2.4,
     "armorPenetration": 500.0,
@@ -24,7 +24,7 @@
     {
       "subName": "",
       "name": "NLAW & RPG-28 Missile",
-      "description": "☺☺☺ Знакомьтесь, это Планктон, автор канала Изумруд Эмеральд, \nэто главный позор России и Российской армии ☺☺☺",
+      "description": "орден порядка нубасики :nerd:",
       "extraMaterialLists": [[]]
     }
   ],

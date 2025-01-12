@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 400,
+    "health": 800,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]]
   },
   "motorized": {
@@ -36,7 +36,7 @@
   "parts": [
     {
       "pos": [0.48349, 1.4, 2.9722],
-      "dismountPos": [2.0, 0.0, 0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "isPermanent": true,
       "canDisableGun": true,
@@ -46,7 +46,7 @@
     },
     {
       "pos": [-0.48349, 1.4, 2.9722],
-      "dismountPos": [2.0, 0.0, 0.0],
+      "dismountPos": [4.0,3.0,3.0],
       "isPermanent": true,
       "canDisableGun": true,
       "defaultPart": "qvist_p:seat_invis",

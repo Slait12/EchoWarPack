@@ -80,7 +80,7 @@
     {
       "pos": [0.0,0.29,1.5],
       "partScale": [1.0,0.9,1.0],
-      "dismountPos": [0.0,1.0,2.5],
+      "dismountPos": [4.0,3.0,3.0],
       "isController": true,
       "types": [
         "seat"
