@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 600,
+    "health": 100,
     "materialLists": [[]]
   },
   "motorized": {
@@ -97,7 +97,7 @@
     },
     {
       "pos": [0.89051, 1.05, 0.2688],
-      "dismountPos": [4.0,3.0,3.0],
+      "dismountPos": [3.0, 1.0, 1.0],
       "playerScale": [0.9, 0.9, 0.9],
       "isController": true,
       "defaultPart": "qvist_p:humvee_seat",
@@ -112,7 +112,7 @@
     },
     {
       "pos": [0.89051, 1.05, -0.75115],
-      "dismountPos": [4.0,3.0,3.0],
+      "dismountPos": [3.0, 0.0, 0.0],
       "playerScale": [0.9, 0.9, 0.9],
       "defaultPart": "qvist_p:humvee_seat",
       "types": ["seat_humvee"]
@@ -464,8 +464,7 @@
   "connectionGroups": [],
   "collisionGroups": [
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "door_front_l",
       "collisions": [
         {
@@ -473,6 +472,7 @@
           "pos": [1.34749, 1.42287, 0.91265],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         },
@@ -481,6 +481,7 @@
           "pos": [1.34749, 1.42287, 0.74401],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         },
@@ -489,6 +490,7 @@
           "pos": [1.34749, 1.42287, 0.57538],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         },
@@ -497,6 +499,7 @@
           "pos": [1.34749, 1.42287, 0.40675],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         },
@@ -505,6 +508,7 @@
           "pos": [1.34749, 1.42287, 0.23811],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         },
@@ -513,6 +517,7 @@
           "pos": [1.34749, 1.42287, 0.06948],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_le",
           "variableType": "toggle"
         }
@@ -527,8 +532,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "door_front_r",
       "collisions": [
         {
@@ -536,6 +540,7 @@
           "pos": [-1.30435, 1.42287, 0.91265],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         },
@@ -544,6 +549,7 @@
           "pos": [-1.30435, 1.42287, 0.74401],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         },
@@ -552,6 +558,7 @@
           "pos": [-1.30435, 1.42287, 0.57538],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         },
@@ -560,6 +567,7 @@
           "pos": [-1.30435, 1.42287, 0.40675],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         },
@@ -568,6 +576,7 @@
           "pos": [-1.30435, 1.42287, 0.23811],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         },
@@ -576,6 +585,7 @@
           "pos": [-1.30435, 1.42287, 0.06948],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_front_re",
           "variableType": "toggle"
         }
@@ -590,8 +600,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "door_back_l",
       "collisions": [
         {
@@ -599,6 +608,7 @@
           "pos": [1.34749, 1.42287, -0.18791],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_le",
           "variableType": "toggle"
         },
@@ -607,6 +617,7 @@
           "pos": [1.34749, 1.42287, -0.38047],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_le",
           "variableType": "toggle"
         },
@@ -615,6 +626,7 @@
           "pos": [1.34749, 1.42287, -0.57302],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_le",
           "variableType": "toggle"
         },
@@ -623,6 +635,7 @@
           "pos": [1.34749, 1.42287, -0.76557],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_le",
           "variableType": "toggle"
         },
@@ -631,6 +644,7 @@
           "pos": [1.34749, 1.42287, -0.95812],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_le",
           "variableType": "toggle"
         }
@@ -645,8 +659,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "door_back_r",
       "collisions": [
         {
@@ -654,6 +667,7 @@
           "pos": [-1.30435, 1.42287, -0.18791],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_re",
           "variableType": "toggle"
         },
@@ -662,6 +676,7 @@
           "pos": [-1.30435, 1.42287, -0.38047],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_re",
           "variableType": "toggle"
         },
@@ -670,6 +685,7 @@
           "pos": [-1.30435, 1.42287, -0.57302],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_re",
           "variableType": "toggle"
         },
@@ -678,6 +694,7 @@
           "pos": [-1.30435, 1.42287, -0.76557],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_re",
           "variableType": "toggle"
         },
@@ -686,6 +703,7 @@
           "pos": [-1.30435, 1.42287, -0.95812],
           "width": 0.19781,
           "height": 1.35008,
+          "armorThickness": 9.0,
           "variableName": "door_back_re",
           "variableType": "toggle"
         }
@@ -700,8 +718,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "Hatch_Top",
       "collisions": [
         {
@@ -709,6 +726,7 @@
           "pos": [0.00547, 2.32371, -0.09631],
           "width": 0.85042,
           "height": 0.03357,
+          "armorThickness": 6.0,
           "variableName": "hatch_tope",
           "variableType": "toggle"
         },
@@ -717,6 +735,7 @@
           "pos": [0.05023, 2.32371, -0.09631],
           "width": 0.85042,
           "height": 0.03357,
+          "armorThickness": 6.0,
           "variableName": "hatch_tope",
           "variableType": "toggle"
         }
@@ -731,8 +750,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
+      "isInterior": true,
       "applyAfter": "Back_Hatch",
       "collisions": [
         {
@@ -740,7 +758,7 @@
           "pos": [-0.65739, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -749,7 +767,7 @@
           "pos": [-0.43058, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -758,7 +776,7 @@
           "pos": [-0.20376, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -767,7 +785,7 @@
           "pos": [0.02305, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -776,7 +794,7 @@
           "pos": [0.24987, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -785,7 +803,7 @@
           "pos": [0.47668, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -794,7 +812,7 @@
           "pos": [0.70349, 1.8629, -2.19712],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -803,7 +821,7 @@
           "pos": [-0.65739, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -812,7 +830,7 @@
           "pos": [-0.43058, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -821,7 +839,7 @@
           "pos": [-0.20376, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -830,7 +848,7 @@
           "pos": [0.02305, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -839,7 +857,7 @@
           "pos": [0.24987, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -848,7 +866,7 @@
           "pos": [0.47668, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -857,7 +875,7 @@
           "pos": [0.70349, 1.929, -1.96262],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -866,7 +884,7 @@
           "pos": [-0.65739, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -875,7 +893,7 @@
           "pos": [-0.43058, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -884,7 +902,7 @@
           "pos": [-0.20376, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -893,7 +911,7 @@
           "pos": [0.02305, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -902,7 +920,7 @@
           "pos": [0.24987, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -911,7 +929,7 @@
           "pos": [0.47668, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -920,7 +938,7 @@
           "pos": [0.70349, 1.98995, -1.73284],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -929,7 +947,7 @@
           "pos": [-0.65739, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -938,7 +956,7 @@
           "pos": [-0.43058, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -947,7 +965,7 @@
           "pos": [-0.20376, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -956,7 +974,7 @@
           "pos": [0.02305, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -965,7 +983,7 @@
           "pos": [0.24987, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -974,7 +992,7 @@
           "pos": [0.47668, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -983,7 +1001,7 @@
           "pos": [0.70349, 2.09313, -1.50032],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -992,7 +1010,7 @@
           "pos": [-0.65739, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1001,7 +1019,7 @@
           "pos": [-0.43058, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1010,7 +1028,7 @@
           "pos": [-0.20376, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1019,7 +1037,7 @@
           "pos": [0.02305, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1028,7 +1046,7 @@
           "pos": [0.24987, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1037,7 +1055,7 @@
           "pos": [0.47668, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1046,7 +1064,7 @@
           "pos": [0.70349, 1.7912, -2.42435],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1055,7 +1073,7 @@
           "pos": [-0.65739, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1064,7 +1082,7 @@
           "pos": [-0.43058, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1073,7 +1091,7 @@
           "pos": [-0.20376, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1082,7 +1100,7 @@
           "pos": [0.02305, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1091,7 +1109,7 @@
           "pos": [0.24987, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1100,7 +1118,7 @@
           "pos": [0.47668, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1109,7 +1127,7 @@
           "pos": [0.70349, 1.71558, -2.65647],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1118,7 +1136,7 @@
           "pos": [-0.65739, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1127,7 +1145,7 @@
           "pos": [-0.43058, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1136,7 +1154,7 @@
           "pos": [-0.20376, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1145,7 +1163,7 @@
           "pos": [0.02305, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1154,7 +1172,7 @@
           "pos": [0.24987, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1163,7 +1181,7 @@
           "pos": [0.47668, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1172,7 +1190,7 @@
           "pos": [0.70349, 1.6325, -2.77886],
           "width": 0.23748,
           "height": 0.23748,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         }
@@ -1187,7 +1205,7 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
+      "isInterior": true,
       "applyAfter": "Trapdoor",
       "collisions": [
         {
@@ -1195,7 +1213,7 @@
           "pos": [-0.65739, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1204,7 +1222,7 @@
           "pos": [-0.43058, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1213,7 +1231,7 @@
           "pos": [-0.20376, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1222,7 +1240,7 @@
           "pos": [0.02305, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1231,7 +1249,7 @@
           "pos": [0.24987, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1240,7 +1258,7 @@
           "pos": [0.47668, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         },
@@ -1249,7 +1267,7 @@
           "pos": [0.70349, 1.21257, -2.81015],
           "width": 0.23748,
           "height": 0.62506,
-          "armorThickness":    0.0,
+          "armorThickness": 8.0,
           "variableName": "back_hatches",
           "variableType": "toggle"
         }
@@ -1318,540 +1336,538 @@
       ]
     },
     {
-      "collisionTypes": ["entity", "click", "bullet"],
-      "armorThickness":    0.0,
       "collisions": [
         {
           "name": "Cube",
           "pos": [-0.8538, 1.3981, 1.45988],
           "width": 0.87199,
           "height": 0.3697,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube",
           "pos": [0.0, 1.3981, 1.45988],
           "width": 0.87199,
           "height": 0.3697,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube",
           "pos": [0.8538, 1.3981, 1.45988],
           "width": 0.87199,
           "height": 0.3697,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.001",
           "pos": [-0.90362, 1.36828, 2.26966],
           "width": 0.77235,
           "height": 0.29296,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.001",
           "pos": [-0.30121, 1.36828, 2.26966],
           "width": 0.77235,
           "height": 0.29296,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.001",
           "pos": [0.30121, 1.36828, 2.26966],
           "width": 0.77235,
           "height": 0.29296,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.001",
           "pos": [0.90362, 1.36828, 2.26966],
           "width": 0.77235,
           "height": 0.29296,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [-0.6966, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [-0.49757, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [-0.29854, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [-0.09951, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [0.09951, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [0.29854, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [0.49757, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.002",
           "pos": [0.6966, 1.03025, 2.76095],
           "width": 0.21897,
           "height": 0.4659,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.003",
           "pos": [-1.04103, 0.98895, 2.47626],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.003",
           "pos": [-1.04103, 0.98895, 2.0699],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.003",
           "pos": [-1.04103, 0.98895, 1.66355],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.003",
           "pos": [-1.04103, 0.98895, 1.2572],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.004",
           "pos": [1.06308, 0.98895, 2.47626],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.004",
           "pos": [1.06308, 0.98895, 2.0699],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.004",
           "pos": [1.06308, 0.98895, 1.66355],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.004",
           "pos": [1.06308, 0.98895, 1.2572],
           "width": 0.51608,
           "height": 0.48321,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.005",
           "pos": [-0.89033, 2.17544, 0.70196],
           "width": 0.74427,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.005",
           "pos": [-0.27856, 2.17544, 0.70196],
           "width": 0.74427,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.005",
           "pos": [0.33322, 2.17544, 0.70196],
           "width": 0.74427,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.005",
           "pos": [0.94499, 2.17544, 0.70196],
           "width": 0.74427,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.006",
           "pos": [-0.83968, 2.17544, -0.94344],
           "width": 0.84558,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.006",
           "pos": [-0.26167, 2.17544, -0.94344],
           "width": 0.84558,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.006",
           "pos": [0.31633, 2.17544, -0.94344],
           "width": 0.84558,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.006",
           "pos": [0.89434, 2.17544, -0.94344],
           "width": 0.84558,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.007",
           "pos": [0.89864, 2.17544, -0.08663],
           "width": 0.83698,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.007",
           "pos": [0.89864, 2.17544, -0.10055],
           "width": 0.83698,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.008",
           "pos": [-0.84398, 2.17544, -0.08663],
           "width": 0.83698,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.008",
           "pos": [-0.84398, 2.17544, -0.10055],
           "width": 0.83698,
           "height": 0.24709,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.009",
           "pos": [-1.02553, 1.63618, -1.29779],
           "width": 0.50112,
           "height": 0.83087,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.009",
           "pos": [-1.02553, 1.63618, -1.64225],
           "width": 0.50112,
           "height": 0.83087,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.010",
           "pos": [-1.02553, 1.53367, -2.14213],
           "width": 0.50112,
           "height": 0.70506,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.010",
           "pos": [-1.02553, 1.53367, -2.624],
           "width": 0.50112,
           "height": 0.70506,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.011",
           "pos": [1.06869, 1.63618, -1.29779],
           "width": 0.50112,
           "height": 0.83087,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.011",
           "pos": [1.06869, 1.63618, -1.64225],
           "width": 0.50112,
           "height": 0.83087,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.012",
           "pos": [1.06869, 1.53367, -2.14213],
           "width": 0.50112,
           "height": 0.70506,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.012",
           "pos": [1.06869, 1.53367, -2.624],
           "width": 0.50112,
           "height": 0.70506,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.013",
           "pos": [0.00676, 0.67789, 2.01318],
           "width": 1.62251,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.013",
           "pos": [0.00676, 0.67789, 0.67106],
           "width": 1.62251,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.013",
           "pos": [0.00676, 0.67789, -0.67106],
           "width": 1.62251,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.013",
           "pos": [0.00676, 0.67789, -2.01318],
           "width": 1.62251,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, 1.15378],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, 0.73108],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, 0.30838],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, -0.11432],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, -0.53702],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.014",
           "pos": [-1.04834, 0.65725, -0.95972],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, 1.15378],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, 0.73108],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, 0.30838],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, -0.11432],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, -0.53702],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.015",
           "pos": [1.07392, 0.65725, -0.95972],
           "width": 0.50414,
           "height": 0.26185,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.016",
           "pos": [1.0277, 1.00983, -1.30459],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.016",
           "pos": [1.0277, 1.00983, -1.71533],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.016",
           "pos": [1.0277, 1.00983, -2.12607],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.016",
           "pos": [1.0277, 1.00983, -2.53682],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.017",
           "pos": [-0.9774, 1.00983, -1.30459],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.017",
           "pos": [-0.9774, 1.00983, -1.71533],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.017",
           "pos": [-0.9774, 1.00983, -2.12607],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.017",
           "pos": [-0.9774, 1.00983, -2.53682],
           "width": 0.50112,
           "height": 0.42518,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [-0.71603, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [-0.53703, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [-0.35802, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [-0.17901, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [0.0, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [0.17901, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [0.35802, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [0.53703, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         },
         {
           "name": "Cube.018",
           "pos": [0.71603, 0.8523, -2.81782],
           "width": 0.19965,
           "height": 0.13322,
-          "armorThickness":    0.0
+          "armorThickness": 8.0
         }
       ],
       "animations": []
@@ -2408,6 +2424,148 @@
     ],
     "customVariables": [],
     "sounds": [
+      //watersplash
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:waterimpact0", "qvist_p:waterimpact1", "qvist_p:waterimpact2"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //base
+      {
+        "name": "qvist_p:waterimpact_add",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -10.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //add
+      {
+        "name": "qvist_p:debrissettle_water1",
+        "soundVariations": ["qvist_p:debrissettle_water0", "qvist_p:debrissettle_water1"],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "vertical_speed",
+            "clampMin": -1000.5,
+            "clampMax": -5.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_distance",
+            "clampMin": -1,
+            "clampMax": 5
+          },
+          {
+            "animationType": "visibility",
+            "variable": "terrain_blockmaterial_water",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "middleDistance": 40.0,
+        "middleDistanceVolume": 0.3,
+        "maxDistance": 100.0,
+        "maxDistanceVolume": 0.0
+      }, //settle
+
+      //doorwind
+      {
+        "name": "qvist_p:dooropenwind",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "speed",
+            "clampMin": 5,
+            "clampMax": 100
+          },
+          {
+            "animationType": "visibility",
+            "variable": "door_l",
+            "reverseDelay": 10,
+            "clampMin": 1,
+            "clampMax": 1
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_13",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_14",
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ],
+        "volumeAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "speed",
+            "axis": [0.0, 0.09, 0.0],
+            "offset": -0.4
+          }
+        ],
+        "looping": true,
+        "isInterior": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      },
+
       {
         "activeAnimations": [
           {
@@ -2460,150 +2618,9 @@
         "maxDistance": 128.0,
         "maxDistanceVolume": 0.0
       },
-      //watersplash
-      {
-        "name": "mtsofficialpack:debrissettle_water1",
-        "soundVariations": ["mtsofficialpack:waterimpact0", "mtsofficialpack:waterimpact1", "mtsofficialpack:waterimpact2"],
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "vertical_speed",
-            "clampMin": -1000.5,
-            "clampMax": -5.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_distance",
-            "clampMin": -1,
-            "clampMax": 5
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_blockmaterial_water",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-
-        "minDistance": 0.0,
-        "minDistanceVolume": 1.0,
-        "middleDistance": 40.0,
-        "middleDistanceVolume": 0.3,
-        "maxDistance": 100.0,
-        "maxDistanceVolume": 0.0
-      }, //base
-      {
-        "name": "mtsofficialpack:waterimpact_add",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "vertical_speed",
-            "clampMin": -1000.5,
-            "clampMax": -10.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_distance",
-            "clampMin": -1,
-            "clampMax": 5
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_blockmaterial_water",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-
-        "minDistance": 0.0,
-        "minDistanceVolume": 1.0,
-        "middleDistance": 40.0,
-        "middleDistanceVolume": 0.3,
-        "maxDistance": 100.0,
-        "maxDistanceVolume": 0.0
-      }, //add
-      {
-        "name": "mtsofficialpack:debrissettle_water1",
-        "soundVariations": ["mtsofficialpack:debrissettle_water0", "mtsofficialpack:debrissettle_water1"],
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "vertical_speed",
-            "clampMin": -1000.5,
-            "clampMax": -5.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_distance",
-            "clampMin": -1,
-            "clampMax": 5
-          },
-          {
-            "animationType": "visibility",
-            "variable": "terrain_blockmaterial_water",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-
-        "minDistance": 0.0,
-        "minDistanceVolume": 1.0,
-        "middleDistance": 40.0,
-        "middleDistanceVolume": 0.3,
-        "maxDistance": 100.0,
-        "maxDistanceVolume": 0.0
-      }, //settle
-
-      //doorwind
-      {
-        "name": "mtsofficialpack:dooropenwind",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "speed",
-            "clampMin": 5,
-            "clampMax": 100
-          },
-          {
-            "animationType": "visibility",
-            "variable": "soundPass",
-            "reverseDelay": 10,
-            "clampMin": 1,
-            "clampMax": 1
-          },
-          {
-            "animationType": "visibility",
-            "variable": "part_present_13",
-            "clampMin": 0.0,
-            "clampMax": 0.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "part_present_14",
-            "clampMin": 0.0,
-            "clampMax": 0.0
-          }
-        ],
-        "volumeAnimations": [
-          {
-            "animationType": "translation",
-            "variable": "speed",
-            "axis": [0.0, 0.09, 0.0],
-            "offset": -0.4
-          }
-        ],
-        "looping": true,
-        "isInterior": true,
-        "minDistance": 0.0,
-        "minDistanceVolume": 0.0,
-        "middleDistance": 0.0,
-        "middleDistanceVolume": 0.0,
-        "maxDistance": 0.0,
-        "maxDistanceVolume": 0.0
-      },
       //fuelalert
       {
-        "name": "mtsofficialpack:fuelalertcar1",
+        "name": "qvist_p:fuelalertcar1",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2636,9 +2653,9 @@
       },
       //radiointeract
       {
-        "name": "mtsofficialpack:interact_radioopen0",
+        "name": "qvist_p:interact_radioopen0",
         "pos": [0.0, 0.5, 2.0],
-        "soundVariations": ["mtsofficialpack:interact_radioopen3", "mtsofficialpack:interact_radioopen2", "mtsofficialpack:interact_radioopen1", "mtsofficialpack:interact_radioopen0"],
+        "soundVariations": ["qvist_p:interact_radioopen3", "qvist_p:interact_radioopen2", "qvist_p:interact_radioopen1", "qvist_p:interact_radioopen0"],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2654,9 +2671,9 @@
       },
       //pedalpush
       {
-        "name": "mtsofficialpack:pedalgaspush0",
+        "name": "qvist_p:pedalgaspush0",
         "pos": [0.5, 0.5, 2.0],
-        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
+        "soundVariations": ["qvist_p:pedalgaspush0", "qvist_p:pedalgaspush1", "qvist_p:pedalgaspush2"],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2668,9 +2685,9 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:pedalgasrelease0",
+        "name": "qvist_p:pedalgasrelease0",
         "pos": [0.5, 0.5, 2.0],
-        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
+        "soundVariations": ["qvist_p:pedalgasrelease0", "qvist_p:pedalgasrelease1"],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2682,9 +2699,9 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:pedalgaspush0",
+        "name": "qvist_p:pedalgaspush0",
         "pos": [0.5, 0.5, 2.0],
-        "soundVariations": ["mtsofficialpack:pedalgaspush0", "mtsofficialpack:pedalgaspush1", "mtsofficialpack:pedalgaspush2"],
+        "soundVariations": ["qvist_p:pedalgaspush0", "qvist_p:pedalgaspush1", "qvist_p:pedalgaspush2"],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2696,9 +2713,9 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:pedalgasrelease0",
+        "name": "qvist_p:pedalgasrelease0",
         "pos": [0.5, 0.5, 2.0],
-        "soundVariations": ["mtsofficialpack:pedalgasrelease0", "mtsofficialpack:pedalgasrelease1"],
+        "soundVariations": ["qvist_p:pedalgasrelease0", "qvist_p:pedalgasrelease1"],
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2711,7 +2728,7 @@
       },
       //handbrake
       {
-        "name": "mtsofficialpack:carhandbrakeup",
+        "name": "qvist_p:carhandbrakeup",
         "pos": [0.0, 0.5, 1.3],
         "activeAnimations": [
           {
@@ -2724,7 +2741,7 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:carhandbrakedown",
+        "name": "qvist_p:carhandbrakedown",
         "pos": [0.0, 0.5, 1.3],
         "activeAnimations": [
           {
@@ -2739,7 +2756,7 @@
 
       //blinkersound
       {
-        "name": "mtsofficialpack:blinker",
+        "name": "qvist_p:blinker",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2759,7 +2776,7 @@
         "middleDistanceVolume": 0.0
       },
       {
-        "name": "mtsofficialpack:blinker",
+        "name": "qvist_p:blinker",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2780,7 +2797,7 @@
       },
       //blinkerlever
       {
-        "name": "mtsofficialpack:blinkerleverup",
+        "name": "qvist_p:blinkerleverup",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2793,7 +2810,7 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:blinkerleverdown",
+        "name": "qvist_p:blinkerleverdown",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2806,7 +2823,7 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:blinkerleverup",
+        "name": "qvist_p:blinkerleverup",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2819,7 +2836,7 @@
         "isInterior": true
       },
       {
-        "name": "mtsofficialpack:blinkerleverdown",
+        "name": "qvist_p:blinkerleverdown",
         "pos": [0.5, 0.5, 2.0],
         "activeAnimations": [
           {
@@ -2834,7 +2851,7 @@
 
       //horn
       {
-        "name": "mtsofficialpack:horn_car",
+        "name": "qvist_p:horn_car",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2853,7 +2870,7 @@
       },
       //rain outside
       {
-        "name": "mtsofficialpack:rain_outside",
+        "name": "qvist_p:rain_outside",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2873,7 +2890,7 @@
       },
       //rain outside roof shennanigans
       {
-        "name": "mtsofficialpack:rain_outside",
+        "name": "qvist_p:rain_outside",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2906,7 +2923,7 @@
 
       //wind
       {
-        "name": "mtsofficialpack:wind_on_outside",
+        "name": "qvist_p:HMMVW/M1151_ambient_moviving_01",
         "activeAnimations": [
           {
             "animationType": "visibility",
@@ -2934,7 +2951,7 @@
       },
       //outside wind if no roof
       {
-        "name": "mtsofficialpack:wind_on_outside",
+        "name": "qvist_p:HMMVW/M1151_ambient_moviving_01",
         "activeAnimations": [
           {
             "animationType": "visibility",
