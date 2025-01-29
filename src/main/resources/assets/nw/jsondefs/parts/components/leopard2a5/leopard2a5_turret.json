@@ -144,6 +144,7 @@
   "collisionGroups": [
     {
       "collisionTypes": ["bullet", "entity", "click"], //gunner hatch
+      "armorThickness":  0.0,
       "applyAfter": "hatch_loader",
       "collisions": [
         {
@@ -246,6 +247,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //commander hatch
+      "armorThickness":  0.0,
       "applyAfter": "hatch_commander",
       "collisions": [
         {
@@ -348,6 +350,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //front armor
+      "armorThickness":  0.0,
       "heatArmorThickness": 700.0,
       "collisions": [
         {
@@ -450,6 +453,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //side left armor
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_l",
@@ -503,6 +507,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //side right armor
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_r",
@@ -556,6 +561,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //top armor
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "top",
@@ -633,6 +639,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //rear armor
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "rear",
@@ -656,6 +663,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //bottom armor
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "bottom",

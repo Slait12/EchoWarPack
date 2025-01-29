@@ -8,13 +8,14 @@
     "quantity": 1,
     "diameter": 155.0,
     "damage": 100.0,
-    "blastStrength": 6.0,
     "caseLength": 840.0,
     "armorPenetration": 36.0,
     "gravitationalVelocity": 0.05,
     "accelerationTime": 60,
     "maxVelocity": 100,
-    "impactDespawnTime": 40
+    "impactDespawnTime": 40,
+    "blastStrength": 7000.0,
+    "blastStrengthRadiusMax": 10
   },
   "definitions": [
     {

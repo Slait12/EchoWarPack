@@ -2912,7 +2912,7 @@
   },
   "general": {
     "description": "American BMP Bradley with BUSK III defence installed. BRAT 2",
-    "health": 1500,
+    "health": 14000,
     "materialLists": [
       [
         "minecraft:iron_ingot:32",

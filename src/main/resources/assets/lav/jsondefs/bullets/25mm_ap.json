@@ -8,7 +8,7 @@
     "isLongRange": true,
     "quantity": 225,
     "diameter": 25.0,
-    "damage": 25.0,
+    "damage": 250.0,
     "knockback": 5.5,
     "gravitationalVelocity": 0.033,
     "despawnTime": 100,

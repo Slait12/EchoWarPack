@@ -13,7 +13,7 @@ license="The Unlicense"
 # The ID of your pack.
 modId="gerwarpack"
 # Version number.  Must start with a number or Forge complains.
-version="4"
+version="5"
  # Display name for the pack in the in-game mods list.
 displayName="GerWar pack"
 # A URL for the "homepage" for this pack, displayed in the mod UI.

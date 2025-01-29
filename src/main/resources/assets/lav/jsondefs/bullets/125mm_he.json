@@ -8,7 +8,7 @@
     "isLongRange": true,
     "quantity": 1,
     "diameter": 125.0,
-    "damage": 400.0,
+    "damage": 6000.0,
     "blastStrength": 3.3,
     "knockback": 5.5,
     "gravitationalVelocity": 0.033,

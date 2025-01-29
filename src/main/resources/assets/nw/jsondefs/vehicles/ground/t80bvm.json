@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 100,
+    "health": 24000,
     "materialLists": [[]],
     "radarWidth": 0.0,
     "radarRange": 0.0
@@ -78,7 +78,7 @@
     {
       "pos": [-0.035351, 0.86, 1.2],
       "playerScale": [0.77, 0.77, 0.77],
-      "dismountPos": [4.0,3.0,3.0],
+      "dismountPos": [2.2, 0.5, 0.0],
       "interactableVariables": [["hatch_driver"]],
       "isController": true,
       "isPermanent": true,
@@ -116,7 +116,7 @@
   "collisionGroups": [
     {
       "collisionTypes": ["entity", "bullet", "click"], //hatch driver
-      ,
+      "armorThickness":  0.0,
       "applyAfter": "hatch_driver",
       "collisions": [
         {
@@ -139,7 +139,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], //hatch engine
-      ,
+      "armorThickness":  0.0,
       "applyAfter": "hatch_engine",
       "collisions": [
         {
@@ -791,7 +791,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // front top armor
-      ,
+      "armorThickness":  0.0,
       "heatArmorThickness": 800.0,
       "collisions": [
         {
@@ -912,7 +912,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // front bottom armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "front_bottom",
@@ -942,7 +942,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // top armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "top",
@@ -1086,7 +1086,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side top armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_top",
@@ -1224,7 +1224,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side left armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_right",
@@ -1704,7 +1704,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // side right armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_left",
@@ -2184,7 +2184,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // rear armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "rear",
@@ -2466,7 +2466,7 @@
     },
     {
       "collisionTypes": ["entity", "bullet", "click"], // bottom armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "bottom",

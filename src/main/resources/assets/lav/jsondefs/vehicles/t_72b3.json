@@ -2037,7 +2037,7 @@
   },
   "general": {
     "description": "A russian battle tank, well armored but can throw the turret.",
-    "health": 2000,
+    "health": 24000,
     "materialLists": [
       [
         "minecraft:iron_ingot:32",

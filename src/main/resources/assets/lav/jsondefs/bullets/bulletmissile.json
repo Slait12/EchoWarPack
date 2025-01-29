@@ -9,7 +9,7 @@
     "seekerMaxAngle": 135.0,
     "quantity": 1,
     "diameter": 150.0,
-    "damage": 250.0,
+    "damage": 9000.0,
     "caseLength": 2.0,
     "blastStrength": 3.5,
     "knockback": 10.5,

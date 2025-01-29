@@ -2444,7 +2444,7 @@
   },
   "general": {
     "description": "russian mtlb, used to transport infantry and meat assaults",
-    "health": 1000,
+    "health": 6000,
     "materialLists": [
       [
         "minecraft:iron_ingot:16",

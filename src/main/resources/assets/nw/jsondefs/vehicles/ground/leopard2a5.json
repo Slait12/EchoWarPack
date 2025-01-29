@@ -1,6 +1,6 @@
 {
   "general": {
-    "health": 100,
+    "health": 24000,
     "materialLists": [[]]
   },
   "motorized": {
@@ -77,7 +77,7 @@
     {
       "pos": [-0.718652, 1.25, 2.38069],
       "playerScale": [0.7, 0.7, 0.7],
-      "dismountPos": [4.0,3.0,3.0],
+      "dismountPos": [2.2, 0.5, 0.0],
       "interactableVariables": [["hatch_driver"]],
       "isController": true,
       "isPermanent": true,
@@ -254,7 +254,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //driver hatch
-      ,
+      "armorThickness":  0.0,
       "applyAfter": "hatch_driver",
       "collisions": [
         {
@@ -309,7 +309,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //front armor
-      ,
+      "armorThickness":  0.0,
       "heatArmorThickness": 1300.0,
       "collisions": [
         {
@@ -400,7 +400,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //side left armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_left",
@@ -682,7 +682,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //side right armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "side_right",
@@ -964,7 +964,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click"], //bottom armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "bottom",
@@ -988,7 +988,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //top armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "top",
@@ -1162,7 +1162,7 @@
     },
     {
       "collisionTypes": ["bullet", "entity", "click", "block"], //rear armor
-      ,
+      "armorThickness":  0.0,
       "collisions": [
         {
           "name": "rear",

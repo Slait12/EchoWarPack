@@ -1,0 +1,343 @@
+{
+  "motorized": {
+    "isTrailer": true,
+    "hasRunningLights": true,
+    "emptyMass": 9760,
+    "axleRatio": 2.36,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.443,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hudTexture": "qvist_p:textures/guis/car_hud.png",
+    "panelTexture": "qvist_p:textures/guis/car_panel.png",
+    "panelTextColor": "FFFAFA",
+    "panelLitTextColor": "FFE2A8",
+    "hookupVariables": [
+      "electric_power",
+      "running_light"
+    ]
+  },
+  "parts": [
+    {
+      "pos": [0.0,1.3,0.0],
+      "isPermanent": true,
+      "maxValue": 200.0,
+      "defaultPart": "qvist_p:msta_howitzer",
+      "types": [
+        "gun_howitzer"
+      ],
+      "linkedParts": [6],
+      "activeAnimations": [
+        {
+          "animationType": "visibility",
+          "variable": "connection_1_1_connected",
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    },
+    {
+      "pos": [1.14057,-0.111646,0.72084],
+      "toneIndex": 1,
+      "minValue": 0.7,
+      "maxValue": 1.9,
+      "defaultPart": "qvist_p:msta_wheel",
+      "types": [],
+      "applyAfter": "suspension",
+      "animations": [
+        {
+          "animationType": "scaling",
+          "variable": "!locked",
+          "centerPoint": [1.14057,-0.111646,0.72084],
+          "axis": [-0.4,-0.4,-0.4]
+        }
+      ]
+    },
+    {
+      "pos": [1.14057,-0.111646,-0.780315],
+      "toneIndex": 1,
+      "minValue": 0.7,
+      "maxValue": 1.9,
+      "defaultPart": "qvist_p:msta_wheel",
+      "types": [],
+      "applyAfter": "suspension",
+      "animations": [
+        {
+          "animationType": "scaling",
+          "variable": "!locked",
+          "centerPoint": [1.14057,-0.111646,-0.780315],
+          "axis": [-0.4,-0.4,-0.4]
+        }
+      ]
+    },
+    {
+      "pos": [-1.14057,-0.111646,0.72084],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "toneIndex": 1,
+      "minValue": 0.7,
+      "maxValue": 1.9,
+      "defaultPart": "qvist_p:msta_wheel",
+      "types": [],
+      "applyAfter": "suspension",
+      "animations": [
+        {
+          "animationType": "scaling",
+          "variable": "!locked",
+          "centerPoint": [-1.14057,-0.111646,0.72084],
+          "axis": [-0.4,-0.4,-0.4]
+        }
+      ]
+    },
+    {
+      "pos": [-1.14057,-0.111646,-0.780315],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "toneIndex": 1,
+      "minValue": 0.7,
+      "maxValue": 1.9,
+      "defaultPart": "qvist_p:msta_wheel",
+      "types": [],
+      "applyAfter": "suspension",
+      "animations": [
+        {
+          "animationType": "scaling",
+          "variable": "!locked",
+          "centerPoint": [-1.14057,-0.111646,-0.780315],
+          "axis": [-0.4,-0.4,-0.4]
+        }
+      ]
+    },
+    {
+      "pos": [0,0.5,-1.71062],
+      "dismountPos": [1.7,1.0,1.0],
+      "isController": true,
+      "isPermanent": true,
+      "defaultPart": "qvist_p:seat_stand_invis",
+      "types": ["seat"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "gun_yaw_1",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,1.0,0.0]
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "block",
+        "click",
+        "attack",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.62081,0.0],
+          "width": 1.125,
+          "height": 0.1
+        },
+        {
+          "pos": [-0.8,1.6,0.3],
+          "width": 0.5,
+          "height": 1.2
+        },
+        {
+          "pos": [-1.1,1.6,0.3],
+          "width": 0.5,
+          "height": 1
+        },
+        {
+          "pos": [0.8,1.6,0.3],
+          "width": 0.5,
+          "height": 1.2
+        },
+        {
+          "pos": [1.1,1.6,0.3],
+          "width": 0.5,
+          "height": 1
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "Lift",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "lift_frame",
+          "pos": [0.0,0,-5],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "MSTA Artillery",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "initialVariables": [],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "arml",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [0.328687,0.201336,-0.43067],
+            "axis": [0.0,20.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 60
+          }
+        ]
+      },
+      {
+        "objectName": "armr",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [-0.328687,0.201336,-0.43067],
+            "axis": [0.0,-20.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 60
+          }
+        ]
+      },
+      {
+        "objectName": "stand",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "connection_1_1_connected",
+            "centerPoint": [0.0,0.083904,0.724246],
+            "axis": [-180.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 20,
+            "reverseDelay": 60
+          }
+        ]
+      },
+      {
+        "objectName": "suspension",
+        "animations": [
+          {
+            "animationType": "inhibitor",
+            "variable": "connection_1_1_connected",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "rotation",
+            "variable": "pitch",
+            "centerPoint": [0.0,-0.013923,0.017829],
+            "axis": [-1.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&taillight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.375,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 6
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ],
+        "blendableComponents": []
+      }
+    ],
+    "sounds": [],
+    "particles": [
+      {
+        "type": "flame",
+        "spawnEveryTick": true,
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "duration": 25,
+        "transparency": 1.0,
+        "scale": 2.0,
+        "toScale": 2.0,
+        "hitboxSize": 0.2,
+        "pos": [0.0,1.0,0.0],
+        "initialVelocity": [0.0,1,-0.5],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "damage",
+            "offset": 0.0,
+            "clampMin": 90.0,
+            "clampMax": 100.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "155mm MSTA Artillery",
+    "description": "",
+    "health": 500,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

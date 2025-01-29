@@ -21,7 +21,7 @@
   "definitions": [
     {
       "subName": "",
-      "name": "152 mm 2A65 Msta-B",
+      "name": "155 mm 2A65 Msta-B",
       "extraMaterialLists": [[]]
     }
   ],
@@ -37,7 +37,7 @@
     "maxYaw": 180.0,
     "minPitch": -10.0,
     "maxPitch": 15.0,
-    "diameter": 152.0,
+    "diameter": 155.0,
     "minCaseLength": 840.0,
     "maxCaseLength": 840.0,
     "yawSpeed": 0.2,
@@ -47,7 +47,7 @@
         "muzzles": [
           {
             "pos": [-0.00125, 0.094344, 6.88695],
-            "rot": [-55.0, 0.0, 0.0],
+            "rot": [0.0, 0.0, 0.0],
             "center": [0.0, 0.0, 0.0]
           }
         ]
@@ -59,7 +59,7 @@
       "pos": [0.3, 0.96875, 0.746],
       "rot": [0.0, 0.0, 0.0],
       "scale": 0.003,
-      "defaultInstrument": "qvist_p:instrument_2b14_scope",
+      "defaultInstrument": "qvist_p:instrument_bmp3_scope",
       "animations": [
         {
           "animationType": "visibility",
