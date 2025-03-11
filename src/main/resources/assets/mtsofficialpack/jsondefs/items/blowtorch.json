@@ -4,7 +4,7 @@
     "type": "repair_pack"
   },
   "repair": {
-    "amount": 50
+    "amount": 250
   },
     "general": {
         "name": "Blowtorch",

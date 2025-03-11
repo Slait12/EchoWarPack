@@ -1,17 +1,21 @@
 {
   "general": {
-    "health": 600,
+    "health": 2400,
     "materialLists": [["immersiveengineering:material:2:8", "immersiveengineering:metal:38:10", "immersiveengineering:wirecoil:0:4", "immersiveengineering:material:27:5", "immersiveengineering:material:2:16", "immersiveengineering:material:23:6", "immersiveengineering:material:9:6", "minecraft:stone_button:0:6", "immersiveengineering:metal:39:5", "minecraft:glass_pane:4"]]
   },
   "motorized": {
     "isAircraft": true,
     "hasNavLights": true,
-    "emptyMass": 2000,
+    "emptyMass": 1000,
     "fuelCapacity": 25000,
     "gearSequenceDuration": 60,
     "axleRatio": 3.55,
     "brakingFactor": 1.0,
     "dragCoefficient": 0.03,
+    "tailDistance": 8.40874,
+    "aileronArea": 1.0,
+    "elevatorArea": 1.0,
+    "rudderArea": 1.0,
     "litVariable": "navigation_light",
     "panel": "mts:default_plane",
     "hudTexture": "qvist_p:textures/guis/car_hud.png",

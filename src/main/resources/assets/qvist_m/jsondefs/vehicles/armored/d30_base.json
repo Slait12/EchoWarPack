@@ -196,7 +196,7 @@
   "definitions": [
     {
       "subName": "",
-      "name": "MSTA Artillery",
+      "name": "D30 Artillery",
       "extraMaterialLists": [
         []
       ]
@@ -475,7 +475,7 @@
     "modelType": "obj"
   },
   "general": {
-    "name": "MSTA Artillery",
+    "name": "D30 Artillery",
     "description": "",
     "health": 500,
     "materialLists": [

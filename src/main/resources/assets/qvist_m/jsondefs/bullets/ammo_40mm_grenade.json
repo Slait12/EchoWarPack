@@ -7,11 +7,18 @@
     "types": ["explosive"],
     "quantity": 48,
     "diameter": 40.0,
-    "damage": 250.0,
+
+    "damage": 200.0,
+    "blastDamage": 50,
+    "blastDamageRadiusMax": 15.0,
+    "blastDamageRadiusDecay": 1,
+    "blastStrength": 10,
+    "blastStrengthRadiusMax": 2,
+    "blastStrengthRadiusDecay": 1,
+
     "caseLength": 53.0,
-    "blastStrength": 2.5,
     "armorPenetration": 12.0,
-    "gravitationalVelocity": 0.05,
+    "gravitationalVelocity": 0.1,
     "accelerationTime": 20,
     "maxVelocity": 100,
     "impactDespawnTime": 40
@@ -19,9 +26,10 @@
   "definitions": [
     {
       "subName": "",
-      "modelName": "30mm_casing",
-      "textureName": "30mm_casing",
-      "name": "40 mm grenade box",
+      "name": "40mm Grenades",
+      "modelName": "ammo_30mm_he",
+      "textureName": "ammo_30mm_he",
+      "description": "40mm Grenades for MK19 Auto Grenade Launcher.",
       "extraMaterialLists": [[]]
     }
   ],

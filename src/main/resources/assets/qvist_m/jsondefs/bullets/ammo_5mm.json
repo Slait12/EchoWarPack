@@ -14,9 +14,10 @@
   "definitions": [
     {
       "subName": "",
-      "modelName": "ammo_7mm",
-      "textureName": "ammo_7mm",
+      "modelName": "ammo_30mm",
+      "textureName": "ammo_30mm",
       "name": "5.45mm Ammo",
+      "description": "5.45mm Ammo for rifles",
       "extraMaterialLists": [[]]
     }
   ],

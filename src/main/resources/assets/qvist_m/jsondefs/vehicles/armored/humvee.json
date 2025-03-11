@@ -131,27 +131,7 @@
       "isPermanent": true,
       "defaultPart": "qvist_p:seat_stand_invis",
       "linkedParts": [10, 11, 12],
-      "types": ["seat"],
-      "animations": [
-        {
-          "animationType": "rotation",
-          "variable": "gun_yaw_1",
-          "centerPoint": [0.03, 1.6, -0.2],
-          "axis": [0.0, 1.0, 0.0]
-        },
-        {
-          "animationType": "rotation",
-          "variable": "gun_yaw_2",
-          "centerPoint": [0.03, 1.6, -0.2],
-          "axis": [0.0, 1.0, 0.0]
-        },
-        {
-          "animationType": "rotation",
-          "variable": "gun_yaw_3",
-          "centerPoint": [0.03, 1.6, -0.2],
-          "axis": [0.0, 1.0, 0.0]
-        }
-      ]
+      "types": ["seat"]
     },
     {
       "pos": [0.027849, 2.32371, -0.09631],
@@ -461,7 +441,20 @@
     }
   ],
   //"initialVariables": ["door_front_le", "door_front_re", "door_back_le", "door_back_re"],
-  "connectionGroups": [],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "canInitiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0, 1.04297, -4.4818],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
   "collisionGroups": [
     {
       "collisionTypes": ["entity", "click", "bullet"],

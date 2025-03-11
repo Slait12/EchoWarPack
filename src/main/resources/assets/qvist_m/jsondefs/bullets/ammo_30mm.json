@@ -14,7 +14,8 @@
   "definitions": [
     {
       "subName": "",
-      "name": "3UBR8 Armor-Piercing",
+      "name": "30mm Ammo",
+      "description": "30mm Ammo for autocannons",
       "extraMaterialLists": [[]]
     }
   ],

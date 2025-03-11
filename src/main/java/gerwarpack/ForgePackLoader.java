@@ -1,4 +1,4 @@
 package gerwarpack;
 import net.minecraftforge.fml.common.Mod;
-@Mod("gerwarpack")
+@Mod("echowarpack")
 public class ForgePackLoader {public ForgePackLoader() {}}

@@ -34,8 +34,6 @@
     "muzzleVelocity": 160,
     "fireDelay": 3.0,
     "bulletSpreadFactor": 1.5,
-    "minCaseLength": 99.0,
-    "maxCaseLength": 99.0,
     "minYaw": -180.0,
     "maxYaw": 180.0,
     "minPitch": -6.0,

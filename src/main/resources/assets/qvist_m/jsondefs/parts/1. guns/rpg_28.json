@@ -8,7 +8,6 @@
   "gun": {
     "lockOnType": "default",
     "targetType": "all",
-    "autoReload": true,
     "handHeld": true,
     "isTwoHanded": true,
     "forceHandheldCameras": true,

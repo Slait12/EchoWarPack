@@ -11,21 +11,21 @@ license="The Unlicense"
 
 [[mods]] 
 # The ID of your pack.
-modId="gerwarpack"
+modId="echowarpack"
 # Version number.  Must start with a number or Forge complains.
-version="5"
+version="1.1"
  # Display name for the pack in the in-game mods list.
-displayName="GerWar pack"
+displayName="EchoWarPack"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
-displayURL="https://discord.gg/nFarBdjmcJ"
+displayURL="https://discord.gg/RNN7t6JvqF"
 # Pack logo.
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
 description='''
-Vehicle pack for GerWar server. All files are from: lindqvist, LAV, MTS Official pack.
+Vehicle pack for EchoWar server. Includes vehicles from OCP, LAV, lindqvist.
 '''
 
-[[dependencies.gerwarpack]]
+[[dependencies.echowarpack]]
     modId="mts"
     mandatory=true
     versionRange="[22.6.0,)"

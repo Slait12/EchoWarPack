@@ -13,6 +13,7 @@
     {
       "subName": "",
       "name": "7.62mm Ammo",
+      "description": "7.62mm Ammo for machineguns.",
       "extraMaterialLists": [[]]
     }
   ],

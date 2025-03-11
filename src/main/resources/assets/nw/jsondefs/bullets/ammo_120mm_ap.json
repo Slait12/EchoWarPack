@@ -7,7 +7,16 @@
     "types": ["armor_piercing"],
     "quantity": 1,
     "diameter": 120.0,
-    "damage": 100.0,
+
+    "damage": 6000.0,
+    "blastDamage": 100,
+    "blastDamageRadiusMax": 10.0,
+    "blastDamageRadiusDecay": 1,
+    "blastStrength": 7000,
+    "blastStrengthRadiusMax": 5,
+    "blastStrengthRadiusDecay": 0,
+    "DirectBlockBreakingStrength": 6000,
+
     "caseLength": 570.0,
     "armorPenetration": 629.0,
     "slowdownSpeed": 0.001,

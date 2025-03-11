@@ -12,9 +12,9 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle"
 
 //Set file name.
-version = "V3"
-group = "gerwar"
-archivesBaseName = "GerWar Pack"
+version = "V1.1"
+group = "echowar"
+archivesBaseName = "EchoWar"
 
 //Options for Java version to compile to.
 sourceCompatibility = targetCompatibility = "1.8"
